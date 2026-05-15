@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Read(//c/Users/user/AppData/Local/Temp/claude/C--Users-user-portfolio-homepage/f02f767f-1f46-41bc-a8dd-e58ce4d528cf/tasks/**)",
-      "PowerShell(Get-ChildItem C:\\\\Users\\\\user\\\\portfolio-homepage\\\\src -Recurse -Force | Where-Object { -not $_.PSIsContainer -or $_.Name -in @\\('styles','data','layout','sections','components','assets'\\) } | Select-Object @{N='Path';E={$_.FullName.Replace\\('C:\\\\Users\\\\user\\\\portfolio-homepage\\\\',''\\)}}, Length | Format-Table -AutoSize)"
+      "PowerShell(Get-ChildItem C:\\\\Users\\\\user\\\\portfolio-homepage\\\\src -Recurse -Force | Where-Object { -not $_.PSIsContainer -or $_.Name -in @\\('styles','data','layout','sections','components','assets'\\) } | Select-Object @{N='Path';E={$_.FullName.Replace\\('C:\\\\Users\\\\user\\\\portfolio-homepage\\\\',''\\)}}, Length | Format-Table -AutoSize)",
+      "Bash(npm run *)"
     ]
   }
 }

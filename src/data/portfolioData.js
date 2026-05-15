@@ -9,6 +9,27 @@
  */
 
 export const portfolioData = {
+  nav: [
+    { id: "projects", label: "Projects", href: "#projects" },
+    { id: "timeline", label: "Timeline", href: "#timeline" },
+    { id: "about", label: "About", href: "#about" },
+    { id: "notes", label: "Notes", href: "#notes" },
+    { id: "contact", label: "Contact", href: "#contact" },
+  ],
+
+  hero: {
+    eyebrow: "Brand Campaign",
+    title: {
+      line1: "브랜드 캠페인을 기획하고,",
+      line2: "디지털 CRM을 설계하며,",
+      line3: "고객 경험을 잇는다.",
+      italicLine: 3,
+    },
+    subtitle:
+      "브랜드 전략부터 디지털 채널 운영, 멤버십·CRM 설계, 고객 경험 프로그램까지 — 마케팅 한 직무 안의 여러 영역을 단일 PM으로 책임져 온 기록.",
+    meta: "Marketing PM · 2017 → Present",
+  },
+
   projects: [
     // TODO: project-1 — fill in from source
     {
