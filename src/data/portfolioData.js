@@ -18,7 +18,7 @@ export const portfolioData = {
   ],
 
   hero: {
-    eyebrow: "Brand Campaign",
+    eyebrow: "Brand Campaign · Digital CRM · Customer Engagement",
     title: {
       line1: "브랜드 캠페인을 기획하고,",
       line2: "디지털 CRM을 설계하며,",

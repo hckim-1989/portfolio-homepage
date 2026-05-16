@@ -15,23 +15,29 @@ function Hero() {
   return (
     <section id="hero" className={styles.hero}>
       <div className={styles.inner}>
-        <p className={styles.eyebrow}>{eyebrow}</p>
-        <h1 className={styles.title}>
-          {lines.map((line) => (
-            <span
-              key={line.key}
-              className={
-                line.key === italicLine
-                  ? styles.titleLineItalic
-                  : styles.titleLine
-              }
-            >
-              {line.text}
-            </span>
-          ))}
-        </h1>
-        {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
-        {meta && <p className={styles.meta}>{meta}</p>}
+        <div className={styles.content}>
+          <p className={styles.eyebrow}>{eyebrow}</p>
+          <h1 className={styles.title}>
+            {lines.map((line) => (
+              <span
+                key={line.key}
+                className={
+                  line.key === italicLine
+                    ? styles.titleLineItalic
+                    : styles.titleLine
+                }
+              >
+                {line.text}
+              </span>
+            ))}
+          </h1>
+          {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+          {meta && <p className={styles.meta}>{meta}</p>}
+        </div>
+
+        <aside className={styles.visual} aria-hidden="true">
+          <div className={styles.visualBlock} />
+        </aside>
       </div>
     </section>
   );
