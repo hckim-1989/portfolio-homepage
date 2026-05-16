@@ -1,0 +1,89 @@
+/* ============================================
+   Design Tokens — Portfolio v3
+   work.ac style × Uber design system
+   ============================================ */
+
+:root {
+  /* --- Colors --- */
+  --color-canvas: #F0F2F4;
+  --color-surface: #FFFFFF;
+  --color-ink: #000000;
+  --color-body: #5E5E5E;
+  --color-mute: #AFAFAF;
+  --color-hairline: rgba(0, 0, 0, 0.1);
+  --color-placeholder: #E8EBED;
+
+  /* --- Pillar accents (현재 미사용, 향후 옵션) --- */
+  --pillar-brand: #C19A6B;
+  --pillar-crm: #1F4E79;
+  --pillar-engagement: #C7522A;
+
+  /* --- Font --- */
+  --font-family: 'Pretendard Variable', 'Pretendard', 'Inter',
+                 -apple-system, BlinkMacSystemFont, system-ui,
+                 sans-serif;
+
+  /* --- Spacing (4px base) --- */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  --space-3xl: 48px;
+  --space-4xl: 64px;
+
+  /* --- Active state (italic + letter-spacing 시그니처) --- */
+  --tracking-active: 0.10em;
+  --tracking-hover: 0.04em;
+  --transition-active: letter-spacing 0.25s ease-out, font-style 0s;
+
+  /* --- Layout --- */
+  --max-content-width: 1440px;
+}
+
+/* --- Global resets --- */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* --- Site Footer (단순) --- */
+.site-footer {
+  background: var(--color-canvas);
+  border-top: 1px solid var(--color-hairline);
+  padding: var(--space-xl) var(--space-2xl);
+  text-align: center;
+  font-size: 12px;
+  color: var(--color-mute);
+}

@@ -1,0 +1,94 @@
+/* ============================================
+   Masthead — 단일 행 마스트헤드
+   ============================================ */
+
+.masthead {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-hairline);
+  padding: 18px var(--space-2xl);
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: var(--space-xl);
+
+  /* sticky 처리 */
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.masthead-logo {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+  color: var(--color-ink);
+}
+
+.masthead-filter-nav {
+  display: flex;
+  gap: var(--space-xl);
+  justify-content: center;
+}
+
+.masthead-meta {
+  font-size: 13px;
+  color: var(--color-body);
+  white-space: nowrap;
+}
+
+.masthead-meta:hover {
+  color: var(--color-ink);
+}
+
+.masthead-secondary-nav {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+/* ── nav 버튼 공통 (필터 + secondary 모두 사용) ── */
+.nav-btn {
+  font: 500 15px/1 var(--font-family);
+  color: var(--color-ink);
+  padding: 4px 0;
+  letter-spacing: 0;
+  transition: var(--transition-active);
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.nav-btn.active {
+  font-style: italic;
+  letter-spacing: var(--tracking-active);
+}
+
+.nav-btn:hover:not(.active) {
+  letter-spacing: var(--tracking-hover);
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+
+/* Tablet — 메타 정보 숨김 (공간 부족) */
+@media (max-width: 1023px) {
+  .masthead {
+    grid-template-columns: auto 1fr auto;
+    gap: var(--space-lg);
+  }
+  .masthead-meta {
+    display: none;
+  }
+}
+
+/* Mobile — 햄버거 메뉴로 전환 (Phase 1: 단순 hide, 추후 hamburger 추가) */
+@media (max-width: 767px) {
+  .masthead {
+    grid-template-columns: auto 1fr;
+    padding: var(--space-lg);
+  }
+  .masthead-filter-nav,
+  .masthead-secondary-nav {
+    display: none;
+    /* TODO: Phase 2 — 햄버거 메뉴 + fullscreen overlay 추가 */
+  }
+}
