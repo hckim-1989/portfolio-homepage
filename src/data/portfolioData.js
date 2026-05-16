@@ -164,11 +164,18 @@ export const portfolioData = {
 
   contact: {
     eyebrow: "Contact",
-    // TODO — source fragment ended at `eyebrow`. Fill in remaining fields when available.
-    title: "",
-    body: "",
-    email: "",
-    socials: [],
+    // TODO — source fragment ended at `eyebrow`. Replace placeholder copy when final text is available.
+    title: {
+      line1: "다음 브랜드 이야기,",
+      line2: "함께 만들어볼까요.",
+      italicLine: 2,
+    },
+    body: "프로젝트 문의, 협업, 커피챗 — 어떤 주제든 편하게 메일 주세요. 영업일 기준 2일 안에 회신드립니다.",
+    email: "heungkim2003@gmail.com",
+    socials: [
+      { id: "linkedin", label: "LinkedIn", href: "#" },
+      { id: "github", label: "GitHub", href: "#" },
+    ],
   },
 };
 

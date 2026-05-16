@@ -1,5 +1,9 @@
 import Header from './components/layout/Header'
+import Footer from './components/layout/Footer'
 import Hero from './components/sections/Hero'
+import About from './components/sections/About'
+import SelectedWork from './components/sections/SelectedWork'
+import Timeline from './components/sections/Timeline'
 import './App.css'
 
 function App() {
@@ -8,27 +12,11 @@ function App() {
       <Header />
       <main>
         <Hero />
-
-        <section id="about">
-          <h2>About</h2>
-        </section>
-
-        <section id="projects">
-          <h2>Projects</h2>
-        </section>
-
-        <section id="timeline">
-          <h2>Timeline</h2>
-        </section>
-
-        <section id="notes">
-          <h2>Notes</h2>
-        </section>
-
-        <section id="contact">
-          <h2>Contact</h2>
-        </section>
+        <About />
+        <SelectedWork />
+        <Timeline />
       </main>
+      <Footer />
     </>
   )
 }
