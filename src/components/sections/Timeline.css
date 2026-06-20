@@ -32,7 +32,6 @@
 
 .timeline-year {
   font: 400 28px/1 var(--font-family);
-  font-style: italic;
   letter-spacing: -0.01em;
   color: var(--color-ink);
 }

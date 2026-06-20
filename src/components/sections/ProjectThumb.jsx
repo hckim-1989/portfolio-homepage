@@ -57,7 +57,7 @@ export default function ProjectThumb({ project }) {
         <text x="40" y="540" fontSize="14" fontWeight="500" letterSpacing="2.4" fill={c.ink} opacity="0.6">
           {year.toUpperCase()}
         </text>
-        <text x="40" y="572" fontSize="20" fontStyle="italic" fill={c.ink} opacity="0.85">
+        <text x="40" y="572" fontSize="20" fontWeight="500" fill={c.ink} opacity="0.85">
           {word}
         </text>
       </g>

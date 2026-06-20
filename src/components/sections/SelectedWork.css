@@ -42,7 +42,6 @@
 
 /* Pillar 별 살짝의 hover 강조 */
 .work-card-link:hover .work-card-title {
-  font-style: italic;
   letter-spacing: var(--tracking-hover);
 }
 
@@ -67,9 +66,12 @@
 }
 
 .work-card-impact {
-  font: 400 italic 15px/1.4 var(--font-family);
-  color: var(--pillar-engagement);
+  font: 500 14px/1.4 var(--font-family);
+  color: var(--color-ink);
   margin: 0 0 var(--space-md) 0;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 .work-card-summary {
@@ -125,8 +127,9 @@
 }
 
 .work-archive-year {
-  font: 400 italic 14px/1 var(--font-family);
+  font: 400 14px/1 var(--font-family);
   color: var(--color-mute);
+  letter-spacing: 0.04em;
 }
 
 .work-archive-title {

@@ -59,9 +59,10 @@
 }
 
 .notes-post-date {
-  font: 400 italic 13px/1 var(--font-family);
+  font: 400 13px/1 var(--font-family);
   color: var(--color-mute);
   min-width: 100px;
+  letter-spacing: 0.04em;
 }
 
 .notes-post-title {

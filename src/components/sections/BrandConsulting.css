@@ -102,7 +102,6 @@
 
 .consulting-service-num {
   font: 400 14px/1 var(--font-family);
-  font-style: italic;
   color: var(--color-mute);
   letter-spacing: 0.04em;
 }

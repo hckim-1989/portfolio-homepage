@@ -41,8 +41,10 @@
 
 .section-title-line--italic {
   display: block;
-  font-style: italic;
-  letter-spacing: 0.005em;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+  text-decoration-color: var(--color-ink);
 }
 
 /* ── body lead (섹션 본문 한 단락) ── */

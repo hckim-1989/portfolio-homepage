@@ -46,7 +46,7 @@
 }
 
 .capability-tagline {
-  font: 400 italic 16px/1.5 var(--font-family);
+  font: 400 16px/1.5 var(--font-family);
   color: var(--color-body);
   margin: 0;
 }
