@@ -1,0 +1,140 @@
+.consulting-inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.consulting-lead {
+  min-width: 0;
+}
+
+.consulting-eyebrow-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.consulting-eyebrow-row .section-eyebrow {
+  margin: 0;
+}
+
+/* ── Available 배지 ── */
+.consulting-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid var(--color-ink);
+  border-radius: 999px;
+  font: 500 11px/1 var(--font-family);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  background: var(--color-canvas);
+}
+
+.consulting-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--pillar-engagement);
+  box-shadow: 0 0 0 3px rgba(199, 82, 42, 0.18);
+  animation: pulse 2s ease-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(199, 82, 42, 0.18); }
+  50%      { box-shadow: 0 0 0 6px rgba(199, 82, 42, 0.06); }
+}
+
+.consulting-title {
+  margin-bottom: var(--space-2xl);
+}
+
+/* ── CTA ── */
+.consulting-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: var(--space-3xl);
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-ink);
+  font: 500 16px/1 var(--font-family);
+  color: var(--color-ink);
+  transition: var(--transition-active);
+}
+
+.consulting-cta:hover {
+  letter-spacing: var(--tracking-hover);
+}
+
+.consulting-cta:hover .consulting-cta-arrow {
+  transform: translateX(6px);
+}
+
+.consulting-cta-arrow {
+  display: inline-block;
+  transition: transform 0.25s ease-out;
+}
+
+/* ── 우측 서비스 카드 ── */
+.consulting-services {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--color-hairline);
+}
+
+.consulting-service {
+  position: relative;
+  padding: var(--space-xl) 0;
+  border-bottom: 1px solid var(--color-hairline);
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: var(--space-lg);
+  align-items: baseline;
+}
+
+.consulting-service-num {
+  font: 400 14px/1 var(--font-family);
+  font-style: italic;
+  color: var(--color-mute);
+  letter-spacing: 0.04em;
+}
+
+.consulting-service-title {
+  font: 500 18px/1.3 var(--font-family);
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+  margin: 0 0 6px 0;
+}
+
+.consulting-service-desc {
+  font: 400 14px/1.55 var(--font-family);
+  color: var(--color-body);
+  margin: 0;
+  grid-column: 2;
+}
+
+/* ── 반응형 ── */
+@media (max-width: 1023px) {
+  .consulting-inner {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+}
+
+@media (max-width: 767px) {
+  .consulting-eyebrow-row {
+    flex-wrap: wrap;
+    gap: var(--space-md);
+  }
+  .consulting-badge {
+    font-size: 10px;
+  }
+}

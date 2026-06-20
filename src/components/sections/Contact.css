@@ -1,0 +1,74 @@
+.contact-header {
+  margin-bottom: var(--space-4xl);
+  max-width: 760px;
+}
+
+.contact-header .section-lead {
+  margin-top: var(--space-xl);
+}
+
+.contact-channels {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--color-ink);
+}
+
+.contact-channel {
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.contact-channel-link {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: var(--space-xl);
+  align-items: baseline;
+  padding: var(--space-2xl) 0;
+  color: var(--color-ink);
+  transition: padding 0.25s ease-out;
+}
+
+.contact-channel-link:hover {
+  padding-left: var(--space-lg);
+}
+
+.contact-channel-link:hover .contact-channel-arrow {
+  transform: translateX(8px);
+  opacity: 1;
+}
+
+.contact-channel-label {
+  font: 500 12px/1 var(--font-family);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-mute);
+}
+
+.contact-channel-value {
+  font: 400 clamp(22px, 3vw, 32px) / 1.2 var(--font-family);
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.contact-channel--primary .contact-channel-value {
+  font-style: italic;
+}
+
+.contact-channel-arrow {
+  font-size: 0.7em;
+  color: var(--color-mute);
+  opacity: 0.5;
+  transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+/* ── 반응형 ── */
+@media (max-width: 767px) {
+  .contact-channel-link {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+    padding: var(--space-xl) 0;
+  }
+}

@@ -1,20 +1,21 @@
 /* ============================================
-   Masthead — 단일 행 마스트헤드
+   Masthead — sticky 앵커 nav 바
    ============================================ */
 
 .masthead {
   background: var(--color-surface);
   border-bottom: 1px solid var(--color-hairline);
-  padding: 18px var(--space-2xl);
+  padding: 16px var(--space-2xl);
   display: grid;
-  grid-template-columns: auto 1fr auto auto;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: var(--space-xl);
+  gap: var(--space-2xl);
 
-  /* sticky 처리 */
   position: sticky;
   top: 0;
   z-index: 50;
+  backdrop-filter: saturate(180%) blur(8px);
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .masthead-logo {
@@ -24,14 +25,14 @@
   color: var(--color-ink);
 }
 
-.masthead-filter-nav {
+.masthead-nav {
   display: flex;
   gap: var(--space-xl);
   justify-content: center;
 }
 
 .masthead-meta {
-  font-size: 13px;
+  font: 400 13px/1 var(--font-family);
   color: var(--color-body);
   white-space: nowrap;
 }
@@ -40,55 +41,52 @@
   color: var(--color-ink);
 }
 
-.masthead-secondary-nav {
-  display: flex;
-  gap: var(--space-lg);
-}
-
-/* ── nav 버튼 공통 (필터 + secondary 모두 사용) ── */
+/* ── nav 버튼 ── */
 .nav-btn {
-  font: 500 15px/1 var(--font-family);
+  font: 500 14px/1 var(--font-family);
   color: var(--color-ink);
   padding: 4px 0;
   letter-spacing: 0;
   transition: var(--transition-active);
   white-space: nowrap;
   display: inline-block;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-.nav-btn.active {
+.nav-btn:hover {
   font-style: italic;
-  letter-spacing: var(--tracking-active);
-}
-
-.nav-btn:hover:not(.active) {
   letter-spacing: var(--tracking-hover);
 }
 
-/* ============================================
-   Responsive
-   ============================================ */
+/* 스크롤 시 부드러운 앵커 이동 */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
 
-/* Tablet — 메타 정보 숨김 (공간 부족) */
+/* ── Responsive ── */
 @media (max-width: 1023px) {
   .masthead {
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto 1fr;
     gap: var(--space-lg);
   }
   .masthead-meta {
     display: none;
   }
+  .masthead-nav {
+    gap: var(--space-lg);
+    justify-content: flex-end;
+  }
 }
 
-/* Mobile — 햄버거 메뉴로 전환 (Phase 1: 단순 hide, 추후 hamburger 추가) */
 @media (max-width: 767px) {
   .masthead {
-    grid-template-columns: auto 1fr;
-    padding: var(--space-lg);
+    padding: 12px var(--space-lg);
   }
-  .masthead-filter-nav,
-  .masthead-secondary-nav {
+  .masthead-nav {
     display: none;
-    /* TODO: Phase 2 — 햄버거 메뉴 + fullscreen overlay 추가 */
+    /* TODO: Phase 2 — 햄버거 메뉴 */
   }
 }
