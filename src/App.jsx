@@ -1,6 +1,7 @@
 import Masthead from './components/Masthead';
 import Hero from './components/sections/Hero';
 import SelectedWork from './components/sections/SelectedWork';
+import CaseStudies from './components/sections/CaseStudies';
 import BrandConsulting from './components/sections/BrandConsulting';
 import Capabilities from './components/sections/Capabilities';
 import Timeline from './components/sections/Timeline';
@@ -27,6 +28,7 @@ export default function App() {
       <main>
         <Hero />
         <SelectedWork />
+        <CaseStudies />
         <BrandConsulting />
         <Capabilities />
         <Timeline />

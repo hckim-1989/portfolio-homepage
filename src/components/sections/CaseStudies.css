@@ -1,0 +1,243 @@
+/* ============================================
+   CaseStudies — 풀 콘텐츠 article 형식
+   ============================================ */
+
+.cases {
+  background: var(--color-canvas);
+  padding: 80px 64px;
+  border-top: 1px solid var(--color-hairline);
+}
+
+.cases-inner {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}
+
+/* ── Section header ── */
+.cases-header {
+  margin-bottom: 64px;
+  max-width: 760px;
+}
+
+.cases-eyebrow {
+  font: 500 12px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 var(--space-lg) 0;
+}
+
+.cases-title {
+  font: 700 clamp(28px, 3.8vw, 48px) / 1.15 var(--font-family);
+  letter-spacing: -0.025em;
+  color: var(--color-ink);
+  margin: 0 0 var(--space-xl) 0;
+}
+
+.cases-title-accent {
+  color: var(--color-accent);
+}
+
+.cases-lead {
+  font: 400 16px/1.65 var(--font-family);
+  color: var(--color-body);
+  margin: 0;
+}
+
+/* ── List of cases ── */
+.cases-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--color-hairline);
+  border-top: 1px solid var(--color-hairline);
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+/* ── Single case article ── */
+.case {
+  background: var(--color-surface);
+  padding: 56px 48px;
+  scroll-margin-top: 96px;
+}
+
+.case--ongoing {
+  background: var(--color-canvas);
+}
+
+.case-head {
+  margin-bottom: var(--space-2xl);
+  max-width: 880px;
+}
+
+.case-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font: 500 12px/1 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-mute);
+  margin-bottom: var(--space-lg);
+}
+
+.case-num {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.case-meta-sep {
+  color: var(--color-mute-2);
+}
+
+.case-pillar,
+.case-year,
+.case-role {
+  color: var(--color-body);
+}
+
+.case-ongoing-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 4px 8px;
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.case-title {
+  font: 700 clamp(28px, 3vw, 38px) / 1.2 var(--font-family);
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+  margin: 0 0 var(--space-md) 0;
+}
+
+.case-impact {
+  font: 500 17px/1.4 var(--font-family);
+  color: var(--color-accent);
+  margin: 0 0 var(--space-lg) 0;
+}
+
+.case-summary {
+  font: 400 16px/1.65 var(--font-family);
+  color: var(--color-body);
+  margin: 0;
+}
+
+/* ── Body: 3 blocks (Challenge / Approach / Outcome) ── */
+.case-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding-top: var(--space-2xl);
+  border-top: 1px solid var(--color-hairline);
+}
+
+.case-block {
+  min-width: 0;
+}
+
+.case-block-label {
+  font: 600 11px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-mute);
+  margin: 0 0 var(--space-md) 0;
+}
+
+.case-block-text {
+  font: 400 14px/1.7 var(--font-family);
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.case-block-text--qualitative {
+  color: var(--color-ink);
+  font-weight: 500;
+  margin-bottom: var(--space-lg);
+}
+
+/* ── Metrics ── */
+.case-metrics {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  border-top: 1px dashed var(--color-hairline);
+  padding-top: var(--space-md);
+}
+
+.case-metric {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-md);
+  align-items: baseline;
+}
+
+.case-metric-label {
+  font: 400 12px/1.4 var(--font-family);
+  color: var(--color-body);
+  margin: 0;
+}
+
+.case-metric-value {
+  font: 500 12px/1.4 var(--font-mono);
+  color: var(--color-mute-2);
+  margin: 0;
+  text-align: right;
+}
+
+/* ── Foot (assets) ── */
+.case-foot {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-lg);
+  border-top: 1px dashed var(--color-hairline);
+  display: flex;
+  gap: var(--space-md);
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.case-foot-label {
+  font: 600 10px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-mute);
+  min-width: 60px;
+}
+
+.case-foot-value {
+  font: 400 13px/1.5 var(--font-family);
+  color: var(--color-mute);
+  flex: 1;
+}
+
+/* ── 반응형 ── */
+@media (max-width: 1023px) {
+  .cases {
+    padding: 64px var(--space-2xl);
+  }
+  .case {
+    padding: 40px var(--space-2xl);
+  }
+  .case-body {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+}
+
+@media (max-width: 767px) {
+  .cases {
+    padding: 48px var(--space-lg);
+  }
+  .case {
+    padding: 32px var(--space-lg);
+  }
+  .case-meta {
+    font-size: 11px;
+  }
+}
