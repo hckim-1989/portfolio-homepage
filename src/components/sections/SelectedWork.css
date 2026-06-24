@@ -4,7 +4,7 @@
 
 .section-work {
   background: var(--color-surface);
-  padding: 0 64px 60px;
+  padding: 48px 64px 60px;
 }
 
 .work-inner {
@@ -17,7 +17,7 @@
   justify-content: space-between;
   align-items: baseline;
   border-top: 1px solid var(--color-ink);
-  padding: 16px 0 24px 0;
+  padding: 16px 0 8px 0;
 }
 
 .work-meta-label {
@@ -27,14 +27,10 @@
   color: var(--color-body);
 }
 
-.work-meta-link {
+.work-meta-count {
   font: 400 12px/1 var(--font-mono);
   color: var(--color-mute-2);
-  transition: color 0.2s ease-out;
-}
-
-.work-meta-link:hover {
-  color: var(--color-accent);
+  letter-spacing: 0.04em;
 }
 
 /* ── Featured big card ── */

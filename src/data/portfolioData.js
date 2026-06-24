@@ -26,27 +26,20 @@ export const nav = [
   { id: 'contact',  label: 'Contact',  href: '#contact', muted: true },
 ];
 
-// ── Hero (영문 메인 + 한글 서브, 단어 강조) ──
+// ── Hero (C2 Split — 좌: 카피+버튼 / 우: featured 케이스) ──
 export const hero = {
   eyebrow: 'Brand & Marketing Strategist · Seoul',
-  titleEn: {
-    parts: [
-      { text: 'From brand strategy ', accent: false },
-      { text: 'to customer ', accent: false },
-      { text: 'engagement.', accent: true },
-    ],
-  },
+  titleLines: [
+    { text: 'From brand strategy', accent: false },
+    { text: 'to customer', accent: false },
+    { text: 'engagement.', accent: true },
+  ],
   subtitleKo:
-    '브랜드 전략부터 디지털 CRM과 고객 경험 프로그램까지 — 마케팅 한 직무 안의 여러 영역을 단일 PM으로 책임져 온 9년의 기록.',
-  focus: {
-    label: 'FOCUS',
-    items: [
-      'Brand Strategy',
-      'CRM & Loyalty',
-      'Customer Engagement',
-    ],
-    available: 'Available 2025',
-  },
+    '브랜드 전략부터 디지털 CRM과 고객 경험 프로그램까지 — 마케팅 한 직무를 단일 PM으로 책임져 온 9년의 기록.',
+  buttons: [
+    { label: '프로젝트 보기', href: '#work', primary: true },
+    { label: '이력서 PDF',    href: '#',     primary: false }, // [TODO] resumeUrl
+  ],
 };
 
 // ── Brand Consulting (옵션 C: 자기 정체성 + 의뢰 CTA) ──
