@@ -53,6 +53,9 @@ export default function CaseStudies() {
                     <span className="case-ongoing-badge">진행 중</span>
                   )}
                 </div>
+                {p.client && (
+                  <p className="case-client">{p.client}</p>
+                )}
                 <h3 className="case-title">{p.title}</h3>
                 <p className="case-impact">{p.impact}</p>
                 <p className="case-summary">{p.summary}</p>

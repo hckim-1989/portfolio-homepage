@@ -149,6 +149,7 @@ export const projects = [
       { label: '인게이지먼트 참여율', value: '[TBD]' },
       { label: '재방문·리텐션 변화', value: '[TBD]' },
     ],
+    client: 'Toyota Motor Korea',
     assets: '[확인 필요 — 프로그램 구조도 / 등급 체계 도식 / 개인화 콘텐츠 샘플]',
   },
   {
@@ -173,6 +174,7 @@ export const projects = [
       { label: 'MAU·활성 사용자', value: '[TBD]' },
       { label: '주요 기능 사용률', value: '[TBD]' },
     ],
+    client: 'Toyota Motor Korea',
     assets: '[확인 필요 — 앱 스크린샷 / IA 설계 문서 / before-after]',
   },
   {
@@ -197,6 +199,7 @@ export const projects = [
       { label: '런칭 후 판매·목표 달성률', value: '[TBD]' },
       { label: '캠페인 도달·전환', value: '[TBD]' },
     ],
+    client: 'Toyota Motor Korea',
     assets: '[확인 필요 — 런칭 캠페인 / IMC 채널 / 미디어 리포트]',
   },
   {
@@ -221,6 +224,7 @@ export const projects = [
       { label: '경영진 승인 로드맵', value: '진행 중' },
       { label: '채택 시나리오', value: '[확인 후 입력]' },
     ],
+    client: 'Toyota Motor Korea',
     assets: '[확인 필요 — 기밀 가능성 높음, 공개 가능한 요약·도식만 선별]',
   },
   {
@@ -244,6 +248,7 @@ export const projects = [
       { label: '입고 운영 효율', value: '[TBD]' },
       { label: '세그먼트 대응 결과', value: '[TBD]' },
     ],
+    client: 'Toyota Motor Korea',
     assets: '[확인 필요 — 초기 경력이라 자료 없을 가능성]',
   },
 ];
@@ -256,8 +261,10 @@ export const about = {
     line2: '다층의 경험.',
     italicLine: 2,
   },
+  company: 'Toyota Motor Korea · Toyota / Lexus 브랜드',
+  tenure: '2017 → Present',
   body:
-    '브랜드 전략과 IMC 캠페인의 기획·집행, 공식 디지털 채널의 리뉴얼과 운영, 프리미엄 멤버십 프로그램의 설계와 CRM 운영, 그리고 멤버십과 연계된 고객 경험 프로그램의 기획까지 — 마케팅이라는 한 직무 안의 여러 영역을 단일 PM 또는 코어 멤버로 책임져 왔습니다. 본사·세일즈·딜러·에이전시 사이의 4자 조율은 그 과정에서 자연스러워진 일상입니다.',
+    'Toyota Motor Korea에서 Toyota·Lexus 두 브랜드의 마케팅 한 직무를 9년간 책임져 왔습니다. 브랜드 전략과 IMC 캠페인의 기획·집행, 공식 디지털 채널의 리뉴얼과 운영, 프리미엄 멤버십 프로그램의 설계와 CRM 운영, 그리고 멤버십과 연계된 고객 경험 프로그램의 기획까지 — 마케팅의 여러 영역을 단일 PM 또는 코어 멤버로 책임져 왔습니다. 본사·세일즈·딜러·에이전시 사이의 4자 조율은 그 과정에서 자연스러워진 일상입니다.',
 };
 
 // ── Timeline (5단계 커리어) ──

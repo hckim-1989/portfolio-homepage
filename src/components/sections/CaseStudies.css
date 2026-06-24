@@ -109,6 +109,13 @@
   text-transform: none;
 }
 
+.case-client {
+  font: 500 13px/1 var(--font-family);
+  color: var(--color-mute);
+  letter-spacing: 0.02em;
+  margin: 0 0 var(--space-md) 0;
+}
+
 .case-title {
   font: 700 clamp(28px, 3vw, 38px) / 1.2 var(--font-family);
   letter-spacing: -0.02em;

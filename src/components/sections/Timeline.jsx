@@ -36,6 +36,13 @@ export default function Timeline() {
               </span>
             ))}
           </h2>
+          {about.company && (
+            <p className="timeline-company">
+              <span className="timeline-company-name">{about.company}</span>
+              <span className="timeline-company-sep">·</span>
+              <span className="timeline-company-tenure">{about.tenure}</span>
+            </p>
+          )}
           <p className="section-lead">{about.body}</p>
         </header>
 
