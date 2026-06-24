@@ -1,48 +1,52 @@
 // ============================================
-// Portfolio Data — v4
+// Portfolio Data — v5 (Refined design system)
 // Single source of truth for site content.
-// 모든 콘텐츠는 이 파일에서 관리.
-// [TODO] 마커가 있는 부분은 실 데이터로 교체 예정.
 // ============================================
 
 export const profile = {
   initials: 'HK',
   nameKo: '김흥철',
   nameEn: 'Heungchul Kim',
-  role: 'Brand & Marketing Strategist',
+  role: 'Brand Strategist',
+  location: 'Seoul',
   tenureFrom: 2017,
   email: 'heungkim2003@gmail.com',
-  linkedin: '#',           // [TODO] LinkedIn URL
-  coffeeChat: '#',         // [TODO] Calendly 등 커피챗 링크
-  resumeUrl: '#',          // [TODO] 이력서 PDF 경로
+  linkedin: '#',
+  coffeeChat: '#',
+  resumeUrl: '#',
+  available: '2025',
 };
 
-// ── 마스트헤드 nav (앵커 링크) ──
+// ── 마스트헤드 nav (Refined 5-link) ──
 export const nav = [
-  { id: 'consulting',   label: 'Consulting', href: '#consulting' },
-  { id: 'capabilities', label: 'What I Do',  href: '#capabilities' },
-  { id: 'work',         label: 'Work',       href: '#work' },
-  { id: 'about',        label: 'About',      href: '#about' },
-  { id: 'notes',        label: 'Notes',      href: '#notes' },
-  { id: 'contact',      label: 'Contact',    href: '#contact' },
+  { id: 'work',     label: 'Work',     href: '#work' },
+  { id: 'about',    label: 'About',    href: '#about' },
+  { id: 'services', label: 'Services', href: '#consulting' },
+  { id: 'journal',  label: 'Journal',  href: '#notes' },
+  { id: 'contact',  label: 'Contact',  href: '#contact', muted: true },
 ];
 
-// ── Hero ──
+// ── Hero (영문 메인 + 한글 서브, 단어 강조) ──
 export const hero = {
-  eyebrow: 'Brand & Marketing PM · 2017 → Present',
-  title: {
-    line1: '브랜드 캠페인을 기획하고,',
-    line2: '디지털 CRM을 설계하며,',
-    line3: '고객 경험을 잇는다.',
-    italicLine: 3,
+  eyebrow: 'Brand & Marketing Strategist · Seoul',
+  titleEn: {
+    parts: [
+      { text: 'From brand strategy ', accent: false },
+      { text: 'to customer ', accent: false },
+      { text: 'engagement.', accent: true },
+    ],
   },
-  subtitle:
-    '브랜드 전략부터 디지털 채널 운영, 멤버십·CRM 설계, 고객 경험 프로그램까지 — 마케팅 한 직무 안의 여러 영역을 단일 PM으로 책임져 온 기록.',
-  stats: [
-    { value: '9+',  label: 'Years in Marketing' },
-    { value: '5',   label: 'Major Projects' },
-    { value: '3',   label: 'Pillars: Brand · CRM · CX' },
-  ],
+  subtitleKo:
+    '브랜드 전략부터 디지털 CRM과 고객 경험 프로그램까지 — 마케팅 한 직무 안의 여러 영역을 단일 PM으로 책임져 온 9년의 기록.',
+  focus: {
+    label: 'FOCUS',
+    items: [
+      'Brand Strategy',
+      'CRM & Loyalty',
+      'Customer Engagement',
+    ],
+    available: 'Available 2025',
+  },
 };
 
 // ── Brand Consulting (옵션 C: 자기 정체성 + 의뢰 CTA) ──

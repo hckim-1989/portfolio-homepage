@@ -1,88 +1,79 @@
 /* ============================================
-   Masthead — sticky 앵커 nav 바
+   Masthead — Refined (warm + sienna slash)
    ============================================ */
 
 .masthead {
   background: var(--color-surface);
-  border-bottom: 1px solid var(--color-hairline);
-  padding: 16px var(--space-2xl);
+  border-bottom: 1px solid var(--color-hairline-2);
+  padding: 26px 64px;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr;
   align-items: center;
   gap: var(--space-2xl);
 
   position: sticky;
   top: 0;
   z-index: 50;
-  backdrop-filter: saturate(180%) blur(8px);
-  background: rgba(255, 255, 255, 0.92);
 }
 
-.masthead-logo {
+.masthead-brand {
+  font-size: 16px;
   font-weight: 700;
-  font-size: 22px;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.01em;
   color: var(--color-ink);
+}
+
+.masthead-brand-slash {
+  color: var(--color-accent);
 }
 
 .masthead-nav {
   display: flex;
-  gap: var(--space-xl);
-  justify-content: center;
+  gap: 30px;
+  justify-content: flex-end;
 }
 
-.masthead-meta {
-  font: 400 13px/1 var(--font-family);
-  color: var(--color-body);
-  white-space: nowrap;
-}
-
-.masthead-meta:hover {
-  color: var(--color-ink);
-}
-
-/* ── nav 버튼 ── */
 .nav-btn {
   font: 500 14px/1 var(--font-family);
-  color: var(--color-ink);
+  color: #3a3833;
   padding: 4px 0;
   letter-spacing: 0;
   transition: var(--transition-active);
   white-space: nowrap;
-  display: inline-block;
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 
 .nav-btn:hover {
+  color: var(--color-accent);
   letter-spacing: var(--tracking-hover);
 }
 
-/* 스크롤 시 부드러운 앵커 이동 */
+.nav-btn--muted {
+  color: var(--color-mute-2);
+}
+
+.nav-btn--muted:hover {
+  color: var(--color-accent);
+}
+
+/* 부드러운 앵커 스크롤 */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 100px;
 }
 
 /* ── Responsive ── */
 @media (max-width: 1023px) {
   .masthead {
-    grid-template-columns: auto 1fr;
-    gap: var(--space-lg);
-  }
-  .masthead-meta {
-    display: none;
+    padding: 20px var(--space-2xl);
   }
   .masthead-nav {
     gap: var(--space-lg);
-    justify-content: flex-end;
   }
 }
 
 @media (max-width: 767px) {
   .masthead {
-    padding: 12px var(--space-lg);
+    padding: 16px var(--space-lg);
   }
   .masthead-nav {
     display: none;

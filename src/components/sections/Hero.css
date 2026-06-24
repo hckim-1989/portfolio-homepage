@@ -1,122 +1,112 @@
+/* ============================================
+   Hero — C1 Featured Strip
+   ============================================ */
+
 .hero {
-  background: var(--color-canvas);
-  padding: 120px var(--space-2xl) 96px;
+  background: var(--color-surface);
+  padding: 72px 64px 56px;
 }
 
 .hero-inner {
   max-width: var(--max-content-width);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   gap: 64px;
-  align-items: end;
 }
 
 .hero-main {
   min-width: 0;
+  flex: 1;
 }
 
 .hero-eyebrow {
-  font: 500 13px/1 var(--font-family);
-  letter-spacing: 0.14em;
+  font: 500 12px/1 var(--font-mono);
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--color-mute);
-  margin: 0 0 var(--space-xl) 0;
+  color: var(--color-accent);
+  margin: 0 0 26px 0;
 }
 
 .hero-title {
-  font: 400 clamp(28px, 4vw, 48px) / 1.4 var(--font-family);
-  letter-spacing: -0.015em;
-  margin: 0 0 var(--space-2xl) 0;
+  font: 700 clamp(40px, 6.5vw, 78px) / 1 var(--font-family);
+  letter-spacing: -0.035em;
   color: var(--color-ink);
+  margin: 0 0 24px 0;
 }
 
-.hero-title-line {
-  display: block;
-}
-
-.hero-title-line--italic {
-  display: block;
-  text-decoration-line: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 6px;
-  text-decoration-color: var(--color-ink);
+.hero-title-accent {
+  color: var(--color-accent);
 }
 
 .hero-subtitle {
-  font: 400 18px/1.65 var(--font-family);
+  font: 400 17px/1.6 var(--font-family);
   color: var(--color-body);
-  max-width: 640px;
+  max-width: 540px;
   margin: 0;
 }
 
-/* ── 우측 통계 ── */
+/* ── Right side: FOCUS list ── */
 .hero-side {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex: none;
+  font-family: var(--font-mono);
+  text-align: right;
+  color: var(--color-body);
+  line-height: 2;
 }
 
-.hero-stats {
+.hero-focus-label {
+  font-size: 13px;
+  color: var(--color-mute);
+  margin-bottom: 8px;
+}
+
+.hero-focus-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2xl);
 }
 
-.hero-stat {
-  text-align: right;
+.hero-focus-item {
+  font-size: 13px;
+  color: var(--color-body);
 }
 
-.hero-stat-value {
-  display: block;
-  font: 400 32px/1 var(--font-family);
-  letter-spacing: -0.02em;
-  color: var(--color-ink);
-  margin-bottom: 6px;
+.hero-available {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--color-success);
+  font-family: var(--font-mono);
 }
 
-.hero-stat-label {
-  display: block;
-  font: 400 12px/1.4 var(--font-family);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-mute);
+.hero-available-dot {
+  margin-right: 4px;
 }
 
 /* ── 반응형 ── */
 @media (max-width: 1023px) {
   .hero {
-    padding: 96px var(--space-xl) 72px;
+    padding: 56px var(--space-2xl) 40px;
   }
   .hero-inner {
-    gap: 48px;
+    gap: 32px;
+  }
+  .hero-title {
+    font-size: clamp(36px, 6vw, 60px);
   }
 }
 
 @media (max-width: 767px) {
   .hero {
-    padding: 72px var(--space-lg) 56px;
+    padding: 48px var(--space-lg) 32px;
   }
   .hero-inner {
-    grid-template-columns: 1fr;
-    gap: var(--space-3xl);
-    align-items: start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2xl);
   }
   .hero-side {
-    align-items: flex-start;
-  }
-  .hero-stats {
-    flex-direction: row;
-    gap: var(--space-2xl);
-    flex-wrap: wrap;
-  }
-  .hero-stat {
     text-align: left;
-  }
-  .hero-stat-value {
-    font-size: 28px;
   }
 }

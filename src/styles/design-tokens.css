@@ -1,27 +1,38 @@
 /* ============================================
-   Design Tokens — Portfolio v3
-   work.ac style × Uber design system
+   Design Tokens — Portfolio v5
+   Warm beige + Sienna accent (Refined)
    ============================================ */
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 :root {
-  /* --- Colors --- */
-  --color-canvas: #F0F2F4;
-  --color-surface: #FFFFFF;
-  --color-ink: #000000;
-  --color-body: #5E5E5E;
-  --color-mute: #AFAFAF;
-  --color-hairline: rgba(0, 0, 0, 0.1);
-  --color-placeholder: #E8EBED;
+  /* --- Colors (warm) --- */
+  --color-canvas: #e7e5df;          /* page background, warm beige */
+  --color-surface: #f7f6f2;          /* card/elevated, lighter warm */
+  --color-ink: #1a1814;              /* primary text (warm black) */
+  --color-body: #56544e;             /* body text */
+  --color-mute: #7a776f;             /* secondary text */
+  --color-mute-2: #a3a097;           /* tertiary, very light */
+  --color-hairline: #e4e1da;         /* primary hairline */
+  --color-hairline-2: #e6e3dc;       /* surface hairline */
+  --color-placeholder: #e7e3da;      /* image placeholder bg */
 
-  /* --- Pillar accents (현재 미사용, 향후 옵션) --- */
-  --pillar-brand: #C19A6B;
-  --pillar-crm: #1F4E79;
-  --pillar-engagement: #C7522A;
+  /* --- Accent (the signature) --- */
+  --color-accent: #b4532a;           /* sienna */
+  --color-accent-soft: rgba(180, 83, 42, 0.12);
+  --color-success: #1aa35a;          /* available indicator */
 
-  /* --- Font --- */
+  /* --- Legacy pillar accents (Capabilities 등) — accent tone에 맞춰 통일 --- */
+  --pillar-brand: #b4532a;           /* 시에나 단일 톤으로 통일 */
+  --pillar-crm: #1a1814;
+  --pillar-engagement: #56544e;
+
+  /* --- Fonts --- */
   --font-family: 'Pretendard Variable', 'Pretendard', 'Inter',
                  -apple-system, BlinkMacSystemFont, system-ui,
                  sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace,
+               'SF Mono', Menlo, Consolas, monospace;
 
   /* --- Spacing (4px base) --- */
   --space-xs: 4px;
@@ -33,13 +44,13 @@
   --space-3xl: 48px;
   --space-4xl: 64px;
 
-  /* --- Active state (italic + letter-spacing 시그니처) --- */
+  /* --- Active state (letter-spacing 시그니처만 유지) --- */
   --tracking-active: 0.10em;
   --tracking-hover: 0.04em;
-  --transition-active: letter-spacing 0.25s ease-out, font-style 0s;
+  --transition-active: letter-spacing 0.25s ease-out, color 0.25s ease-out;
 
   /* --- Layout --- */
-  --max-content-width: 1440px;
+  --max-content-width: 1280px;       /* refined 디자인 기준 */
 }
 
 /* --- Global resets --- */
@@ -78,7 +89,7 @@ img {
   max-width: 100%;
 }
 
-/* --- Site Footer (단순) --- */
+/* --- Site Footer --- */
 .site-footer {
   background: var(--color-canvas);
   border-top: 1px solid var(--color-hairline);
@@ -86,4 +97,5 @@ img {
   text-align: center;
   font-size: 12px;
   color: var(--color-mute);
+  letter-spacing: 0.04em;
 }

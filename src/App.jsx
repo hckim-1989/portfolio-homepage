@@ -1,8 +1,8 @@
 import Masthead from './components/Masthead';
 import Hero from './components/sections/Hero';
+import SelectedWork from './components/sections/SelectedWork';
 import BrandConsulting from './components/sections/BrandConsulting';
 import Capabilities from './components/sections/Capabilities';
-import SelectedWork from './components/sections/SelectedWork';
 import Timeline from './components/sections/Timeline';
 import Notes from './components/sections/Notes';
 import Contact from './components/sections/Contact';
@@ -11,15 +11,14 @@ import './styles/design-tokens.css';
 import './styles/sections.css';
 
 /**
- * App — 단일 페이지 스크롤 구조 (Phase 1)
+ * App — Refined IA (Hero → Work 즉시 노출)
  *
- * IA:
- *   Hero → Brand Consulting → Capabilities → Selected Work
- *        → Timeline (About 통합) → Notes (placeholder)
- *        → Contact → Footer
+ *  Hero → Selected Work (Featured Strip)
+ *       → Brand Consulting → Capabilities
+ *       → Timeline (About 통합) → Notes (placeholder)
+ *       → Contact → Footer
  *
- * 라우터 미도입. 모든 nav는 앵커 링크.
- * Phase 2에서 react-router-dom 도입 시 /work/[slug], /notes 등으로 분리 예정.
+ * Hero와 SelectedWork는 같은 surface bg로 묶여 "한 카드처럼" 보임.
  */
 export default function App() {
   return (
@@ -27,15 +26,15 @@ export default function App() {
       <Masthead />
       <main>
         <Hero />
+        <SelectedWork />
         <BrandConsulting />
         <Capabilities />
-        <SelectedWork />
         <Timeline />
         <Notes />
         <Contact />
       </main>
       <footer className="site-footer">
-        © {new Date().getFullYear()} {profile.nameEn} · {profile.role}
+        © {new Date().getFullYear()} {profile.nameKo} / {profile.nameEn} · {profile.role}
       </footer>
     </>
   );

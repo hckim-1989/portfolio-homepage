@@ -1,19 +1,18 @@
 /**
- * ProjectThumb — 추상 SVG 썸네일
- * NDA 우회 + 톤 통일. heroImage 채워지면 ProjectCard에서 분기 처리.
+ * ProjectThumb — Refined 톤 (warm beige + sienna)
+ * 모든 프로젝트 동일한 베이스 컬러, pillar별로는 패턴만 차별화
  */
-const PALETTE = {
-  brand:      { bg: '#F4ECE0', fg: '#C19A6B', ink: '#2A1F12' },
-  crm:        { bg: '#E6EEF5', fg: '#1F4E79', ink: '#0E2440' },
-  engagement: { bg: '#F5E7E1', fg: '#C7522A', ink: '#3A1A0E' },
+const C = {
+  bg: '#e7e3da',
+  fg: '#b4532a',      // sienna
+  ink: '#1a1814',
+  inkSoft: '#56544e',
 };
 
 export default function ProjectThumb({ project }) {
-  const c = PALETTE[project.pillar] || PALETTE.brand;
-  const word = (project.impact || project.title).split(' ').slice(0, 2).join(' ');
+  const word = (project.impact || project.title).split(' ').slice(0, 3).join(' ');
   const year = project.year;
 
-  // pillar별로 다른 추상 패턴
   return (
     <svg
       viewBox="0 0 800 600"
@@ -22,42 +21,42 @@ export default function ProjectThumb({ project }) {
       className="project-thumb-svg"
       aria-hidden="true"
     >
-      <rect width="800" height="600" fill={c.bg} />
+      <rect width="800" height="600" fill={C.bg} />
 
       {project.pillar === 'brand' && (
         <>
-          <circle cx="640" cy="120" r="220" fill={c.fg} opacity="0.18"/>
-          <circle cx="640" cy="120" r="140" fill={c.fg} opacity="0.28"/>
-          <circle cx="640" cy="120" r="70"  fill={c.fg} opacity="0.45"/>
+          <circle cx="640" cy="120" r="220" fill={C.fg} opacity="0.14"/>
+          <circle cx="640" cy="120" r="140" fill={C.fg} opacity="0.22"/>
+          <circle cx="640" cy="120" r="70"  fill={C.fg} opacity="0.38"/>
         </>
       )}
       {project.pillar === 'crm' && (
         <>
-          <circle cx="400" cy="300" r="240" fill="none" stroke={c.fg} strokeWidth="1.2" opacity="0.5"/>
-          <circle cx="400" cy="300" r="170" fill="none" stroke={c.fg} strokeWidth="1.2" opacity="0.6"/>
-          <circle cx="400" cy="300" r="100" fill="none" stroke={c.fg} strokeWidth="1.2" opacity="0.7"/>
-          <circle cx="400" cy="300" r="40"  fill={c.fg} opacity="0.85"/>
+          <circle cx="400" cy="300" r="240" fill="none" stroke={C.fg} strokeWidth="1.2" opacity="0.4"/>
+          <circle cx="400" cy="300" r="170" fill="none" stroke={C.fg} strokeWidth="1.2" opacity="0.55"/>
+          <circle cx="400" cy="300" r="100" fill="none" stroke={C.fg} strokeWidth="1.2" opacity="0.7"/>
+          <circle cx="400" cy="300" r="40"  fill={C.fg} opacity="0.75"/>
         </>
       )}
       {project.pillar === 'engagement' && (
         <>
-          <line x1="120" y1="120" x2="680" y2="480" stroke={c.fg} strokeWidth="1.2" opacity="0.5"/>
-          <line x1="680" y1="120" x2="120" y2="480" stroke={c.fg} strokeWidth="1.2" opacity="0.5"/>
-          <line x1="120" y1="300" x2="680" y2="300" stroke={c.fg} strokeWidth="1.2" opacity="0.5"/>
-          <circle cx="120" cy="120" r="14" fill={c.fg}/>
-          <circle cx="680" cy="120" r="14" fill={c.fg}/>
-          <circle cx="120" cy="480" r="14" fill={c.fg}/>
-          <circle cx="680" cy="480" r="14" fill={c.fg}/>
-          <circle cx="400" cy="300" r="20" fill={c.bg} stroke={c.fg} strokeWidth="2"/>
+          <line x1="120" y1="120" x2="680" y2="480" stroke={C.fg} strokeWidth="1.2" opacity="0.4"/>
+          <line x1="680" y1="120" x2="120" y2="480" stroke={C.fg} strokeWidth="1.2" opacity="0.4"/>
+          <line x1="120" y1="300" x2="680" y2="300" stroke={C.fg} strokeWidth="1.2" opacity="0.4"/>
+          <circle cx="120" cy="120" r="14" fill={C.fg}/>
+          <circle cx="680" cy="120" r="14" fill={C.fg}/>
+          <circle cx="120" cy="480" r="14" fill={C.fg}/>
+          <circle cx="680" cy="480" r="14" fill={C.fg}/>
+          <circle cx="400" cy="300" r="20" fill={C.bg} stroke={C.fg} strokeWidth="2"/>
         </>
       )}
 
-      {/* 좌하단 키워드 라벨 */}
-      <g fontFamily="Pretendard Variable, Pretendard, Inter, sans-serif">
-        <text x="40" y="540" fontSize="14" fontWeight="500" letterSpacing="2.4" fill={c.ink} opacity="0.6">
+      {/* 좌하단 메타 라벨 (mono 폰트) */}
+      <g fontFamily="JetBrains Mono, ui-monospace, monospace">
+        <text x="40" y="540" fontSize="12" fontWeight="500" letterSpacing="2.4" fill={C.inkSoft}>
           {year.toUpperCase()}
         </text>
-        <text x="40" y="572" fontSize="20" fontWeight="500" fill={c.ink} opacity="0.85">
+        <text x="40" y="572" fontSize="20" fontWeight="600" fill={C.ink}>
           {word}
         </text>
       </g>
