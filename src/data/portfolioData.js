@@ -329,7 +329,7 @@ export const projects = [
   {
     slug: 'raison-detre-consulting',
     id: 'project-raison',
-    title: 'Raison D\'être — 브랜드·CX·SNS 컨설팅',
+    title: '브랜드 컨설팅',
     pillar: 'consulting',
     year: '2025–현재',
     role: 'Independent Consultant',
