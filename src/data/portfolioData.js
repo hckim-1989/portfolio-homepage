@@ -464,18 +464,10 @@ export const contact = {
       primary: true,
     },
     {
-      id: 'linkedin',
-      label: 'LinkedIn',
-      value: 'in/heungchul-kim',
-      href: '#',                 // [TODO] LinkedIn URL
-      external: true,
-    },
-    {
-      id: 'coffee',
-      label: 'Coffee Chat',
-      value: '15분 캘리들리',
-      href: '#',                 // [TODO] Calendly 링크
-      external: true,
+      id: 'kakao',
+      label: 'KakaoTalk',
+      value: 'kimheungchul',
+      href: 'https://qr.kakao.com/talk/kimheungchul',
     },
   ],
 };
