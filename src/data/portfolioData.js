@@ -467,7 +467,7 @@ export const contact = {
       id: 'kakao',
       label: 'KakaoTalk',
       value: 'kimheungchul',
-      href: 'https://qr.kakao.com/talk/kimheungchul',
+      static: true,   // 표시 전용 — 링크/CTA 없음
     },
   ],
 };

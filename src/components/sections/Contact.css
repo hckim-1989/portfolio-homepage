@@ -28,13 +28,17 @@
   transition: padding 0.25s ease-out;
 }
 
-.contact-channel-link:hover {
+a.contact-channel-link:hover {
   padding-left: var(--space-lg);
 }
 
-.contact-channel-link:hover .contact-channel-arrow {
+a.contact-channel-link:hover .contact-channel-arrow {
   transform: translateX(8px);
   opacity: 1;
+}
+
+.contact-channel--static .contact-channel-link {
+  cursor: default;
 }
 
 .contact-channel-label {

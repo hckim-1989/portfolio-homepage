@@ -30,26 +30,37 @@ export default function Contact() {
         </header>
 
         <ul className="contact-channels">
-          {contact.channels.map(ch => (
-            <li
-              key={ch.id}
-              className={`contact-channel ${ch.primary ? 'contact-channel--primary' : ''}`}
-            >
-              <a
-                href={ch.href}
-                className="contact-channel-link"
-                {...(ch.external
-                  ? { target: '_blank', rel: 'noopener noreferrer' }
-                  : {})}
-              >
+          {contact.channels.map(ch => {
+            const inner = (
+              <>
                 <span className="contact-channel-label">{ch.label}</span>
                 <span className="contact-channel-value">
                   {ch.value}
-                  <span className="contact-channel-arrow" aria-hidden="true">→</span>
+                  {!ch.static && (
+                    <span className="contact-channel-arrow" aria-hidden="true">→</span>
+                  )}
                 </span>
-              </a>
-            </li>
-          ))}
+              </>
+            );
+            const cls = `contact-channel ${ch.primary ? 'contact-channel--primary' : ''} ${ch.static ? 'contact-channel--static' : ''}`;
+            return (
+              <li key={ch.id} className={cls}>
+                {ch.static ? (
+                  <div className="contact-channel-link">{inner}</div>
+                ) : (
+                  <a
+                    href={ch.href}
+                    className="contact-channel-link"
+                    {...(ch.external
+                      ? { target: '_blank', rel: 'noopener noreferrer' }
+                      : {})}
+                  >
+                    {inner}
+                  </a>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </div>
     </section>
