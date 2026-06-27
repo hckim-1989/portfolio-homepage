@@ -6,6 +6,7 @@ const PILLAR_LABEL = {
   engagement: 'Customer Engagement',
   dx: 'DX',
   brand: 'Brand Strategy',
+  consulting: 'Brand Consulting',
 };
 
 /**
@@ -20,7 +21,6 @@ export default function SelectedWork() {
       <div className="work-inner">
         <header className="work-meta">
           <span className="work-meta-label">More Work</span>
-          <span className="work-meta-count">{rest.length} projects</span>
         </header>
 
         <ul className="work-index">

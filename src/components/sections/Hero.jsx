@@ -7,6 +7,7 @@ const PILLAR_LABEL = {
   engagement: 'Customer Engagement',
   dx: 'DX',
   brand: 'Brand Strategy',
+  consulting: 'Brand Consulting',
 };
 
 /**
@@ -38,7 +39,6 @@ export default function Hero() {
                 </span>
               ))}
             </h1>
-            <p className="hero-subtitle">{hero.subtitleKo}</p>
           </div>
 
           <div className="hero-actions">

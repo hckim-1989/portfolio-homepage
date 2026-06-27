@@ -38,6 +38,13 @@ export default function BrandConsulting() {
             ))}
           </h2>
 
+          {consulting.client && (
+            <p className="consulting-client">
+              <span className="consulting-client-label">Client</span>
+              <span className="consulting-client-value">{consulting.client}</span>
+            </p>
+          )}
+
           <p className="section-lead">{consulting.body}</p>
 
           <a href={consulting.cta.href} className="consulting-cta">

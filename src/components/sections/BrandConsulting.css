@@ -50,7 +50,29 @@
 }
 
 .consulting-title {
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-lg);
+}
+
+.consulting-client {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-md);
+  margin: 0 0 var(--space-xl) 0;
+  padding: 8px 14px;
+  background: var(--color-canvas);
+  border-radius: 999px;
+}
+
+.consulting-client-label {
+  font: 500 11px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-mute);
+}
+
+.consulting-client-value {
+  font: 500 13px/1 var(--font-family);
+  color: var(--color-ink);
 }
 
 /* ── CTA (pill 형식, Refined 톤) ── */

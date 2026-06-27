@@ -10,9 +10,6 @@ const C = {
 };
 
 export default function ProjectThumb({ project }) {
-  const word = (project.impact || project.title).split(' ').slice(0, 3).join(' ');
-  const year = project.year;
-
   return (
     <svg
       viewBox="0 0 800 600"
@@ -60,16 +57,15 @@ export default function ProjectThumb({ project }) {
           <path d="M455 365 L495 405 L575 320" fill="none" stroke={C.bg} strokeWidth="6" strokeLinecap="round" strokeLinejoin="round"/>
         </>
       )}
-
-      {/* 좌하단 메타 라벨 (mono 폰트) */}
-      <g fontFamily="JetBrains Mono, ui-monospace, monospace">
-        <text x="40" y="540" fontSize="12" fontWeight="500" letterSpacing="2.4" fill={C.inkSoft}>
-          {year.toUpperCase()}
-        </text>
-        <text x="40" y="572" fontSize="20" fontWeight="600" fill={C.ink}>
-          {word}
-        </text>
-      </g>
+      {project.pillar === 'consulting' && (
+        <>
+          {/* Consulting — interlocking arcs (handcraft + brand) */}
+          <path d="M 200 460 Q 200 200 460 200" fill="none" stroke={C.fg} strokeWidth="1.5" opacity="0.45"/>
+          <path d="M 340 460 Q 340 340 460 340" fill="none" stroke={C.fg} strokeWidth="1.5" opacity="0.6"/>
+          <circle cx="600" cy="200" r="100" fill={C.fg} opacity="0.18"/>
+          <circle cx="600" cy="200" r="55"  fill={C.fg} opacity="0.5"/>
+        </>
+      )}
     </svg>
   );
 }
