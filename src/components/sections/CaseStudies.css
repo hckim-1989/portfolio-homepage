@@ -56,12 +56,17 @@
 
 /* ── Single case article ── */
 .case {
-  background: var(--color-surface);
   padding: 56px 48px;
   scroll-margin-top: 96px;
 }
 
-.case--ongoing {
+/* 홀수(1/3/5) — 밝은 surface */
+.case:nth-child(odd) {
+  background: var(--color-surface);
+}
+
+/* 짝수(2/4/6) — warm beige canvas (영역 구분) */
+.case:nth-child(even) {
   background: var(--color-canvas);
 }
 
@@ -113,10 +118,6 @@
 .case-personal-badge {
   background: var(--color-ink);
   color: var(--color-surface);
-}
-
-.case--personal {
-  background: var(--color-canvas);
 }
 
 .case-client {
