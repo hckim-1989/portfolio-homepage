@@ -121,7 +121,7 @@ export default function Hero() {
             <div className="hero-snap-featured-eyebrow">{snap.featured.eyebrow}</div>
             <div className="hero-snap-featured-row">
               <span className="hero-snap-featured-title">{snap.featured.title}</span>
-              <span className="hero-snap-featured-cta">케이스 읽기 →</span>
+              <span className="hero-snap-featured-cta">프로젝트 디테일 →</span>
             </div>
           </a>
         </aside>
