@@ -54,7 +54,7 @@ export default function Timeline() {
                 <span className="timeline-year">{entry.year}</span>
                 <span className="timeline-year-range">{entry.yearDisplay}</span>
                 {entry.isPresent && (
-                  <span className="timeline-present-badge">Present</span>
+                  <span className="timeline-present-badge">현재</span>
                 )}
               </div>
 

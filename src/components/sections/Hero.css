@@ -146,12 +146,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  gap: var(--space-md);
+  margin-top: 12px;
+  flex-wrap: wrap;
 }
 
 .hero-featured-sub {
-  font: 400 12px/1 var(--font-mono);
+  font: 400 12px/1.4 var(--font-mono);
   color: var(--color-mute);
+  letter-spacing: 0.04em;
 }
 
 .hero-featured-cta {
@@ -159,6 +162,7 @@
   color: var(--color-accent);
   transition: transform 0.2s ease-out;
   display: inline-block;
+  white-space: nowrap;
 }
 
 .hero-featured:hover .hero-featured-cta {

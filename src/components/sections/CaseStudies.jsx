@@ -9,6 +9,14 @@ const PILLAR_LABEL = {
   consulting: 'Brand Consulting',
 };
 
+// Placeholder 패턴 — 화면에 노출하지 않을 값들
+const PLACEHOLDER_RE = /^\s*(\[)?\s*(TBD|확인\s*필요|확인\s*후\s*입력|비공개|예정)/i;
+const isPlaceholder = (val) => {
+  if (!val) return true;
+  if (typeof val !== 'string') return false;
+  return PLACEHOLDER_RE.test(val.trim()) || val.includes('[TBD]') || val.includes('[확인');
+};
+
 /**
  * CaseStudies — Project Details
  *
@@ -87,20 +95,26 @@ export default function CaseStudies() {
                 <div className="case-block">
                   <h4 className="case-block-label">Outcome</h4>
                   {renderBullets(p.outcomeQualitative)}
-                  {p.outcomeMetrics && p.outcomeMetrics.length > 0 && (
-                    <dl className="case-metrics">
-                      {p.outcomeMetrics.map(m => (
-                        <div key={m.label} className="case-metric">
-                          <dt className="case-metric-label">{m.label}</dt>
-                          <dd className="case-metric-value">{m.value}</dd>
-                        </div>
-                      ))}
-                    </dl>
-                  )}
+                  {(() => {
+                    const visibleMetrics = (p.outcomeMetrics || []).filter(
+                      m => !isPlaceholder(m.value)
+                    );
+                    if (visibleMetrics.length === 0) return null;
+                    return (
+                      <dl className="case-metrics">
+                        {visibleMetrics.map(m => (
+                          <div key={m.label} className="case-metric">
+                            <dt className="case-metric-label">{m.label}</dt>
+                            <dd className="case-metric-value">{m.value}</dd>
+                          </div>
+                        ))}
+                      </dl>
+                    );
+                  })()}
                 </div>
               </div>
 
-              {p.assets && (
+              {p.assets && !isPlaceholder(p.assets) && (
                 <footer className="case-foot">
                   <span className="case-foot-label">Assets</span>
                   <span className="case-foot-value">{p.assets}</span>

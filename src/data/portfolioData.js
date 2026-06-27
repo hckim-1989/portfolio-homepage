@@ -173,7 +173,7 @@ export const projects = [
     id: 'project-as-dx',
     title: '고객 애프터서비스 디지털 전환',
     pillar: 'dx',
-    year: '2021 → 2026',
+    year: '2021–2026',
     role: 'PM (서비스 DX 총괄)',
     featured: true,
     summary:
@@ -241,7 +241,7 @@ export const projects = [
     id: 'project-electrified',
     title: '브랜드 중장기 전략 (Electrified)',
     pillar: 'brand',
-    year: '2025–Present',
+    year: '2025–현재',
     role: 'TFT 코어 멤버',
     featured: false,
     isOngoing: true,
@@ -306,7 +306,7 @@ export const projects = [
     id: 'project-raison',
     title: 'Raison D\'être — 브랜드·CX·SNS 컨설팅',
     pillar: 'consulting',
-    year: '2025–Present',
+    year: '2025–현재',
     role: 'Independent Consultant',
     featured: false,
     isOngoing: true,
@@ -347,7 +347,7 @@ export const about = {
     italicLine: 2,
   },
   company: 'Toyota Motor Korea · Toyota / Lexus 브랜드',
-  tenure: '2017 → Present',
+  tenure: '2017–현재',
   body:
     'Toyota Motor Korea에서 Toyota·Lexus 두 브랜드의 마케팅 한 직무를 9년간 담당. 브랜드 전략과 IMC 캠페인의 기획·집행, 공식 디지털 채널의 리뉴얼·운영, 프리미엄 멤버십 프로그램의 설계·CRM 운영, 멤버십 연계 고객 경험 프로그램 기획까지 — 마케팅의 여러 영역을 단일 PM 또는 코어 멤버로 수행. 본사·세일즈·딜러·에이전시 4자 조율은 그 과정에서 자연스러워진 일상.',
 };
@@ -357,7 +357,7 @@ export const timeline = [
   {
     id: 'timeline-1',
     year: '2025',
-    yearDisplay: '2025 → Present',
+    yearDisplay: '2025–현재',
     isPresent: true,
     title: '브랜드 중장기 전략 수립 (Electrified)',
     description:
@@ -367,7 +367,7 @@ export const timeline = [
   {
     id: 'timeline-2',
     year: '2024',
-    yearDisplay: '2024 → 2025',
+    yearDisplay: '2024–2025',
     isPresent: false,
     title: '브랜드 로열티 프로그램 구축',
     description:
@@ -377,7 +377,7 @@ export const timeline = [
   {
     id: 'timeline-3',
     year: '2021',
-    yearDisplay: '2021 → 2026',
+    yearDisplay: '2021–2026',
     isPresent: false,
     title: '고객 애프터서비스 디지털 전환',
     description:
@@ -387,7 +387,7 @@ export const timeline = [
   {
     id: 'timeline-4',
     year: '2019',
-    yearDisplay: '2019 → 2026 Q1',
+    yearDisplay: '2019–2026 Q1',
     isPresent: false,
     title: '핵심 프로덕트 런칭 & 라이프사이클 관리',
     description:
@@ -397,7 +397,7 @@ export const timeline = [
   {
     id: 'timeline-5',
     year: '2017',
-    yearDisplay: '2017 → 2019',
+    yearDisplay: '2017–2019',
     isPresent: false,
     title: '고객 브랜드 여정 서비스 기획',
     description:

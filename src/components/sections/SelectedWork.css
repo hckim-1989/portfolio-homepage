@@ -131,7 +131,7 @@
 
 .work-index-link {
   display: grid;
-  grid-template-columns: 40px 1fr auto 60px;
+  grid-template-columns: 40px minmax(0, 1fr) auto 110px;
   align-items: center;
   gap: 24px;
   padding: 22px 0;
@@ -165,6 +165,7 @@
   color: var(--color-mute-2);
   text-align: right;
   letter-spacing: 0.04em;
+  white-space: nowrap;
 }
 
 /* ── 반응형 ── */
@@ -179,11 +180,8 @@
     padding: 24px;
   }
   .work-index-link {
-    grid-template-columns: 32px 1fr auto;
+    grid-template-columns: 32px minmax(0, 1fr) auto 100px;
     gap: 16px;
-  }
-  .work-index-year {
-    display: none;
   }
 }
 
