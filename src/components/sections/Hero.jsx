@@ -3,9 +3,10 @@ import ProjectThumb from './ProjectThumb';
 import './Hero.css';
 
 const PILLAR_LABEL = {
-  brand: 'Brand Strategy',
   crm: 'CRM & Loyalty',
   engagement: 'Customer Engagement',
+  dx: 'DX',
+  brand: 'Brand Strategy',
 };
 
 /**

@@ -3,7 +3,7 @@ import CapabilityIcon from './CapabilityIcon';
 import './Capabilities.css';
 
 /**
- * Capabilities — 3축 매트릭스
+ * Capabilities — 4축 매트릭스
  * 각 pillar: 아이콘 + 라벨 + tagline + bullet + 대표 프로젝트 링크
  */
 export default function Capabilities() {
@@ -48,7 +48,7 @@ export default function Capabilities() {
                 </ul>
                 {featured && (
                   <a
-                    href={`#work`}
+                    href={`#work-${featured.slug}`}
                     className="capability-featured"
                     title={`대표 프로젝트: ${featured.title}`}
                   >

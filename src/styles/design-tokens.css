@@ -26,6 +26,7 @@
   --pillar-brand: #b4532a;           /* 시에나 단일 톤으로 통일 */
   --pillar-crm: #1a1814;
   --pillar-engagement: #56544e;
+  --pillar-dx: #b4532a;              /* DX도 시에나 (강조) */
 
   /* --- Fonts --- */
   --font-family: 'Pretendard Variable', 'Pretendard', 'Inter',

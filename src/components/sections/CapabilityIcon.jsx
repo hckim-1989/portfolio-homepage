@@ -54,5 +54,22 @@ export default function CapabilityIcon({ pillarId, className = '' }) {
       </svg>
     );
   }
+  if (pillarId === 'dx') {
+    return (
+      <svg
+        viewBox="0 0 80 80"
+        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+        aria-hidden="true"
+      >
+        {/* DX — fragmented squares merging into one */}
+        <rect x="14" y="14" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.5"/>
+        <rect x="32" y="14" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.5"/>
+        <rect x="14" y="32" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.5"/>
+        <rect x="40" y="40" width="26" height="26" fill="currentColor"/>
+        <path d="M48 53 L52 57 L60 49" fill="none" stroke="var(--color-canvas)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    );
+  }
   return null;
 }

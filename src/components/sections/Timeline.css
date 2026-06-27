@@ -150,6 +150,7 @@
 .timeline-pillar--brand .timeline-pillar-dot { background: var(--pillar-brand); }
 .timeline-pillar--crm   .timeline-pillar-dot { background: var(--pillar-crm); }
 .timeline-pillar--engagement .timeline-pillar-dot { background: var(--pillar-engagement); }
+.timeline-pillar--dx .timeline-pillar-dot { background: var(--pillar-dx); }
 
 /* ── 반응형 ── */
 @media (max-width: 1023px) {

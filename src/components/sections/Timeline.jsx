@@ -2,9 +2,10 @@ import { about, timeline } from '../../data/portfolioData';
 import './Timeline.css';
 
 const PILLAR_LABEL = {
-  brand: 'Brand',
   crm: 'CRM',
   engagement: 'Engagement',
+  dx: 'DX',
+  brand: 'Brand',
 };
 
 /**

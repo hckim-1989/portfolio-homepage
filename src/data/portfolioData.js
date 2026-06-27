@@ -73,127 +73,136 @@ export const consulting = {
   ],
 };
 
-// ── Capabilities (3축 매트릭스) ──
+// ── Capabilities (4축 매트릭스) ──
 export const capabilities = {
   eyebrow: 'What I Do',
   title: {
-    line1: '세 개의 축으로',
+    line1: '네 개의 축으로',
     line2: '브랜드와 고객을 잇습니다.',
     italicLine: 2,
   },
   pillars: [
     {
-      id: 'brand',
-      label: 'Brand Strategy',
-      tagline: '브랜드의 중장기 방향과 시장 진입을 설계',
-      bullets: [
-        'Brand Positioning · Long-term Roadmap',
-        'IMC Campaign Planning & Execution',
-        'Product Launch (Launch → Grow → Sustain)',
-      ],
-      featuredProjectSlug: 'brand-long-term-strategy',
-    },
-    {
       id: 'crm',
-      label: 'CRM & Loyalty',
+      label: 'CRM & Customer Loyalty',
       tagline: '데이터로 고객 관계를 자산화',
       bullets: [
-        'Premium Tier Program Design',
-        'Engagement Program Operation',
-        'Personalization & Segmentation',
+        'Tiering · Segmentation (구매·행동 데이터 기반)',
+        'Loyalty Loop · CLV 최적화',
+        'Personalization · Engagement Operation',
       ],
-      featuredProjectSlug: 'loyalty-engagement-program',
+      featuredProjectSlug: 'loyalty-program',
     },
     {
       id: 'engagement',
       label: 'Customer Engagement',
-      tagline: '오프라인 경험을 디지털 1:1로 확장',
+      tagline: '서비스 접점 데이터를 마케팅 자산으로',
+      bullets: [
+        '고객 여정 설계 · 세그먼트 대응',
+        '서비스 접점 데이터 → 마케팅 연계',
+        '연령·등급별 개인화 콘텐츠',
+      ],
+      featuredProjectSlug: 'customer-brand-journey',
+    },
+    {
+      id: 'dx',
+      label: 'DX',
+      tagline: '오프라인을 디지털 1:1 채널로 통합',
       bullets: [
         'App / Web Renewal PM',
-        'IA & Content Architecture',
-        'Compliance · Operations',
+        'Single Source of Truth · 데이터 통합',
+        'Compliance · IA · Operations',
       ],
-      featuredProjectSlug: 'brand-app-renewal',
+      featuredProjectSlug: 'after-service-dx',
+    },
+    {
+      id: 'brand',
+      label: 'Brand Strategy',
+      tagline: '중장기 방향과 시장 진입을 설계',
+      bullets: [
+        'Positioning · Long-term Roadmap',
+        'IMC Campaign · Cross-functional',
+        'Launch → Grow → Sustain · Localization',
+      ],
+      featuredProjectSlug: 'brand-long-term-strategy',
     },
   ],
 };
 
-// ── Projects (5개, projects.md 기반) ──
+// ── Projects (v6 — Google Docs "포트폴리오 프로젝트 콘텐츠" 기반) ──
 export const projects = [
   {
-    slug: 'loyalty-engagement-program',
+    slug: 'loyalty-program',
     id: 'project-loyalty',
-    title: '고객 등급 프로그램 & Engagement',
+    title: '브랜드 로열티 프로그램 구축',
     pillar: 'crm',
     year: '2024–2025',
-    role: 'PM',
+    role: 'PM (프로젝트 총괄)',
     featured: true,
     summary:
-      '프리미엄 고객 등급 체계와 등급 연계 인게이지먼트 프로그램을 설계·운영해, 일회성 행사형 CX를 상시 운영형 1:1 자산화 체계로 전환했다.',
-    impact: '일회성 행사 → 상시 1:1 자산화 체계 전환',
+      '구매·행동 데이터 분석 기반 고객 세그먼테이션(Tiering)을 재설계하고 인게이지먼트 선순환 루프(Loyalty Loop)를 구축해, 일회성 CX를 데이터 기반 자산화 체계로 전환했다.',
+    impact: '일회성 CX → 데이터 기반 자산화 · CLV 제고',
     challenge:
-      '기존 고객 경험은 일회성 행사 중심이라 고객 데이터가 자산으로 축적되지 못하고 매번 리셋됐다. 프리미엄 고객을 지속적으로 식별·관리하고, 등급에 따라 차별화된 경험을 상시 제공할 수 있는 구조가 필요했다.',
+      '일회성 캠페인 중심 CRM의 한계를 극복하고 지속가능한 로열티 모델이 필요했다. 고객 데이터가 자산으로 축적되는 구조를 만들고, 등급별로 차별화된 경험을 상시 제공할 수 있는 체계가 부재했다.',
     approach:
-      '프리미엄 고객 등급 체계를 새로 설계하고, 등급과 연계된 인게이지먼트 프로그램을 기획·운영했다. RFP 기반으로 운영 파트너를 선정·계약하고, 약관·동의서를 정비해 데이터 활용 기반을 마련했다. 등급별 개인화 콘텐츠까지 직접 기획했으며, 일회성 이벤트를 상시 운영형 1:1 커뮤니케이션 체계로 재설계해 고객 데이터가 누적·활용되는 구조로 전환했다.',
+      '구매·행동 데이터 분석을 토대로 고객 세그먼테이션(Tiering)을 재설계하고, 등급과 연계된 인게이지먼트 프로그램을 기획·운영했다. CLV 최적화를 목표로 인게이지먼트 선순환 루프(Loyalty Loop)를 설계해, 데이터 → 세그먼트 → 경험 → 다시 데이터로 이어지는 구조를 구축했다.',
     outcomeQualitative:
-      '일회성 행사형 CX → 상시 운영형 1:1 자산화 체계로 전환, 고객 데이터의 지속 축적 기반 확보',
+      '일회성 CX를 데이터 기반 자산화 체계로 전환하여 고객 생애 가치(CLV) 제고 기반 마련.',
     outcomeMetrics: [
-      { label: '등급 회원 수', value: '[TBD]' },
-      { label: '인게이지먼트 참여율', value: '[TBD]' },
-      { label: '재방문·리텐션 변화', value: '[TBD]' },
+      { label: '등급 회원 / 인게이지먼트 참여율', value: '[TBD]' },
+      { label: 'CLV 변화', value: '[TBD]' },
     ],
     client: 'Toyota Motor Korea',
-    assets: '[확인 필요 — 프로그램 구조도 / 등급 체계 도식 / 개인화 콘텐츠 샘플]',
+    assets: '[확인 필요 — Tiering 구조도 / Loyalty Loop 도식 / 개인화 콘텐츠 샘플]',
   },
   {
-    slug: 'brand-app-renewal',
-    id: 'project-app',
-    title: '브랜드 애플리케이션 리뉴얼',
-    pillar: 'engagement',
-    year: '2021',
-    role: 'PM',
+    slug: 'after-service-dx',
+    id: 'project-as-dx',
+    title: '고객 애프터서비스 디지털 전환',
+    pillar: 'dx',
+    year: '2021 → 2026',
+    role: 'PM (서비스 DX 총괄)',
     featured: true,
     summary:
-      '브랜드 공식 디지털 애플리케이션의 통합 리뉴얼을 RFP·설계·런칭·운영 전 단계에서 PM으로 책임지고, 오프라인 중심 프리미엄 경험을 디지털 1:1 채널로 확장했다.',
-    impact: '오프라인 프리미엄 경험 → 디지털 1:1 상시 채널',
+      '대리점별 분산된 고객 데이터를 브랜드 앱으로 통합(Single Source of Truth)하고, 오프라인 정비 프로세스를 100% 디지털화하여 상시 접점을 확보했다.',
+    impact: '정비 예약 20% 온라인 전환 · 앱 가입률 90% · MAU 100% 성장',
     challenge:
-      '프리미엄 브랜드 경험이 오프라인 접점에 집중돼 있어, 디지털에서 고객과 1:1로 연결되는 상시 채널이 부재했다. 분산된 디지털 기능을 하나의 공식 애플리케이션으로 통합하고 사용성을 재설계할 필요가 있었다.',
+      '오프라인·대리점 파편화로 고객 데이터 관리가 부재하고 운영 비용이 높았다. 정비 예약·이력·고객 정보가 대리점별로 흩어져 있어 통합된 고객 뷰가 불가능했다.',
     approach:
-      'RFP를 작성해 에이전시를 선정하고, IA와 콘텐츠 구조를 설계했다. 약관·개인정보 항목을 검토·정비해 컴플라이언스를 확보했으며, 런칭 이후 운영까지 전 단계를 단일 PM으로 책임졌다. 오프라인 중심의 프리미엄 경험을 디지털 채널로 옮겨 고객과 상시 연결되는 1:1 접점을 구축했다.',
+      '대리점별 분산된 고객 데이터를 브랜드 앱으로 통합해 Single Source of Truth를 구축했다. 오프라인 정비 프로세스를 100% 디지털화해 상시 접점을 확보하고, RFP·설계·런칭·운영 전 단계를 PM으로 책임지며 2021년 첫 구축부터 2026년 확장까지 일관되게 끌고 갔다.',
     outcomeQualitative:
-      '오프라인 중심 경험 → 디지털 1:1 상시 채널로 확장, 분산된 기능의 단일 앱 통합',
+      '전체 정비 예약의 20%를 온라인으로 전환해 콜센터 효율화. 앱 가입률 90%, MAU 100% 성장 달성. 분산되어 있던 고객 데이터의 단일화로 마케팅·CRM 활용 기반 확보.',
     outcomeMetrics: [
-      { label: '가입자·다운로드', value: '[TBD]' },
-      { label: 'MAU·활성 사용자', value: '[TBD]' },
-      { label: '주요 기능 사용률', value: '[TBD]' },
+      { label: '온라인 정비 예약 전환', value: '20%' },
+      { label: '앱 가입률', value: '90%' },
+      { label: 'MAU 성장', value: '100%' },
     ],
     client: 'Toyota Motor Korea',
-    assets: '[확인 필요 — 앱 스크린샷 / IA 설계 문서 / before-after]',
+    assets: '[확인 필요 — 앱 스크린샷 / IA / before-after / DX 프로세스 도식]',
   },
   {
     slug: 'product-lifecycle',
     id: 'project-lifecycle',
-    title: '프로덕트 런칭 & 라이프사이클 관리',
+    title: '핵심 프로덕트 런칭 & 라이프사이클 관리',
     pillar: 'brand',
-    year: '2019–2026 1Q',
-    role: 'Product Owner',
+    year: '2019–2026 Q1',
+    role: 'PM (Product Owner)',
     featured: true,
     summary:
-      '핵심 프로덕트의 Launch → Grow → Sustain 전 단계를 Product Owner로 담당하고, 본사·세일즈·딜러·에이전시 4자를 조율하며 시장 여정 전체를 책임졌다.',
-    impact: 'Launch → Grow → Sustain 단일 오너십',
+      'Launch → Grow → Sustain 전 과정을 Product Owner로 총괄하며, 본사·딜러·마케팅 간 Cross-functional 리더십을 발휘하고 글로벌 전략을 한국 시장에 로컬라이제이션했다.',
+    impact: '라이프사이클 거버넌스 체계 구축 · 일관된 브랜드 메시지 정착',
     challenge:
-      '프로덕트 하나가 시장에 안착해 성장·유지되기까지는 런칭 이벤트만으로 부족하며, 단계별로 다른 메시지와 미디어 전략이 필요하다. 동시에 본사·세일즈·딜러·에이전시 등 이해관계자가 많아 일관된 방향 정렬이 핵심 과제였다.',
+      '이해관계자(본사·딜러·마케팅) 간 목표 충돌과 단기 런칭 위주의 마케팅 한계가 있었다. 프로덕트 하나가 시장에 안착해 성장·유지되기까지 단계별로 다른 메시지·미디어가 필요하지만, 일관된 거버넌스가 부재했다.',
     approach:
-      '사전예약·프레스·채널 지원물·360° IMC로 런칭을 설계하고, 인마켓 단계에서는 확장 미디어로 수요를 키웠다. 중기에는 리프레시·세대교체 메시지로 제품 수명을 관리했다. Product Owner로서 Launch→Grow→Sustain 전 구간을 일관된 관점으로 끌고 가며, 4자 이해관계자를 지속적으로 조율했다.',
+      'Launch-Grow-Sustain 전 과정을 Product Owner로 총괄하며 Cross-functional 리더십을 발휘했다. 한국 시장 특성에 맞춰 글로벌 전략을 로컬라이제이션(Localization)하고, 본사·딜러·마케팅의 목표를 정렬해 단계별 메시지·미디어 전략을 일관되게 설계했다.',
     outcomeQualitative:
-      '단발 런칭이 아닌 Launch→Grow→Sustain 전 주기를 단일 오너십으로 관리, 다자 이해관계자 정렬 체계화',
+      '라이프사이클 전체를 관통하는 거버넌스 체계 구축 및 일관된 브랜드 메시지 정착. 단발 런칭이 아닌 전 주기 단일 오너십.',
     outcomeMetrics: [
-      { label: '사전예약 실적', value: '[TBD]' },
-      { label: '런칭 후 판매·목표 달성률', value: '[TBD]' },
+      { label: '사전예약 / 판매 달성률', value: '[TBD]' },
       { label: '캠페인 도달·전환', value: '[TBD]' },
     ],
     client: 'Toyota Motor Korea',
-    assets: '[확인 필요 — 런칭 캠페인 / IMC 채널 / 미디어 리포트]',
+    assets: '[확인 필요 — 런칭 캠페인 / IMC 결과물 / 미디어 리포트]',
   },
   {
     slug: 'brand-long-term-strategy',
@@ -201,18 +210,18 @@ export const projects = [
     title: '브랜드 중장기 전략 (Electrified)',
     pillar: 'brand',
     year: '2025–Present',
-    role: 'TFT Core Member',
+    role: 'TFT 코어 멤버',
     featured: false,
     isOngoing: true,
     summary:
-      '전동화 전환을 포함한 브랜드 중장기 로드맵을 TFT 코어 멤버로 수립하고, 본사 글로벌 전략을 한국 시장에 적합화했다.',
-    impact: '전동화 포함 중장기 로드맵 정립 (진행 중)',
+      '전동화 전환 속에서 단순 기술·스펙이 아닌 고객 라이프스타일 안에서 브랜드 가치로 발현되는 방향성을 정립하고, 글로벌 전략과 한국 시장 간 전략적 갭을 해소했다.',
+    impact: '전동화 단계별 시나리오 확립 · 경쟁 브랜드 대비 차별화된 로드맵',
     challenge:
-      '전동화로 시장 환경이 빠르게 바뀌는 가운데, 단기 캠페인을 넘어 브랜드의 중장기 방향성을 정의할 필요가 있었다. 본사의 글로벌 전략을 한국 시장 특성에 맞게 재해석하는 것이 핵심 과제였다.',
+      '전동화 전환 속에서 단순 기술·스펙 나열이 아닌 고객 라이프스타일에 맞춘 미래 방향성 정의가 필요했다. 본사 글로벌 전략과 한국 시장 특성 간 전략적 갭(Gap) 해소가 핵심 과제.',
     approach:
-      'TFT 코어 멤버로 브랜드 포지셔닝, 단계별 전환 시나리오, 인프라 전략을 기획했다. 본사 글로벌 전략을 한국 시장 맥락에 맞게 적합화하고, 전동화 전환 로드맵을 단계별로 구조화했다. (진행 중 프로젝트)',
+      'TFT 코어 멤버로 브랜드 포지셔닝과 인프라 전략을 기획했다. 단순 스펙이 아닌 고객 라이프스타일 안에서 전동화 기술이 브랜드 가치로 발현되는 방향성을 정립하고, 글로벌 전략과 한국 시장 간 전략적 갭을 해소했다.',
     outcomeQualitative:
-      '전동화를 포함한 브랜드 중장기 로드맵·포지셔닝·단계별 시나리오 정립, 글로벌 전략의 한국 시장 적합화',
+      '전동화 전환의 명확한 단계별 시나리오 확립 및 시장 경쟁 브랜드 대비 차별화된 브랜드 로드맵 정립.',
     outcomeMetrics: [
       { label: '경영진 승인 로드맵', value: '진행 중' },
       { label: '채택 시나리오', value: '[확인 후 입력]' },
@@ -221,25 +230,24 @@ export const projects = [
     assets: '[확인 필요 — 기밀 가능성 높음, 공개 가능한 요약·도식만 선별]',
   },
   {
-    slug: 'after-service',
-    id: 'project-as',
-    title: '고객 애프터 서비스 기획',
-    pillar: 'crm',
+    slug: 'customer-brand-journey',
+    id: 'project-cbj',
+    title: '고객 브랜드 여정 서비스 기획',
+    pillar: 'engagement',
     year: '2017–2019',
-    role: '지원',
+    role: '기획 지원',
     featured: false,
     summary:
-      '차량 입고 운영과 연령별 고객 세그먼트 대응 전략 수립을 지원하며, 서비스 접점 데이터를 마케팅 전략과 연결한 고객 중심 경력의 출발점.',
-    impact: '고객 중심 커리어의 출발점',
+      '차량 입고 프로세스 최적화와 연령별 세그먼트 대응 전략을 지원하고, 서비스 접점 데이터를 마케팅 전략과 연계하는 체계를 수립했다.',
+    impact: 'CRM·멤버십 등 데이터 기반 사고의 커리어 출발점',
     challenge:
-      '서비스 접점에서 발생하는 고객 데이터가 마케팅 관점에서 활용되지 못하고 있었다. 차량 입고 운영을 효율화하고, 연령대별로 다른 고객 니즈에 맞춰 대응할 전략이 필요했다.',
+      '서비스 접점에서 발생하는 고객 데이터가 마케팅 관점에서 활용되지 못하고 있었다. 연령대별로 다른 고객 니즈에 맞춘 대응 전략도 부재했다.',
     approach:
-      '차량 입고 운영 프로세스를 지원하고, 연령별 고객 세그먼트에 따른 대응 전략 수립을 도왔다. 서비스 접점에서 수집되는 데이터를 마케팅 전략과 연결하는 관점을 적용했다. 이 경험이 이후 멤버십·CRM·인게이지먼트로 이어지는 고객 중심 사고의 기반이 됐다.',
+      '차량 입고 프로세스를 최적화하고 연령별 세그먼트 대응 전략 수립을 지원했다. 서비스 접점에서 수집되는 데이터를 마케팅 전략과 연계하는 체계를 수립해, 흩어져 있던 접점 데이터를 마케팅 관점으로 연결했다.',
     outcomeQualitative:
-      '서비스 접점 데이터를 마케팅 전략과 연결, 이후 CRM·멤버십·인게이지먼트로 이어지는 고객 중심 커리어의 출발점',
+      'CRM·멤버십 등 고객 중심 데이터 기반 사고의 커리어 기반 마련. 이후 모든 프로젝트의 출발점이 된 경험.',
     outcomeMetrics: [
-      { label: '입고 운영 효율', value: '[TBD]' },
-      { label: '세그먼트 대응 결과', value: '[TBD]' },
+      { label: '입고 운영 효율 / 세그먼트 대응', value: '[TBD]' },
     ],
     client: 'Toyota Motor Korea',
     assets: '[확인 필요 — 초기 경력이라 자료 없을 가능성]',
@@ -277,29 +285,29 @@ export const timeline = [
     year: '2024',
     yearDisplay: '2024 → 2025',
     isPresent: false,
-    title: '고객 등급 프로그램 & Engagement 프로그램 개발',
+    title: '브랜드 로열티 프로그램 구축',
     description:
-      '프리미엄 고객 등급 체계 개발과 등급 연계 인게이지먼트 프로그램 기획·운영. 일회성 행사형 CX를 상시 운영형 1:1 자산화 체계로 전환. RFP 기반 파트너 선정·계약, 약관·동의서 정비, 개인화 콘텐츠 기획까지.',
-    pillars: ['crm', 'engagement'],
+      '구매·행동 데이터 기반 고객 Tiering 재설계 + 인게이지먼트 선순환 루프(Loyalty Loop) 구축. CLV 최적화를 목표로 데이터 → 세그먼트 → 경험 → 다시 데이터로 이어지는 자산화 체계 마련.',
+    pillars: ['crm'],
   },
   {
     id: 'timeline-3',
     year: '2021',
-    yearDisplay: '2021',
+    yearDisplay: '2021 → 2026',
     isPresent: false,
-    title: '브랜드 애플리케이션 리뉴얼',
+    title: '고객 애프터서비스 디지털 전환',
     description:
-      '브랜드 공식 디지털 애플리케이션 통합 리뉴얼 PM. RFP 작성, 에이전시 선정, IA·콘텐츠 설계, 약관·개인정보 검토부터 런칭 운영까지 전 단계 책임. 오프라인 중심 프리미엄 경험을 디지털 1:1 채널로 확장.',
-    pillars: ['engagement'],
+      '대리점별 분산된 고객 데이터를 브랜드 앱으로 통합(Single Source of Truth). 오프라인 정비 프로세스 100% 디지털화. 정비 예약 20% 온라인 전환, 앱 가입률 90%, MAU 100% 성장 달성.',
+    pillars: ['dx'],
   },
   {
     id: 'timeline-4',
     year: '2019',
-    yearDisplay: '2019 → 2026 1Q',
+    yearDisplay: '2019 → 2026 Q1',
     isPresent: false,
-    title: '프로덕트 런칭 & 라이프사이클 관리',
+    title: '핵심 프로덕트 런칭 & 라이프사이클 관리',
     description:
-      '핵심 프로덕트의 Launch → Grow → Sustain Product Owner. 사전예약·프레스·채널 지원물·360° IMC 런칭부터 인마켓 확장 미디어, 중기 리프레시·세대교체 메시지까지. 본사·세일즈·딜러·에이전시 4자 조율로 프로덕트의 시장 여정 전체 책임.',
+      'Launch → Grow → Sustain 전 과정 Product Owner 총괄. Cross-functional 리더십으로 본사·딜러·마케팅 정렬. 한국 시장 맞춤 글로벌 전략 로컬라이제이션으로 라이프사이클 거버넌스 체계 구축.',
     pillars: ['brand'],
   },
   {
@@ -307,10 +315,10 @@ export const timeline = [
     year: '2017',
     yearDisplay: '2017 → 2019',
     isPresent: false,
-    title: '고객 애프터 서비스 기획',
+    title: '고객 브랜드 여정 서비스 기획',
     description:
-      '차량 입고 운영 및 연령별 고객 세그먼트 대응 전략 수립 지원. 서비스 접점 데이터를 마케팅 전략과 연결하는 첫 경력 — 이후 멤버십·CRM·인게이지먼트로 이어지는 고객 중심 사고의 출발점.',
-    pillars: ['crm'],
+      '차량 입고 프로세스 최적화 및 연령별 세그먼트 대응 전략 지원. 서비스 접점 데이터를 마케팅 전략과 연계하는 체계 수립 — 이후 모든 프로젝트의 출발점이 된 데이터 기반 사고.',
+    pillars: ['engagement'],
   },
 ];
 

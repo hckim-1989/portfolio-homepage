@@ -50,6 +50,16 @@ export default function ProjectThumb({ project }) {
           <circle cx="400" cy="300" r="20" fill={C.bg} stroke={C.fg} strokeWidth="2"/>
         </>
       )}
+      {project.pillar === 'dx' && (
+        <>
+          {/* Scattered squares merging into one — 디지털 통합 메타포 */}
+          <rect x="120" y="80"  width="80" height="80" fill="none" stroke={C.fg} strokeWidth="1.5" opacity="0.45"/>
+          <rect x="220" y="80"  width="80" height="80" fill="none" stroke={C.fg} strokeWidth="1.5" opacity="0.30"/>
+          <rect x="120" y="180" width="80" height="80" fill="none" stroke={C.fg} strokeWidth="1.5" opacity="0.30"/>
+          <rect x="380" y="240" width="280" height="240" fill={C.fg} opacity="0.85"/>
+          <path d="M455 365 L495 405 L575 320" fill="none" stroke={C.bg} strokeWidth="6" strokeLinecap="round" strokeLinejoin="round"/>
+        </>
+      )}
 
       {/* 좌하단 메타 라벨 (mono 폰트) */}
       <g fontFamily="JetBrains Mono, ui-monospace, monospace">

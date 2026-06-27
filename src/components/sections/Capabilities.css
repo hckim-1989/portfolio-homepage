@@ -7,7 +7,7 @@
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1px;
   background: var(--color-hairline);
   border-top: 1px solid var(--color-hairline);
@@ -37,6 +37,7 @@
 .capability--brand .capability-icon { color: var(--pillar-brand); }
 .capability--crm   .capability-icon { color: var(--pillar-crm); }
 .capability--engagement .capability-icon { color: var(--pillar-engagement); }
+.capability--dx    .capability-icon { color: var(--pillar-dx); }
 
 .capability-label {
   font: 500 22px/1.2 var(--font-family);
@@ -104,7 +105,13 @@
 }
 
 /* ── 반응형 ── */
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
+  .capabilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
   .capabilities-grid {
     grid-template-columns: 1fr;
   }
