@@ -26,7 +26,7 @@ export const nav = [
   { id: 'contact',  label: 'Contact',  href: '#contact', muted: true },
 ];
 
-// ── Hero (C2 Split — 좌: 카피+버튼 / 우: featured 케이스) ──
+// ── Hero (C2 Split — 좌: 카피+버튼 / 우: Snapshot 프로필 패널) ──
 export const hero = {
   eyebrow: 'Brand & Marketing Strategist · Seoul',
   titleLines: [
@@ -38,6 +38,33 @@ export const hero = {
     { label: '프로젝트 보기', href: '#work', primary: true },
     { label: '이력서 PDF',    href: '#',     primary: false }, // [TODO] resumeUrl
   ],
+  // 우측 스냅샷 프로필 — 5초 안에 ① 경력/레벨 ② 핵심 역량 ③ 산업 ④ 다음 행동
+  snapshot: {
+    status: { available: true, label: 'AVAILABLE' },
+    experience: {
+      total: '9년+ TOTAL',
+      tracks: [
+        { value: '6', unit: '년+', unitAccent: true,  label: 'Brand Marketing' },
+        { value: '3', unit: '년',  unitAccent: false, label: 'After Service 기획' },
+      ],
+    },
+    metrics: [
+      { value: '5', unit: '+', unitAccent: true, label: '대표 프로젝트' },
+      { value: '1', label: '브랜드 컨설팅' },
+    ],
+    focus: [
+      { en: 'Brand Strategy',                       ko: '전략·포지셔닝' },
+      { en: 'Digital Transformation',                ko: 'DX' },
+      { en: 'Customer Engagement & CRM',             ko: 'CX·CRM' },
+      { en: 'Integrated Marketing Communications',   ko: 'IMC 수립·실행' },
+    ],
+    sector: 'Automotive · F&B',
+    featured: {
+      eyebrow: 'FEATURED CASE / 01',
+      title: '브랜드 로열티 프로그램 구축',
+      href: '#work-loyalty-program',
+    },
+  },
 };
 
 // ── Independent Work · 개인 컨설팅 (Raison D'être 중심) ──

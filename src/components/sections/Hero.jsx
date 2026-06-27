@@ -1,22 +1,14 @@
-import { hero, projects } from '../../data/portfolioData';
-import ProjectThumb from './ProjectThumb';
+import { hero } from '../../data/portfolioData';
 import './Hero.css';
-
-const PILLAR_LABEL = {
-  crm: 'CRM & Loyalty',
-  engagement: 'Customer Engagement',
-  dx: 'DX',
-  brand: 'Brand Strategy',
-  consulting: 'Brand Consulting',
-};
 
 /**
  * Hero — C2 Split layout
- * 좌: eyebrow + 3줄 영문 헤드라인 + 한글 서브 + 버튼 2개
- * 우: Featured 01 — 첫 번째 프로젝트 카드 (이미지 + 메타 + 케이스 읽기)
+ * 좌: eyebrow + 3줄 영문 헤드라인 + 버튼 2개
+ * 우: Snapshot Profile (PROFILE/Available, Experience 2-track,
+ *     보조 지표, Focus 4행, Sector, Featured Case 하단)
  */
 export default function Hero() {
-  const featured = projects[0];
+  const snap = hero.snapshot;
 
   return (
     <section id="top" className="hero">
@@ -54,28 +46,85 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* 우측 Featured */}
-        <a href={`#work-${featured.slug}`} className="hero-featured" aria-label={featured.title}>
-          <div className="hero-featured-tag">Featured / 01</div>
+        {/* 우측 Snapshot Profile */}
+        <aside className="hero-snap">
+          <div className="hero-snap-top">
+            {/* 1. 라벨 행 */}
+            <div className="hero-snap-label-row">
+              <span className="hero-snap-label">PROFILE</span>
+              {snap.status.available && (
+                <span className="hero-snap-available">
+                  <span className="hero-snap-available-dot" aria-hidden="true" />
+                  {snap.status.label}
+                </span>
+              )}
+            </div>
 
-          <div className="hero-featured-image">
-            {featured.heroImage ? (
-              <img src={featured.heroImage} alt={featured.title} loading="lazy" />
-            ) : (
-              <ProjectThumb project={featured} />
-            )}
-          </div>
+            {/* 2. Experience — 두 트랙 */}
+            <div className="hero-snap-exp-header">
+              <span className="hero-snap-mono-label">EXPERIENCE</span>
+              <span className="hero-snap-mono-mute">{snap.experience.total}</span>
+            </div>
+            <div className="hero-snap-exp-grid">
+              {snap.experience.tracks.map(t => (
+                <div key={t.label} className="hero-snap-track">
+                  <div className="hero-snap-track-value">
+                    {t.value}
+                    <span className={t.unitAccent ? 'hero-snap-track-unit hero-snap-track-unit--accent' : 'hero-snap-track-unit'}>
+                      {t.unit}
+                    </span>
+                  </div>
+                  <div className="hero-snap-track-label">{t.label}</div>
+                </div>
+              ))}
+            </div>
 
-          <div className="hero-featured-meta">
-            <h3 className="hero-featured-title">{featured.title}</h3>
-            <div className="hero-featured-foot">
-              <span className="hero-featured-sub">
-                {PILLAR_LABEL[featured.pillar]} — {featured.year}
-              </span>
-              <span className="hero-featured-cta">케이스 읽기 →</span>
+            {/* 3. 보조 지표 */}
+            <div className="hero-snap-metric-grid">
+              {snap.metrics.map(m => (
+                <div key={m.label} className="hero-snap-metric">
+                  <span className="hero-snap-metric-value">
+                    {m.value}
+                    {m.unit && (
+                      <span className="hero-snap-metric-unit">{m.unit}</span>
+                    )}
+                  </span>
+                  <span className="hero-snap-mono-mute">{m.label}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* 4. Focus — 역량 4행 */}
+            <div className="hero-snap-focus">
+              <div className="hero-snap-mono-label hero-snap-focus-header">FOCUS</div>
+              {snap.focus.map((f, idx) => (
+                <div
+                  key={f.en}
+                  className={`hero-snap-focus-row ${idx === snap.focus.length - 1 ? 'hero-snap-focus-row--last' : ''}`}
+                >
+                  <span className="hero-snap-focus-bullet" aria-hidden="true" />
+                  <span className="hero-snap-focus-en">{f.en}</span>
+                  <span className="hero-snap-mono-mute">{f.ko}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* 5. Sector */}
+            <div className="hero-snap-sector">
+              <span className="hero-snap-mono-label">SECTOR</span>
+              <span className="hero-snap-sector-value">{snap.sector}</span>
             </div>
           </div>
-        </a>
+
+          {/* 6. Featured Case 링크 (하단 고정) */}
+          <a href={snap.featured.href} className="hero-snap-featured">
+            <div className="hero-snap-featured-eyebrow">{snap.featured.eyebrow}</div>
+            <div className="hero-snap-featured-row">
+              <span className="hero-snap-featured-title">{snap.featured.title}</span>
+              <span className="hero-snap-featured-cta">케이스 읽기 →</span>
+            </div>
+          </a>
+        </aside>
       </div>
     </section>
   );

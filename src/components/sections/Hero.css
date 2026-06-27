@@ -1,5 +1,5 @@
 /* ============================================
-   Hero — C2 Split layout
+   Hero — C2 Split layout (with Snapshot panel)
    ============================================ */
 
 .hero {
@@ -34,8 +34,8 @@
 }
 
 .hero-title {
-  font: 700 clamp(36px, 5vw, 64px) / 1.02 var(--font-family);
-  letter-spacing: -0.03em;
+  font: 700 clamp(36px, 5vw, 62px) / 1.02 var(--font-family);
+  letter-spacing: -0.035em;
   color: var(--color-ink);
   margin: 0 0 24px 0;
 }
@@ -47,13 +47,6 @@
 .hero-title-line--accent {
   display: block;
   color: var(--color-accent);
-}
-
-.hero-subtitle {
-  font: 400 16px/1.6 var(--font-family);
-  color: var(--color-body);
-  max-width: 420px;
-  margin: 0;
 }
 
 /* ── 액션 버튼 ── */
@@ -91,92 +84,244 @@
   border-color: var(--color-ink);
 }
 
-/* ── 우측 Featured 케이스 ── */
-.hero-featured {
+/* ============================================
+   우측 Snapshot Profile 패널
+   ============================================ */
+
+.hero-snap {
   flex: none;
   width: 520px;
-  padding: 32px;
+  padding: 48px 52px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   color: var(--color-ink);
 }
 
-.hero-featured-tag {
+.hero-snap-top {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── 공통 모노 라벨 ── */
+.hero-snap-mono-label {
   font: 500 11px/1 var(--font-mono);
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  color: var(--color-body);
+}
+
+.hero-snap-mono-mute {
+  font: 400 11px/1.4 var(--font-mono);
+  letter-spacing: 0.06em;
   color: var(--color-mute-2);
-  margin-bottom: 16px;
 }
 
-.hero-featured-image {
-  flex: 1;
-  min-height: 300px;
-  background: var(--color-placeholder);
-  border-radius: 3px;
-  overflow: hidden;
-  position: relative;
-}
-
-.hero-featured-image img,
-.hero-featured-image .project-thumb-svg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.hero-featured-meta {
-  margin-top: 20px;
-}
-
-.hero-featured-title {
-  font: 700 26px/1.25 var(--font-family);
-  letter-spacing: -0.02em;
-  color: var(--color-ink);
-  margin: 0;
-  transition: color 0.2s ease-out;
-}
-
-.hero-featured:hover .hero-featured-title {
-  color: var(--color-accent);
-}
-
-.hero-featured-foot {
+/* ── 1. 라벨 행 ── */
+.hero-snap-label-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
+}
+
+.hero-snap-label {
+  font: 500 12px/1 var(--font-mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-mute-2);
+}
+
+.hero-snap-available {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font: 500 11px/1 var(--font-mono);
+  letter-spacing: 0.08em;
+  color: var(--color-success);
+}
+
+.hero-snap-available-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-success);
+  display: inline-block;
+}
+
+/* ── 2. Experience header + 두 트랙 ── */
+.hero-snap-exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid var(--color-ink);
+  padding-top: 20px;
+}
+
+.hero-snap-exp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.hero-snap-track-value {
+  font: 700 42px/1 var(--font-family);
+  letter-spacing: -0.03em;
+  color: var(--color-ink);
+}
+
+.hero-snap-track-unit {
+  font: 600 18px/1 var(--font-family);
+  color: var(--color-body);
+  margin-left: 2px;
+}
+
+.hero-snap-track-unit--accent {
+  color: var(--color-accent);
+}
+
+.hero-snap-track-label {
+  font: 600 13px/1.2 var(--font-family);
+  color: var(--color-ink);
+  margin-top: 10px;
+}
+
+/* ── 3. 보조 지표 ── */
+.hero-snap-metric-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 22px;
+  border-top: 1px solid var(--color-hairline);
+  padding-top: 18px;
+}
+
+.hero-snap-metric {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.hero-snap-metric-value {
+  font: 700 30px/1 var(--font-family);
+  letter-spacing: -0.03em;
+  color: var(--color-ink);
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.hero-snap-metric-unit {
+  font: 700 16px/1 var(--font-family);
+  color: var(--color-accent);
+  margin-left: 1px;
+}
+
+/* ── 4. Focus ── */
+.hero-snap-focus {
+  margin-top: 34px;
+}
+
+.hero-snap-focus-header {
+  margin-bottom: 6px;
+}
+
+.hero-snap-focus-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-top: 1px solid var(--color-hairline);
+}
+
+.hero-snap-focus-row--last {
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.hero-snap-focus-bullet {
+  width: 9px;
+  height: 9px;
+  background: var(--color-accent);
+  flex: none;
+  /* sharp (no radius) — 가이드 지정 */
+}
+
+.hero-snap-focus-en {
+  flex: 1;
+  font: 600 17px/1.2 var(--font-family);
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+}
+
+/* ── 5. Sector ── */
+.hero-snap-sector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.hero-snap-sector-value {
+  font: 500 14px/1 var(--font-family);
+  color: #3a3833;
+}
+
+/* ── 6. Featured Case (하단 고정) ── */
+.hero-snap-featured {
+  display: block;
+  margin-top: 36px;
+  border-top: 1px solid var(--color-ink);
+  padding-top: 18px;
+  color: var(--color-ink);
+  transition: transform 0.2s ease-out;
+}
+
+.hero-snap-featured-eyebrow {
+  font: 500 11px/1 var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-mute-2);
+}
+
+.hero-snap-featured-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
   gap: var(--space-md);
-  margin-top: 12px;
-  flex-wrap: wrap;
 }
 
-.hero-featured-sub {
-  font: 400 12px/1.4 var(--font-mono);
-  color: var(--color-mute);
-  letter-spacing: 0.04em;
+.hero-snap-featured-title {
+  font: 700 19px/1.25 var(--font-family);
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
 }
 
-.hero-featured-cta {
+.hero-snap-featured-cta {
   font: 600 14px/1 var(--font-family);
   color: var(--color-accent);
-  transition: transform 0.2s ease-out;
-  display: inline-block;
   white-space: nowrap;
+  transition: transform 0.2s ease-out;
 }
 
-.hero-featured:hover .hero-featured-cta {
+.hero-snap-featured:hover .hero-snap-featured-cta {
   transform: translateX(4px);
 }
 
-/* ── 반응형 ── */
+/* ============================================
+   반응형
+   ============================================ */
+
 @media (max-width: 1199px) {
-  .hero-featured {
-    width: 420px;
-    padding: 28px;
+  .hero-snap {
+    width: 460px;
+    padding: 40px 36px;
   }
   .hero-main {
     padding: 64px 40px 56px;
+  }
+  .hero-snap-track-value {
+    font-size: 36px;
   }
 }
 
@@ -189,12 +334,9 @@
     border-right: none;
     border-bottom: 1px solid var(--color-hairline-2);
   }
-  .hero-featured {
+  .hero-snap {
     width: 100%;
-    padding: 32px var(--space-2xl);
-  }
-  .hero-featured-image {
-    min-height: 260px;
+    padding: 40px var(--space-2xl);
   }
 }
 
@@ -202,8 +344,8 @@
   .hero-main {
     padding: 48px var(--space-lg) 32px;
   }
-  .hero-featured {
-    padding: 24px var(--space-lg);
+  .hero-snap {
+    padding: 32px var(--space-lg);
   }
   .hero-actions {
     margin-top: 32px;
@@ -213,7 +355,13 @@
     padding: 12px 20px;
     font-size: 13px;
   }
-  .hero-featured-image {
-    min-height: 200px;
+  .hero-snap-track-value {
+    font-size: 34px;
+  }
+  .hero-snap-metric-value {
+    font-size: 26px;
+  }
+  .hero-snap-featured-row {
+    flex-wrap: wrap;
   }
 }
