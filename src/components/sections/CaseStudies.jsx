@@ -2,7 +2,7 @@ import { projects } from '../../data/portfolioData';
 import './CaseStudies.css';
 
 const PILLAR_LABEL = {
-  crm: 'CRM & Loyalty',
+  crm: 'CRM & Loyalty Program',
   engagement: 'Customer Engagement',
   dx: 'DX',
   brand: 'Brand Strategy',
@@ -42,12 +42,7 @@ export default function CaseStudies() {
     <section id="case-studies" className="cases">
       <div className="cases-inner">
         <header className="cases-header">
-          <p className="cases-eyebrow">Project Details</p>
-          <h2 className="cases-title">
-            맥락 · 접근 · 결과,
-            <br />
-            <span className="cases-title-accent">한 자리에서.</span>
-          </h2>
+          <h2 className="cases-title">PROJECT DETAILS</h2>
         </header>
 
         <div className="cases-list">

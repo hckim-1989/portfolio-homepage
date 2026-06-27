@@ -19,28 +19,10 @@
   max-width: 760px;
 }
 
-.cases-eyebrow {
-  font: 500 12px/1 var(--font-mono);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--color-accent);
-  margin: 0 0 var(--space-lg) 0;
-}
-
 .cases-title {
-  font: 700 clamp(28px, 3.8vw, 48px) / 1.15 var(--font-family);
-  letter-spacing: -0.025em;
+  font: 700 clamp(40px, 5vw, 64px) / 1.1 var(--font-mono);
+  letter-spacing: 0.04em;
   color: var(--color-ink);
-  margin: 0 0 var(--space-xl) 0;
-}
-
-.cases-title-accent {
-  color: var(--color-accent);
-}
-
-.cases-lead {
-  font: 400 16px/1.65 var(--font-family);
-  color: var(--color-body);
   margin: 0;
 }
 

@@ -22,7 +22,7 @@ export const nav = [
   { id: 'work',     label: 'Work',     href: '#work' },
   { id: 'about',    label: 'About',    href: '#about' },
   { id: 'services', label: 'Services', href: '#consulting' },
-  { id: 'journal',  label: 'Journal',  href: '#notes' },
+  { id: 'journal',  label: 'Notes',    href: '#notes' },
   { id: 'contact',  label: 'Contact',  href: '#contact', muted: true },
 ];
 
@@ -71,16 +71,16 @@ export const hero = {
 export const consulting = {
   eyebrow: 'Independent Work',
   title: {
-    line1: '인하우스 9년의 시선을',
+    line1: '글로벌 브랜드에서의 경험을',
     line2: '작은 브랜드의 실전으로.',
     italicLine: 2,
   },
   body:
-    '현재 진행 중인 개인 프로젝트 — 파티셰리 브랜드 Raison D\'être 5개 지점의 고객경험·브랜드·SNS·운영 체계를 통합 컨설팅. 인하우스에서 길러낸 관점을 작은 브랜드의 한정된 리소스 안에서도 작동하는 형태로 다시 설계.',
+    '현재 진행 중인 개인 프로젝트 — 파티세리 브랜드 Raison D\'être의 고객경험·브랜드·SNS·운영 체계를 통합 컨설팅. 글로벌 브랜드에서 길러낸 관점을 작은 브랜드의 한정된 리소스 안에서도 작동하는 형태로 다시 설계.',
   badge: 'Currently consulting',
-  client: 'Raison D\'être · 5개 지점 파티셰리',
+  client: 'Raison D\'être · 파티세리',
   cta: {
-    label: '컨설팅 의뢰·커피챗',
+    label: '컨설팅 의뢰',
     href: '#contact',
   },
   services: [
@@ -114,11 +114,10 @@ export const capabilities = {
   pillars: [
     {
       id: 'crm',
-      label: 'CRM & Customer Loyalty',
+      label: 'CRM & Customer Loyalty Program',
       tagline: '데이터로 고객 관계를 자산화',
       bullets: [
         'Tiering · Segmentation (구매·행동 데이터 기반)',
-        'Loyalty Loop · CLV 최적화',
         'Personalization · Engagement Operation',
       ],
       featuredProjectSlug: 'loyalty-program',
@@ -179,7 +178,7 @@ export const projects = [
       '등급별 상시 차별화 경험 체계 미구축',
     ],
     approach: [
-      '구매·행동 데이터 분석 기반 고객 Tiering 재설계',
+      '고객 등급 구조 설계와 인게이지먼트 구조 구축',
       '등급 연계 인게이지먼트 프로그램 기획·운영',
       'CLV 최적화 위한 Loyalty Loop 설계 (데이터 → 세그먼트 → 경험 → 데이터)',
     ],
@@ -207,7 +206,7 @@ export const projects = [
       '대리점별 분산 데이터의 브랜드 앱 통합과 정비 프로세스 100% 디지털화로, 상시 1:1 접점 확보.',
     impact: '정비 예약 20% 온라인 · 앱 가입률 90% · MAU 100% 성장',
     challenge: [
-      '대리점 파편화로 인한 고객 데이터 관리 부재',
+      '온라인 상에서의 에프터서비스 경험 제공 툴 부재',
       '높은 오프라인 운영 비용',
       '대리점별 흩어진 정비 이력·고객 정보',
     ],
@@ -239,7 +238,7 @@ export const projects = [
     featured: true,
     summary:
       'Launch → Grow → Sustain 전 과정 PO 총괄과 Cross-functional 리더십, 글로벌 전략의 한국 시장 로컬라이제이션.',
-    impact: '라이프사이클 거버넌스 · 일관된 브랜드 메시지 정착',
+    impact: '상품 라이프사이클 매니지먼트 · 일관된 브랜드 메시지 정착',
     challenge: [
       '본사·딜러·마케팅 간 목표 충돌',
       '단기 런칭 위주의 마케팅 한계',
@@ -266,7 +265,7 @@ export const projects = [
   {
     slug: 'brand-long-term-strategy',
     id: 'project-electrified',
-    title: '브랜드 중장기 전략 (Electrified)',
+    title: '전동화 브랜드 중장기 전략',
     pillar: 'brand',
     year: '2025–현재',
     role: 'TFT 코어 멤버',
@@ -291,7 +290,6 @@ export const projects = [
       '글로벌 전략의 한국 시장 적합화 완료',
     ],
     outcomeMetrics: [
-      { label: '경영진 승인 로드맵', value: '진행 중' },
       { label: '채택 시나리오', value: '[확인 후 입력]' },
     ],
     client: 'Toyota Motor Korea',
@@ -300,7 +298,7 @@ export const projects = [
   {
     slug: 'customer-brand-journey',
     id: 'project-cbj',
-    title: '고객 브랜드 여정 서비스 기획',
+    title: '에프터서비스 고객 라이프사이클 기획',
     pillar: 'engagement',
     year: '2017–2019',
     role: '기획 지원',
@@ -339,12 +337,12 @@ export const projects = [
     isOngoing: true,
     isPersonal: true,
     summary:
-      '5개 지점 파티셰리 브랜드의 고객경험·SNS·브랜드·마케팅을 통합 컨설팅. 인하우스 9년의 관점을 작은 브랜드에 적용한 개인 프로젝트.',
+      '파티세리 브랜드의 고객경험·SNS·브랜드·마케팅을 통합 컨설팅.',
     impact: '브랜드 정체성 · 고객 경험 · 채널 통합 컨설팅 (개인 프로젝트)',
     challenge: [
-      '5개 지점 운영의 일관된 브랜드 경험 부재',
+      '일관된 브랜드 경험 부재',
       'SNS·오프라인·고객 데이터의 분리된 운영',
-      '소규모 브랜드의 한정된 리소스로 운영 가능한 체계 필요',
+      '한정된 리소스로 운영 가능한 체계 필요',
     ],
     approach: [
       '브랜드 정체성 정리 + 톤앤매너 가이드',
@@ -353,14 +351,13 @@ export const projects = [
       '실행 가능한 마케팅 운영 체계 설계',
     ],
     outcomeQualitative: [
-      '인하우스 9년의 시선으로 소규모 브랜드에 적용 가능한 컨설팅 모델 정착',
+      '작은 브랜드에서 필요한 실행에 적용 가능한 컨설팅 모델 정착',
       '브랜드·경험·운영·SNS의 통합 관점 제공',
     ],
     outcomeMetrics: [
-      { label: '운영 지점', value: '5개' },
       { label: '담당 영역', value: 'CX · Brand · SNS · 운영' },
     ],
-    client: 'Raison D\'être (Patisserie)',
+    client: 'Raison D\'être · 파티세리',
     assets: '[비공개 — 클라이언트 협의]',
   },
 ];
@@ -376,7 +373,7 @@ export const about = {
   company: 'Toyota Motor Korea · Toyota / Lexus 브랜드',
   tenure: '2017–현재',
   body:
-    'Toyota Motor Korea에서 Toyota·Lexus 두 브랜드의 마케팅 한 직무를 9년간 담당. 브랜드 전략과 IMC 캠페인의 기획·집행, 공식 디지털 채널의 리뉴얼·운영, 프리미엄 멤버십 프로그램의 설계·CRM 운영, 멤버십 연계 고객 경험 프로그램 기획까지 — 마케팅의 여러 영역을 단일 PM 또는 코어 멤버로 수행. 본사·세일즈·딜러·에이전시 4자 조율은 그 과정에서 자연스러워진 일상.',
+    'Toyota Motor Korea에서 Toyota·Lexus 두 브랜드의 마케팅 한 직무를 9년간 담당해 왔습니다. 브랜드 전략과 IMC 캠페인의 기획·집행, 공식 디지털 채널의 리뉴얼과 운영, 프리미엄 멤버십 프로그램의 설계와 CRM 운영, 멤버십 연계 고객 경험 프로그램 기획까지 — 마케팅의 여러 영역을 단일 PM 또는 코어 멤버로 책임져 왔습니다. 본사·세일즈·딜러·에이전시 사이의 4자 조율은 그 과정에서 자연스러워진 일상이 되었습니다.',
 };
 
 // ── Timeline (5단계 커리어) ──
@@ -386,7 +383,7 @@ export const timeline = [
     year: '2025',
     yearDisplay: '2025–현재',
     isPresent: true,
-    title: '브랜드 중장기 전략 수립 (Electrified)',
+    title: '전동화 브랜드 중장기 전략 수립',
     description:
       '전동화 전환을 포함한 브랜드 중장기 로드맵 수립. TFT 코어 멤버로 브랜드 포지셔닝, 단계별 시나리오, 인프라 전략 기획. 본사 글로벌 전략을 한국 시장에 적합화.',
     pillars: ['brand', 'crm'],
@@ -426,7 +423,7 @@ export const timeline = [
     year: '2017',
     yearDisplay: '2017–2019',
     isPresent: false,
-    title: '고객 브랜드 여정 서비스 기획',
+    title: '에프터서비스 고객 라이프사이클 기획',
     description:
       '차량 입고 프로세스 최적화 및 연령별 세그먼트 대응 전략 지원. 서비스 접점 데이터를 마케팅 전략과 연계하는 체계 수립 — 이후 모든 프로젝트의 출발점이 된 데이터 기반 사고.',
     pillars: ['engagement'],
@@ -436,7 +433,7 @@ export const timeline = [
 // ── Notes (블로그 자리만) ──
 export const notes = {
   enabled: false,
-  eyebrow: 'Notes',
+  eyebrow: 'Notes & Idea',
   title: {
     line1: '브랜드와 마케팅에 대한,',
     line2: '나의 시선.',
