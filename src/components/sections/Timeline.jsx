@@ -1,4 +1,4 @@
-import { about, timeline } from '../../data/portfolioData';
+import { about, timeline, background } from '../../data/portfolioData';
 import './Timeline.css';
 
 const PILLAR_LABEL = {
@@ -6,6 +6,7 @@ const PILLAR_LABEL = {
   engagement: 'Engagement',
   dx: 'DX',
   brand: 'Brand',
+  product: 'Product',
 };
 
 /**
@@ -85,6 +86,31 @@ export default function Timeline() {
             </li>
           ))}
         </ol>
+
+        {/* Background — Education / Languages / Tools & Skills */}
+        <div className="timeline-background">
+          <div className="timeline-background-eyebrow">{background.eyebrow}</div>
+          <div className="timeline-background-grid">
+            <div className="tbg-block">
+              <div className="tbg-label">{background.education.label}</div>
+              <div className="tbg-primary">{background.education.school}</div>
+              <div className="tbg-secondary">{background.education.line}</div>
+            </div>
+            <div className="tbg-block">
+              <div className="tbg-label">{background.languages.label}</div>
+              <div className="tbg-primary">{background.languages.value}</div>
+            </div>
+            <div className="tbg-block tbg-block--wide">
+              <div className="tbg-label">{background.skills.label}</div>
+              {background.skills.items.map(sk => (
+                <div key={sk.title} className="tbg-skill">
+                  <div className="tbg-skill-title">{sk.title}</div>
+                  <div className="tbg-skill-text">{sk.text}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

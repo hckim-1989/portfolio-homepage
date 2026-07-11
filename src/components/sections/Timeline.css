@@ -25,6 +25,93 @@
   margin-top: var(--space-xl);
 }
 
+/* ── Background (Education / Languages / Tools & Skills) ── */
+.timeline-background {
+  margin-top: var(--space-4xl);
+  padding-top: var(--space-2xl);
+  border-top: 1px solid var(--color-ink);
+}
+
+.timeline-background-eyebrow {
+  font: 500 12px/1 var(--font-mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xl);
+}
+
+.timeline-background-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 40px;
+}
+
+.tbg-block {
+  min-width: 0;
+}
+
+.tbg-label {
+  font: 600 11px/1 var(--font-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-mute);
+  margin-bottom: 10px;
+}
+
+.tbg-primary {
+  font: 600 15px/1.3 var(--font-family);
+  color: var(--color-ink);
+  margin-bottom: 4px;
+}
+
+.tbg-secondary {
+  font: 400 12px/1.4 var(--font-family);
+  color: var(--color-body);
+}
+
+.tbg-skill {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 14px;
+  padding: 8px 0;
+  border-top: 1px solid var(--color-hairline);
+}
+
+.tbg-skill:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.tbg-skill-title {
+  font: 600 12px/1.4 var(--font-family);
+  color: var(--color-ink);
+}
+
+.tbg-skill-text {
+  font: 400 12px/1.55 var(--font-family);
+  color: var(--color-body);
+}
+
+@media (max-width: 1023px) {
+  .timeline-background-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .tbg-block--wide {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 767px) {
+  .timeline-background-grid {
+    grid-template-columns: 1fr;
+  }
+  .tbg-skill {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
 .timeline-list {
   list-style: none;
   padding: 0;
@@ -151,6 +238,7 @@
 .timeline-pillar--crm   .timeline-pillar-dot { background: var(--pillar-crm); }
 .timeline-pillar--engagement .timeline-pillar-dot { background: var(--pillar-engagement); }
 .timeline-pillar--dx .timeline-pillar-dot { background: var(--pillar-dx); }
+.timeline-pillar--product .timeline-pillar-dot { background: var(--pillar-product); }
 
 /* ── 반응형 ── */
 @media (max-width: 1023px) {

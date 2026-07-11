@@ -27,6 +27,7 @@
   --pillar-crm: #1a1814;
   --pillar-engagement: #56544e;
   --pillar-dx: #b4532a;              /* DX도 시에나 (강조) */
+  --pillar-product: #b4532a;         /* Product 시에나 */
 
   /* --- Fonts --- */
   --font-family: 'Pretendard Variable', 'Pretendard', 'Inter',

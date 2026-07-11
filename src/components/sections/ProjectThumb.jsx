@@ -57,6 +57,15 @@ export default function ProjectThumb({ project }) {
           <path d="M455 365 L495 405 L575 320" fill="none" stroke={C.bg} strokeWidth="6" strokeLinecap="round" strokeLinejoin="round"/>
         </>
       )}
+      {project.pillar === 'product' && (
+        <>
+          {/* Product Lifecycle — Launch → Grow → Sustain */}
+          <line x1="120" y1="300" x2="680" y2="300" stroke={C.fg} strokeWidth="1.5" opacity="0.4"/>
+          <circle cx="120" cy="300" r="40" fill={C.fg} opacity="0.85"/>
+          <circle cx="400" cy="300" r="60" fill="none" stroke={C.fg} strokeWidth="2" opacity="0.65"/>
+          <circle cx="680" cy="300" r="28" fill="none" stroke={C.fg} strokeWidth="1.5" opacity="0.5"/>
+        </>
+      )}
       {project.pillar === 'consulting' && (
         <>
           {/* Consulting — interlocking arcs (handcraft + brand) */}

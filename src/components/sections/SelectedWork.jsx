@@ -2,10 +2,11 @@ import { projects } from '../../data/portfolioData';
 import './SelectedWork.css';
 
 const PILLAR_LABEL = {
-  crm: 'CRM & Loyalty Program',
+  crm: 'CRM & Customer Loyalty',
   engagement: 'Customer Engagement',
-  dx: 'DX',
+  dx: 'Digital Transformation',
   brand: 'Brand Strategy',
+  product: 'Product Ownership & Lifecycle',
   consulting: 'Brand Consulting',
 };
 

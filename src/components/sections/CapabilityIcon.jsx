@@ -71,5 +71,23 @@ export default function CapabilityIcon({ pillarId, className = '' }) {
       </svg>
     );
   }
+  if (pillarId === 'product') {
+    return (
+      <svg
+        viewBox="0 0 80 80"
+        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+        aria-hidden="true"
+      >
+        {/* Product Lifecycle — 3-phase timeline (Launch → Grow → Sustain) */}
+        <line x1="16" y1="40" x2="64" y2="40" stroke="currentColor" strokeWidth="1.2" opacity="0.4"/>
+        <circle cx="16" cy="40" r="6" fill="currentColor"/>
+        <circle cx="40" cy="40" r="8" fill="none" stroke="currentColor" strokeWidth="1.5"/>
+        <circle cx="64" cy="40" r="4" fill="none" stroke="currentColor" strokeWidth="1.5"/>
+        <path d="M20 40 L36 40" stroke="currentColor" strokeWidth="1.5"/>
+        <path d="M44 40 L60 40" stroke="currentColor" strokeWidth="1.5" opacity="0.5"/>
+      </svg>
+    );
+  }
   return null;
 }
