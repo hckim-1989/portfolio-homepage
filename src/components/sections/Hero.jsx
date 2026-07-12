@@ -39,6 +39,9 @@ export default function Hero() {
                 key={btn.label}
                 href={btn.href}
                 className={`hero-btn ${btn.primary ? 'hero-btn--primary' : 'hero-btn--ghost'}`}
+                {...(btn.external
+                  ? { target: '_blank', rel: 'noopener noreferrer' }
+                  : {})}
               >
                 {btn.label}
               </a>

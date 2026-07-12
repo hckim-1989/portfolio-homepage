@@ -13,7 +13,10 @@ export const profile = {
   email: 'heungkim2003@gmail.com',
   linkedin: '#',
   coffeeChat: '#',
-  resumeUrl: '#',
+  resumes: {
+    ko: '/resumes/Resume_Heungchul_Kim_KO.pdf',
+    en: '/resumes/Resume_Heungchul_Kim_EN.pdf',
+  },
   available: '2025',
 };
 
@@ -35,8 +38,8 @@ export const hero = {
     { text: 'engagement.', accent: true },
   ],
   buttons: [
-    { label: '프로젝트 보기', href: '#work', primary: true },
-    { label: '이력서 PDF',    href: '#',     primary: false }, // [TODO] resumeUrl
+    { label: '프로젝트 보기', href: '#work',                                  primary: true },
+    { label: '이력서 PDF',    href: '/resumes/Resume_Heungchul_Kim_KO.pdf',   primary: false, external: true },
   ],
   // 우측 스냅샷 프로필 — 5초 안에 ① 경력/레벨 ② 핵심 역량 ③ 산업 ④ 다음 행동
   snapshot: {
@@ -504,6 +507,20 @@ export const contact = {
       label: 'KakaoTalk',
       value: 'kimheungchul',
       static: true,   // 표시 전용 — 링크/CTA 없음
+    },
+    {
+      id: 'resume-ko',
+      label: 'Resume · KO',
+      value: '이력서 (한국어) 다운로드',
+      href: '/resumes/Resume_Heungchul_Kim_KO.pdf',
+      external: true,
+    },
+    {
+      id: 'resume-en',
+      label: 'Resume · EN',
+      value: 'Resume (English) Download',
+      href: '/resumes/Resume_Heungchul_Kim_EN.pdf',
+      external: true,
     },
   ],
 };
