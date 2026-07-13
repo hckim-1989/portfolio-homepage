@@ -218,6 +218,19 @@
   text-align: right;
 }
 
+.case-metrics-note {
+  margin: 10px 0 0 0;
+  font: 400 11px/1.5 var(--font-mono);
+  letter-spacing: 0.04em;
+  color: var(--color-mute-2);
+  font-style: normal;
+}
+
+.case-metrics-note::before {
+  content: '※ ';
+  color: var(--color-accent);
+}
+
 /* ── Foot (assets) ── */
 .case-foot {
   margin-top: var(--space-2xl);

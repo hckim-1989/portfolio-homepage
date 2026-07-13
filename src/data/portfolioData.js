@@ -178,35 +178,38 @@ export const projects = [
   {
     slug: 'loyalty-program',
     id: 'project-loyalty',
-    title: '브랜드 로열티 프로그램 구축',
+    title: '브랜드 로열티 프로그램 구축 — Lexus Amazing Members',
     pillar: 'crm',
     year: '2024–2025',
     role: 'PM (프로젝트 총괄)',
     featured: true,
     summary:
-      '구매·행동 데이터로 고객 등급을 재설계하고 재구매로 이어지는 로열티 구조를 구축했습니다. 일회성 CX를 반복 가능한 관계 자산으로 전환해 CLV를 최적화했습니다.',
-    impact: '일회성 CX → 반복 가능한 관계 자산 · CLV 최적화',
+      'Lexus 글로벌 로열티 프로그램 Encore의 한국 시장 현지화 — \'Lexus Amazing Members\' 설계·런칭을 PM으로 총괄했습니다. 구매·행동 데이터로 고객 등급을 재설계하고 재구매로 이어지는 로열티 구조를 구축해, 일회성 CX를 반복 가능한 관계 자산으로 전환하고 CLV를 최적화했습니다.',
+    impact: 'VIP 케어 이미지 +3.0p · 목표 초과 · 카테고리 Audi 추월',
     challenge: [
       '일회성 캠페인 중심 CRM의 한계',
       '지속가능한 로열티 모델 부재',
       '등급별 상시 차별화 경험 체계 미구축',
     ],
     approach: [
+      '글로벌 Encore의 한국 시장 현지화 — \'Lexus Amazing Members\' 프로그램 설계·런칭 (PM)',
       '구매·행동 데이터 기반 고객 등급 재설계',
       '재구매로 이어지는 로열티 구조 구축',
       '일회성 CX → 반복 가능한 관계 자산 전환 (CLV 최적화)',
     ],
     outcomeQualitative: [
-      '일회성 CX → 데이터 기반 자산화 체계 전환',
-      'CLV 제고 기반 마련',
-      '고객 데이터의 지속 축적·활용 구조 확보',
+      '\'Lexus Amazing Members\' 프로그램 성공적 런칭 (글로벌 Encore 한국 현지화)',
+      'VIP 케어 이미지 지표 목표 초과 달성',
+      '해당 카테고리에서 Audi 대비 브랜드 우위 확보',
     ],
     outcomeMetrics: [
-      { label: '등급 회원 / 인게이지먼트 참여율', value: '[TBD]' },
-      { label: 'CLV 변화', value: '[TBD]' },
+      { label: 'VIP 케어 이미지', value: '12.8 → 15.8 (+3.0p)' },
+      { label: '목표 대비', value: '14.6 초과 달성' },
+      { label: '카테고리 순위', value: 'Audi 추월' },
     ],
+    outcomeMetricsNote: '내부 브랜드 트래킹 서베이 기준',
     client: 'Toyota Motor Korea',
-    assets: '[확인 필요 — Tiering 구조도 / Loyalty Loop 도식 / 개인화 콘텐츠 샘플]',
+    assets: '[확인 필요 — 프로그램 구조도 / 등급 체계 도식 / 개인화 콘텐츠 샘플]',
   },
   {
     slug: 'after-service-dx',
@@ -217,11 +220,11 @@ export const projects = [
     role: 'PM (서비스 DX 총괄)',
     featured: true,
     summary:
-      '대리점별로 흩어진 고객 데이터를 브랜드 앱으로 통합하고, 정비 프로세스를 100% 디지털화했습니다. 정비 예약 20% 온라인 전환·앱 가입률 90%·MAU 2배를 달성했습니다.',
-    impact: '정비 예약 20% 온라인 · 앱 가입률 90% · MAU 2배',
+      '대리점별로 흩어진 고객 데이터를 브랜드 앱으로 통합하고, 오프라인 100% 의존이던 정비 예약을 온라인 20%로 전환했습니다. 신차 고객 약 90%(2023 기준)가 앱에 가입했고 전체 회원 약 9만·MAU 1.5–2만을 달성했습니다.',
+    impact: '오프라인 100% → 온라인 20% · 신차 90% 가입 · 회원 9만',
     challenge: [
       '온라인 상에서의 에프터서비스 경험 제공 툴 부재',
-      '높은 오프라인 운영 비용',
+      '오프라인 100% 의존으로 인한 높은 운영 비용',
       '대리점별 흩어진 정비 이력·고객 정보',
     ],
     approach: [
@@ -230,14 +233,14 @@ export const projects = [
       'RFP·설계·런칭·운영 전 단계 PM 책임 (2021 첫 구축 → 2026 확장 일관)',
     ],
     outcomeQualitative: [
-      '온라인 정비 예약 20% 전환 → 콜센터 효율화',
-      '앱 가입률 90%, MAU 2배 달성',
+      '오프라인 100% 의존 → 온라인 정비 예약 20% 달성 (콜센터 효율화)',
+      '신차 고객 약 90%(2023 기준) 앱 가입, 전체 회원 약 9만',
       '고객 데이터 단일화 → 마케팅·CRM 활용 기반',
     ],
     outcomeMetrics: [
-      { label: '온라인 정비 예약 전환', value: '20%' },
-      { label: '앱 가입률', value: '90%' },
-      { label: 'MAU 성장', value: '2배' },
+      { label: '온라인 정비 예약', value: '20% (오프라인 100% → )' },
+      { label: '신차 고객 앱 가입률', value: '약 90% (2023)' },
+      { label: '전체 회원 · MAU', value: '약 9만 · 1.5–2만' },
     ],
     client: 'Toyota Motor Korea',
     assets: '[확인 필요 — 앱 스크린샷 / IA / before-after / DX 프로세스 도식]',
@@ -245,34 +248,37 @@ export const projects = [
   {
     slug: 'product-lifecycle',
     id: 'project-lifecycle',
-    title: '핵심 프로덕트 런칭 & 라이프사이클 관리',
+    title: '핵심 프로덕트 런칭 & 라이프사이클 관리 — Lexus RX · LM',
     pillar: 'product',
     year: '2019–2026 Q1',
     role: 'PM (Product Owner)',
     featured: true,
     summary:
-      '신규 프로덕트의 런칭부터 성장·유지까지 전 과정을 직접 책임졌습니다. 유관 부서를 정렬시켜 라이프사이클 관리 체계를 구축했습니다.',
-    impact: '상품 라이프사이클 매니지먼트 · 일관된 브랜드 메시지 정착',
+      'Lexus RX와 LM의 런칭부터 라이프사이클 관리까지 Product Owner로 총괄했습니다. RX는 사전계약 계획 대비 131%(상위 하이브리드 트림 239%/181%), LM은 5개월 사전계약 목표 100%를 달성하고 프리미엄 브랜드 이미지 지표를 19.5 → 22.4로 끌어올렸습니다.',
+    impact: 'RX 사전계약 131% · LM 5개월 100% · 프리미엄 이미지 19.5 → 22.4',
     challenge: [
       '본사·딜러·마케팅 간 목표 충돌',
       '단기 런칭 위주의 마케팅 한계',
       '단계별 메시지·미디어 거버넌스 부재',
     ],
     approach: [
-      'Launch-Grow-Sustain 전 과정 PO 총괄',
+      'RX·LM Launch-Grow-Sustain 전 과정 PO 총괄',
       'Cross-functional 리더십으로 본사·딜러·마케팅 정렬',
       '한국 시장 맞춤 글로벌 전략 로컬라이제이션',
       '단계별 메시지·미디어 전략 일관 설계',
     ],
     outcomeQualitative: [
-      '라이프사이클 전 주기 단일 오너십 확립',
-      '일관된 브랜드 메시지 정착',
+      'RX 사전계약 계획 대비 131% (상위 하이브리드 트림 239% / 181%)',
+      'LM 5개월 사전계약 목표 100% 달성',
+      '프리미엄 브랜드 이미지 19.5 → 22.4 (목표 22.2 달성)',
       '라이프사이클 거버넌스 체계 구축',
     ],
     outcomeMetrics: [
-      { label: '사전예약 / 판매 달성률', value: '[TBD]' },
-      { label: '캠페인 도달·전환', value: '[TBD]' },
+      { label: 'RX 사전계약', value: '131% (트림 239% / 181%)' },
+      { label: 'LM 사전계약', value: '5개월 100% 달성' },
+      { label: '프리미엄 이미지', value: '19.5 → 22.4 (목표 22.2)' },
     ],
+    outcomeMetricsNote: '전년 Audi 수준 근접',
     client: 'Toyota Motor Korea',
     assets: '[확인 필요 — 런칭 캠페인 / IMC 결과물 / 미디어 리포트]',
   },
@@ -282,11 +288,11 @@ export const projects = [
     title: '브랜드 중장기 전략 (Electrified)',
     pillar: 'brand',
     year: '2025–현재',
-    role: 'TFT 코어 멤버',
+    role: '전동화 TFT 코어 (2021 EV CFT →)',
     featured: false,
     isOngoing: true,
     summary:
-      '전동화 TFT 코어 멤버로 단계별 시장 진입 시나리오와 인프라 전략을 설계했습니다. 경쟁사와 차별화된 브랜드 로드맵을 정립했습니다.',
+      '2021년 EV CFT 참여부터 현재 전동화 TFT 코어 멤버까지, 전동화 전환을 일관되게 관여해 왔습니다. 단계별 시장 진입 시나리오와 인프라 전략을 설계하고, 경쟁사와 차별화된 브랜드 로드맵을 정립했습니다.',
     impact: '전동화 단계별 시나리오 · 경쟁 대비 차별화된 로드맵',
     challenge: [
       '단순 기술·스펙이 아닌 라이프스타일 기반 미래 방향성 정의 필요',
@@ -294,6 +300,7 @@ export const projects = [
       '전동화 전환 속 브랜드 차별화 부재',
     ],
     approach: [
+      '2021 EV CFT 참여 → 2025 TFT 코어까지 전동화 이슈에 연속 관여',
       'TFT 코어로 브랜드 포지셔닝·인프라 전략 기획',
       '고객 라이프스타일 안에서 전동화 기술의 브랜드 가치화',
       '글로벌-한국 시장 간 전략적 갭 해소',
@@ -397,7 +404,7 @@ export const background = {
   education: {
     label: 'Education',
     school: '건국대학교',
-    line: '경영학과 · 학사 · 2009–2016',
+    line: '경영학과 · 학사 · 2016 졸업',
   },
   languages: {
     label: 'Languages',
@@ -427,8 +434,8 @@ export const timeline = [
     isPresent: true,
     title: '브랜드 중장기 전략 수립 (Electrified)',
     description:
-      '전동화 전환을 포함한 브랜드 중장기 로드맵 수립. TFT 코어 멤버로 브랜드 포지셔닝, 단계별 시나리오, 인프라 전략 기획. 본사 글로벌 전략을 한국 시장에 적합화.',
-    pillars: ['brand', 'crm'],
+      '2021 EV CFT 참여 → 현재 전동화 TFT 코어 멤버. 브랜드 포지셔닝, 단계별 시나리오, 인프라 전략을 기획하고 본사 글로벌 전략을 한국 시장에 적합화.',
+    pillars: ['brand'],
   },
   {
     id: 'timeline-2',
@@ -447,7 +454,7 @@ export const timeline = [
     isPresent: false,
     title: '고객 애프터서비스 디지털 전환',
     description:
-      '대리점별로 흩어진 고객 데이터를 브랜드 앱으로 통합, 오프라인 정비 프로세스 100% 디지털화. 정비 예약 20% 온라인 전환, 앱 가입률 90%, MAU 2배 달성.',
+      '대리점별로 흩어진 고객 데이터를 브랜드 앱으로 통합, 오프라인 정비 프로세스 100% 디지털화. 오프라인 100% → 온라인 정비 예약 20%, 신차 고객 약 90%(2023 기준) 앱 가입, 전체 회원 9만·MAU 1.5–2만 달성.',
     pillars: ['dx'],
   },
   {

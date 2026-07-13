@@ -36,7 +36,18 @@ export default function App() {
         <Contact />
       </main>
       <footer className="site-footer">
-        © {new Date().getFullYear()} {profile.nameKo} / {profile.nameEn} · {profile.role}
+        <div className="site-footer-copy">
+          © {new Date().getFullYear()} {profile.nameKo} / {profile.nameEn} · {profile.role}
+        </div>
+        <div className="site-footer-url">
+          <a
+            href="https://portfolio-homepage-liart.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            portfolio-homepage-liart.vercel.app
+          </a>
+        </div>
       </footer>
     </>
   );

@@ -97,14 +97,19 @@ export default function CaseStudies() {
                     );
                     if (visibleMetrics.length === 0) return null;
                     return (
-                      <dl className="case-metrics">
-                        {visibleMetrics.map(m => (
-                          <div key={m.label} className="case-metric">
-                            <dt className="case-metric-label">{m.label}</dt>
-                            <dd className="case-metric-value">{m.value}</dd>
-                          </div>
-                        ))}
-                      </dl>
+                      <>
+                        <dl className="case-metrics">
+                          {visibleMetrics.map(m => (
+                            <div key={m.label} className="case-metric">
+                              <dt className="case-metric-label">{m.label}</dt>
+                              <dd className="case-metric-value">{m.value}</dd>
+                            </div>
+                          ))}
+                        </dl>
+                        {p.outcomeMetricsNote && (
+                          <p className="case-metrics-note">{p.outcomeMetricsNote}</p>
+                        )}
+                      </>
                     );
                   })()}
                 </div>
