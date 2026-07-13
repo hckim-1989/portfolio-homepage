@@ -165,7 +165,7 @@ export const capabilities = {
       bullets: [
         'Launch → Grow → Sustain 전 주기 오너십',
         'Cross-functional 정렬 · 이해관계자 조율',
-        '라이프사이클 거버넌스 체계 구축',
+        '한국 시장 맞춤 글로벌 전략 로컬라이제이션',
       ],
       featuredProjectSlug: 'product-lifecycle',
     },
@@ -185,7 +185,7 @@ export const projects = [
     featured: true,
     summary:
       'Lexus 글로벌 로열티 프로그램 Encore의 한국 시장 현지화 — \'Lexus Amazing Members\' 설계·런칭을 PM으로 총괄했습니다. 구매·행동 데이터로 고객 등급을 재설계하고 재구매로 이어지는 로열티 구조를 구축해, 일회성 CX를 반복 가능한 관계 자산으로 전환하고 CLV를 최적화했습니다.',
-    impact: 'VIP 케어 이미지 +3.0p · 목표 초과 · 카테고리 Audi 추월',
+    impact: 'VIP 케어 이미지 +3.0p',
     challenge: [
       '일회성 캠페인 중심 CRM의 한계',
       '지속가능한 로열티 모델 부재',
@@ -254,7 +254,7 @@ export const projects = [
     role: 'PM (Product Owner)',
     featured: true,
     summary:
-      'Lexus RX와 LM의 런칭부터 라이프사이클 관리까지 Product Owner로 총괄했습니다. RX는 사전계약 계획 대비 131%(상위 하이브리드 트림 239%/181%), LM은 5개월 사전계약 목표 100%를 달성하고 프리미엄 브랜드 이미지 지표를 19.5 → 22.4로 끌어올렸습니다.',
+      'Lexus RX와 LM의 런칭부터 라이프사이클 관리까지 Product Owner로 총괄했습니다. RX는 사전계약 계획 대비 131%, LM은 5개월 사전계약 목표 100%를 달성하고 프리미엄 브랜드 이미지 지표를 19.5 → 22.4로 끌어올렸습니다.',
     impact: 'RX 사전계약 131% · LM 5개월 100% · 프리미엄 이미지 19.5 → 22.4',
     challenge: [
       '본사·딜러·마케팅 간 목표 충돌',
@@ -268,15 +268,14 @@ export const projects = [
       '단계별 메시지·미디어 전략 일관 설계',
     ],
     outcomeQualitative: [
-      'RX 사전계약 계획 대비 131% (상위 하이브리드 트림 239% / 181%)',
+      'RX 사전계약 계획 대비 131%',
       'LM 5개월 사전계약 목표 100% 달성',
-      '프리미엄 브랜드 이미지 19.5 → 22.4 (목표 22.2 달성)',
-      '라이프사이클 거버넌스 체계 구축',
+      '프리미엄 브랜드 이미지 19.5 → 22.4',
     ],
     outcomeMetrics: [
-      { label: 'RX 사전계약', value: '131% (트림 239% / 181%)' },
+      { label: 'RX 사전계약', value: '131%' },
       { label: 'LM 사전계약', value: '5개월 100% 달성' },
-      { label: '프리미엄 이미지', value: '19.5 → 22.4 (목표 22.2)' },
+      { label: '프리미엄 이미지', value: '19.5 → 22.4' },
     ],
     outcomeMetricsNote: '전년 Audi 수준 근접',
     client: 'Toyota Motor Korea',
@@ -464,7 +463,7 @@ export const timeline = [
     isPresent: false,
     title: '핵심 프로덕트 런칭 & 라이프사이클 관리',
     description:
-      'Launch → Grow → Sustain 전 과정 Product Owner 총괄. Cross-functional 리더십으로 본사·딜러·마케팅 정렬. 한국 시장 맞춤 글로벌 전략 로컬라이제이션으로 라이프사이클 거버넌스 체계 구축.',
+      'Launch → Grow → Sustain 전 과정 Product Owner 총괄. Cross-functional 리더십으로 본사·딜러·마케팅 정렬. 한국 시장 맞춤 글로벌 전략 로컬라이제이션.',
     pillars: ['product'],
   },
   {
