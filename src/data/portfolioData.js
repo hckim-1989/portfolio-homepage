@@ -40,6 +40,7 @@ export const hero = {
   buttons: [
     { label: '프로젝트 보기', href: '#work',                                  primary: true },
     { label: '이력서 PDF',    href: '/resumes/Resume_Heungchul_Kim_KO.pdf',   primary: false, external: true },
+    { label: 'RESUME',        href: '/resumes/Resume_Heungchul_Kim_EN.pdf',   primary: false, external: true },
   ],
   // 우측 스냅샷 프로필 — 5초 안에 ① 경력/레벨 ② 핵심 역량 ③ 산업 ④ 다음 행동
   snapshot: {
@@ -214,7 +215,7 @@ export const projects = [
   {
     slug: 'after-service-dx',
     id: 'project-as-dx',
-    title: '고객 애프터서비스 디지털 전환',
+    title: '고객 애프터서비스 디지털 전환 — Lexus Customer App',
     pillar: 'dx',
     year: '2021–2026',
     role: 'PM (서비스 DX 총괄)',
@@ -284,7 +285,7 @@ export const projects = [
   {
     slug: 'brand-long-term-strategy',
     id: 'project-electrified',
-    title: '브랜드 중장기 전략 (Electrified)',
+    title: '브랜드 중장기 전략 — Lexus Electrified',
     pillar: 'brand',
     year: '2025–현재',
     role: '전동화 TFT 코어 (2021 EV CFT →)',
@@ -318,7 +319,7 @@ export const projects = [
   {
     slug: 'customer-brand-journey',
     id: 'project-cbj',
-    title: '고객 브랜드 여정 서비스 기획',
+    title: '고객 브랜드 여정 서비스 기획 — Service Customer CRM',
     pillar: 'engagement',
     year: '2017–2019',
     role: '기획 지원',
@@ -349,7 +350,7 @@ export const projects = [
   {
     slug: 'raison-detre-consulting',
     id: 'project-raison',
-    title: '브랜드 컨설팅',
+    title: '브랜드 컨설팅 — Cafe Branding & Marketing Consulting Project',
     pillar: 'consulting',
     year: '2025–현재',
     role: 'Independent Consultant',
