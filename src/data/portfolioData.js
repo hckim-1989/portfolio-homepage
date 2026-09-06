@@ -534,6 +534,13 @@ export const contact = {
       href: '/resumes/Resume_Heungchul_Kim_EN.pdf',
       external: true,
     },
+    {
+      id: 'career-ko',
+      label: '경력기술서 · KO',
+      value: '경력기술서 (한국어) 다운로드',
+      href: '/resumes/Career_Heungchul_Kim_KO.pdf',
+      external: true,
+    },
   ],
 };
 

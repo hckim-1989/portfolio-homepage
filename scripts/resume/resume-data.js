@@ -34,7 +34,7 @@ export const RESUME_DATA = {
             title: '브랜드 로열티 프로그램 구축 — Lexus Amazing Members',
             badge: '',
             text:
-              '글로벌 Encore의 한국 시장 현지화 — \'Lexus Amazing Members\' 설계·런칭을 PM으로 총괄. 구매·행동 데이터로 고객 등급을 재설계, 재구매로 이어지는 로열티 구조를 구축했습니다. VIP 케어 이미지 12.8 → 15.8 (+3.0p, 목표 14.6 초과, 카테고리 Audi 추월 — 내부 브랜드 트래킹 서베이 기준).',
+              '글로벌 Encore를 부분 수정해 적용하는 대신 한국형 프로그램을 별도로 설계하는 안을 HQ에 제안해 승인 — \'Lexus Amazing Members\' 설계와 런칭을 PM으로 총괄. 첫 대상을 플래그십 고객으로 한정해 반응을 검증한 뒤 전 모델로 확장했습니다. VIP 케어 이미지 12.8 → 15.8 (+3.0p, 목표 14.6 초과, 카테고리 Audi 추월, 내부 브랜드 트래킹 서베이 기준).',
           },
         ],
       },
@@ -94,10 +94,10 @@ export const RESUME_DATA = {
 
     consulting: {
       name: 'Raison D’être',
-      period: '2025–현재',
+      period: '2020–현재',
       meta: 'Patisserie · Independent Consultant · 개인 프로젝트',
       summary:
-        '5개 지점 파티셰리 브랜드의 브랜드·CX·SNS·운영을 통합 컨설팅. 인하우스 9년의 관점을 소규모 브랜드의 한정된 리소스 안에서도 작동하는 형태로 재설계.',
+        '상품성은 뛰어나지만 고객에게 어떻게 다가갈지가 과제였던 개인 파티셰리 브랜드에, 맛 이상의 경험을 제공하는 방향으로 브랜드, CX, SNS, 운영을 아우르는 통합 컨설팅을 제안하고 실행까지 담당. 매장 1개에서 3개로 확장하는 과정에 참여 (서울 주요 상권), 인스타그램 팔로워 1만 달성.',
       services: ['Brand Identity', 'Customer Experience', 'SNS & Channel', 'Marketing Ops'],
     },
 
@@ -152,7 +152,7 @@ export const RESUME_DATA = {
             title: 'Brand Loyalty Program — Lexus Amazing Members',
             badge: '',
             text:
-              'Localized the global Encore program into ‘Lexus Amazing Members’ as PM. Redesigned customer tiers from purchase & behavior data and built a loyalty structure that drives repeat purchase. VIP-care brand image 12.8 → 15.8 (+3.0p, exceeded 14.6 target, overtook Audi in category — internal brand tracking survey).',
+              'Proposed to HQ a Korea-specific program designed from the ground up — rather than adapting the global Encore — and won approval; led the design and launch of ‘Lexus Amazing Members’ as PM. Started with flagship-model customers to validate response, then expanded to all models. VIP-care brand image 12.8 → 15.8 (+3.0p, exceeded 14.6 target, overtook Audi in category — internal brand tracking survey).',
           },
         ],
       },
@@ -212,10 +212,10 @@ export const RESUME_DATA = {
 
     consulting: {
       name: 'Raison D’être',
-      period: '2025–Present',
+      period: '2020–Present',
       meta: 'Patisserie · Independent Consultant · Personal project',
       summary:
-        'Integrated consulting across brand, CX, SNS and operations for a five-location patisserie — re-engineering nine years of in-house perspective to work within a small brand’s limited resources.',
+        'Integrated consulting across brand, CX, SNS and operations for an independent patisserie with strong products but no clear way to reach customers — proposing and executing an experience-first direction beyond taste. Participated in the brand’s expansion from one store to three across key Seoul districts; grew Instagram to 10k followers.',
       services: ['Brand Identity', 'Customer Experience', 'SNS & Channel', 'Marketing Ops'],
     },
 

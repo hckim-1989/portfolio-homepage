@@ -1,4 +1,4 @@
-// Build PDF resumes (KO/EN) from resume-data
+// Build PDF resumes (KO/EN) + 범용 경력기술서 from resume-data
 // Usage: node scripts/resume/build-pdf.js
 
 import fs from 'node:fs/promises';
@@ -6,7 +6,16 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import puppeteer from 'puppeteer';
 import { RESUME_DATA } from './resume-data.js';
+import { TOSSPLACE_CAREER_KO } from './tossplace-career-data.js';
 import { renderResumeHtml } from './render-html.js';
+import { renderCareerHtml } from './render-career-html.js';
+
+// 홈페이지 공개용 경력기술서 — 본문은 토스플레이스본과 단일 소스, 직함만 범용으로 교체
+const PUBLIC_CAREER_KO = {
+  ...TOSSPLACE_CAREER_KO,
+  subtitle: '김형철 Heungchul Kim · Brand & Marketing Strategist',
+  footR: 'Brand & Marketing Strategist',
+};
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.resolve(__dirname, '../../public/resumes');
@@ -46,6 +55,24 @@ async function main() {
 
       const size = (await fs.stat(outPath)).size;
       console.log(`✓ ${t.lang.toUpperCase()} → ${outPath} (${(size / 1024).toFixed(1)} KB)`);
+      await page.close();
+    }
+
+    // ── 범용 경력기술서 (멀티페이지, Puppeteer 마진) ──
+    {
+      const page = await browser.newPage();
+      await page.setContent(renderCareerHtml(PUBLIC_CAREER_KO), { waitUntil: 'networkidle0' });
+      await page.evaluate(() => document.fonts?.ready);
+
+      const outPath = path.join(OUT_DIR, 'Career_Heungchul_Kim_KO.pdf');
+      await page.pdf({
+        path: outPath,
+        format: 'A4',
+        printBackground: true,
+        margin: { top: '13mm', right: '17mm', bottom: '13mm', left: '17mm' },
+      });
+      const size = (await fs.stat(outPath)).size;
+      console.log(`✓ Career → ${outPath} (${(size / 1024).toFixed(1)} KB)`);
       await page.close();
     }
   } finally {
