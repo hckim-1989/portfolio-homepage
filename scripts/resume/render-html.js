@@ -150,6 +150,17 @@ export function renderResumeHtml(d) {
     </div>
   </section>
 
+  ${
+    d.salesMaterials
+      ? `<section>
+    <div class="label">${esc(d.L_sales)}</div>
+    <div class="skill">
+      <div class="skill-text">${esc(d.salesMaterials)}</div>
+    </div>
+  </section>`
+      : ''
+  }
+
   <section>
     <div class="label">${esc(d.L_skills)}</div>
     ${d.skills

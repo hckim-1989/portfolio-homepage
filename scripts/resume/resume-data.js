@@ -20,7 +20,7 @@ export const RESUME_DATA = {
     L_contact: 'CONTACT',
 
     profile:
-      'Toyota Motor Korea에서 9년. Toyota·Lexus 브랜드의 고객 관계와 프로덕트 라이프사이클을 함께 맡아 왔습니다. 서비스 접점에서 나온 데이터를 세그먼트·Tiering·로열티 구조로 전환해 CLV를 최적화했고, 프로덕트 런칭부터 성장·유지까지 전 과정을 직접 책임졌습니다. 대표 프로젝트는 두 가지입니다. Lexus 글로벌 로열티 프로그램 Encore의 한국 현지화로 \'Lexus Amazing Members\'를 설계·런칭했고, 애프터서비스 디지털 전환에서는 분산된 대리점 데이터를 브랜드 앱으로 통합해 정비 프로세스를 100% 디지털화하고 신차 고객 약 90%(2023 기준) 앱 가입·전체 회원 약 9만·MAU 1.5–2만을 달성했습니다.',
+      'Toyota Motor Korea에서 9년. Toyota·Lexus 브랜드의 고객 관계와 프로덕트 라이프사이클을 함께 맡아 왔습니다. 서비스 접점에서 나온 데이터를 세그먼트·Tiering·로열티 구조로 전환해 CLV를 최적화했고, 프로덕트 런칭부터 성장·유지까지 전 과정을 직접 책임졌습니다. 대표 프로젝트는 두 가지입니다. Lexus 글로벌 로열티 프로그램 Encore의 한국 현지화로 \'Lexus Amazing Members\'를 설계·런칭했고, 애프터서비스 디지털 전환에서는 분산된 대리점 데이터를 브랜드 앱으로 통합해 정비 프로세스를 100% 디지털화하고 신차 고객 약 90%(2025 기준) 앱 가입·전체 회원 약 9만·MAU 1.5–2만을 달성했습니다.',
 
     employer: 'Toyota Motor Korea · Brand & Marketing PM · 2017–현재 · Seoul',
 
@@ -60,7 +60,7 @@ export const RESUME_DATA = {
             title: '고객 애프터서비스 디지털 전환',
             badge: '',
             text:
-              '대리점별로 흩어진 고객 데이터를 브랜드 앱으로 통합하고, 오프라인 100% 의존이던 정비 예약을 온라인 20%로 전환했습니다. 신차 고객 약 90%(2023 기준) 앱 가입, 전체 회원 약 9만·MAU 1.5–2만 달성.',
+              '대리점별로 흩어진 고객 데이터를 브랜드 앱으로 통합하고, 오프라인 100% 의존이던 정비 예약을 온라인 20%로 전환했습니다. 신차 고객 약 90%(2025 기준) 앱 가입, 전체 회원 약 9만·MAU 1.5–2만 달성.',
           },
         ],
       },
@@ -138,7 +138,7 @@ export const RESUME_DATA = {
     L_contact: 'CONTACT',
 
     profile:
-      'Nine years at Toyota Motor Korea. Owned both customer relationships and product lifecycle across the Toyota and Lexus brands. Turned service-touchpoint data into segmentation, tiering and loyalty structures to optimize CLV, and took full ownership of products from launch through growth and retention. Two flagship projects: localized Lexus’s global loyalty program Encore into ‘Lexus Amazing Members,’ and led an after-sales DX that unified fragmented dealer data into the brand app — digitizing 100% of the service process and reaching ~90% new-car app sign-up (2023), ~90k total members and 15k–20k MAU.',
+      'Nine years at Toyota Motor Korea. Owned both customer relationships and product lifecycle across the Toyota and Lexus brands. Turned service-touchpoint data into segmentation, tiering and loyalty structures to optimize CLV, and took full ownership of products from launch through growth and retention. Two flagship projects: localized Lexus’s global loyalty program Encore into ‘Lexus Amazing Members,’ and led an after-sales DX that unified fragmented dealer data into the brand app — digitizing 100% of the service process and reaching ~90% new-car app sign-up (2025), ~90k total members and 15k–20k MAU.',
 
     employer: 'Toyota Motor Korea · Brand & Marketing PM · 2017–Present · Seoul',
 
@@ -178,7 +178,7 @@ export const RESUME_DATA = {
             title: 'Customer After-Sales DX',
             badge: '',
             text:
-              'Unified customer data scattered across dealers into the brand app and converted service booking from 100% offline to 20% online. Achieved ~90% new-car app sign-up (2023), ~90k total members and 15k–20k MAU.',
+              'Unified customer data scattered across dealers into the brand app and converted service booking from 100% offline to 20% online. Achieved ~90% new-car app sign-up (2025), ~90k total members and 15k–20k MAU.',
           },
         ],
       },
