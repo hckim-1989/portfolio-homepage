@@ -23,21 +23,21 @@ export function renderResumeHtml(d) {
   html,body{background:#fff}
   body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;color:#23262b;font-feature-settings:'tnum' 1}
   @page{size:A4;margin:0}
-  .sheet{width:210mm;min-height:297mm;padding:16mm 17mm 14mm;display:flex;flex-direction:column}
-  header{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:14px;border-bottom:2px solid ${ACCENT}}
+  .sheet{width:210mm;min-height:297mm;padding:13mm 17mm 11mm;display:flex;flex-direction:column}
+  header{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:11px;border-bottom:2px solid ${ACCENT}}
   h1{font-size:26px;font-weight:700;letter-spacing:-.015em;color:#181a1d;line-height:1}
   .latin{font-size:12px;color:#9498a0;font-weight:500;letter-spacing:.01em;margin-left:10px}
   .role{font-size:12px;color:#181a1d;font-weight:600;margin-top:7px;letter-spacing:.01em}
   .meta{text-align:right;font-size:10px;color:#6b6f76;line-height:1.75}
   .meta a{color:${ACCENT};text-decoration:none}
 
-  section{margin-top:16px}
-  .label{font-size:9.5px;font-weight:700;letter-spacing:.15em;color:${ACCENT};margin-bottom:7px}
+  section{margin-top:13px}
+  .label{font-size:9.5px;font-weight:700;letter-spacing:.15em;color:${ACCENT};margin-bottom:6px}
 
-  .profile{font-size:10.5px;line-height:1.65;color:#42454b;text-wrap:pretty}
+  .profile{font-size:10.5px;line-height:1.55;color:#42454b;text-wrap:pretty}
   .employer{font-size:10.5px;color:#4c4f55;margin-bottom:2px}
 
-  .pillar{margin-top:11px}
+  .pillar{margin-top:8px}
   .pillar-head{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
   .dot{width:5px;height:5px;background:${ACCENT};border-radius:50%;flex:none;transform:translateY(-2px);display:inline-block}
   .pillar-title{font-size:11.5px;font-weight:700;color:#181a1d;white-space:nowrap}
@@ -49,28 +49,28 @@ export function renderResumeHtml(d) {
   .item-title-row{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
   .item-title{font-size:10.5px;font-weight:600;color:#2b2e34}
   .badge{font-size:7.5px;font-weight:700;color:${ACCENT};background:#f1f1f2;padding:2px 6px;border-radius:3px;letter-spacing:.04em;white-space:nowrap}
-  .item-text{font-size:10px;color:#6b6f76;line-height:1.55;margin-top:2px;text-wrap:pretty}
+  .item-text{font-size:10px;color:#6b6f76;line-height:1.48;margin-top:2px;text-wrap:pretty}
 
   .consulting-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
   .consulting-name{font-size:12px;font-weight:700;color:#181a1d}
   .consulting-period{font-size:10px;color:#9498a0;white-space:nowrap}
   .consulting-meta{font-size:10px;color:#7d8086;margin-top:2px}
-  .consulting-summary{font-size:10px;color:#6b6f76;line-height:1.55;margin-top:4px;text-wrap:pretty}
-  .services{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+  .consulting-summary{font-size:10px;color:#6b6f76;line-height:1.48;margin-top:4px;text-wrap:pretty}
+  .services{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px}
   .service{font-size:9px;color:#6b6f76;border:1px solid #e3e5e9;border-radius:999px;padding:2px 9px;letter-spacing:.01em}
 
   .skill{display:flex;gap:12px;margin-top:5px}
   .skill-label{width:120px;flex:none;font-size:10.5px;font-weight:600;color:#2b2e34}
   .skill-text{flex:1;font-size:10px;color:#6b6f76;line-height:1.5;text-wrap:pretty}
 
-  .grow{flex:1;min-height:12px}
+  .grow{flex:1;min-height:0}
 
-  .bottom{display:flex;gap:40px;padding-top:14px;border-top:1px solid #ececef}
+  .bottom{display:flex;gap:40px;padding-top:11px;border-top:1px solid #ececef}
   .bottom > div{flex:1}
   .bottom-primary{font-size:11px;font-weight:600;color:#23262b}
   .bottom-secondary{font-size:10px;color:#73767c;margin-top:2px}
 
-  footer{margin-top:16px;display:flex;justify-content:space-between;font-size:8.5px;color:#a4a7ad;letter-spacing:.02em}
+  footer{margin-top:10px;display:flex;justify-content:space-between;font-size:8.5px;color:#a4a7ad;letter-spacing:.02em}
 
   /* 프린트 시 URL 색상 유지 */
   @media print{

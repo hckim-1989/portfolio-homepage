@@ -20,7 +20,7 @@ export const RESUME_DATA = {
     L_contact: 'CONTACT',
 
     profile:
-      'Toyota Motor Korea에서 9년. Toyota·Lexus 브랜드의 고객 관계와 프로덕트 라이프사이클을 함께 맡아 왔습니다. 서비스 접점에서 나온 데이터를 세그먼트·Tiering·로열티 구조로 전환해 CLV를 최적화했고, 프로덕트 런칭부터 성장·유지까지 전 과정을 직접 책임졌습니다. 대표 프로젝트는 두 가지입니다. Lexus 글로벌 로열티 프로그램 Encore의 한국 현지화로 \'Lexus Amazing Members\'를 설계·런칭했고, 애프터서비스 디지털 전환에서는 분산된 대리점 데이터를 브랜드 앱으로 통합해 정비 프로세스를 100% 디지털화하고 신차 고객 약 90%(2025 기준) 앱 가입·전체 회원 약 9만·MAU 1.5–2만을 달성했습니다.',
+      'Toyota Motor Korea에서 9년. Toyota·Lexus 브랜드의 고객 관계와 프로덕트 라이프사이클을 함께 맡아 왔습니다. 서비스 접점에서 나온 데이터를 세그먼트·Tiering·로열티 구조로 전환해 CLV를 최적화했고, 프로덕트 런칭부터 성장·유지까지 전 과정을 직접 책임졌습니다. 대표 프로젝트는 두 가지입니다. Lexus 글로벌 로열티 프로그램 Encore의 한국 현지화로 \'Lexus Amazing Members\'를 설계·런칭했고, 애프터서비스 디지털 전환에서는 분산된 대리점 데이터를 브랜드 앱으로 통합해 정비 프로세스를 100% 디지털화하고 신차 오너 약 90%(2025 기준) 앱 가입·전체 회원 약 9만·MAU 1.5–2만을 달성했습니다.',
 
     employer: 'Toyota Motor Korea · Brand & Marketing PM · 2017–현재 · Seoul',
 
@@ -34,7 +34,7 @@ export const RESUME_DATA = {
             title: '브랜드 로열티 프로그램 구축 — Lexus Amazing Members',
             badge: '',
             text:
-              '글로벌 Encore를 부분 수정해 적용하는 대신 한국형 프로그램을 별도로 설계하는 안을 HQ에 제안해 승인 — \'Lexus Amazing Members\' 설계와 런칭을 PM으로 총괄. 첫 대상을 플래그십 고객으로 한정해 반응을 검증한 뒤 전 모델로 확장했습니다. VIP 케어 이미지 12.8 → 15.8 (+3.0p, 목표 14.6 초과, 카테고리 Audi 추월, 내부 브랜드 트래킹 서베이 기준).',
+              '글로벌 Encore를 그대로 적용하면 한국 오너 기대와 맞지 않는다고 판단하고, 브랜드 로열티 향상과 프리미엄 포지셔닝 강화를 위해 한국형 경험 프로그램이 필요하다는 논리로 HQ 제안 자료를 작성해 승인. 오너를 구매 모델, 구매 시점, 관계 유지 여부로 세그먼트해 오너 전용 3단 티어를 설계하고, 베네핏은 할인 대신 라이프스타일 경험 프로그램으로 구성. 티어 확인과 베네핏 사용을 브랜드 앱으로 한정해 앱 가입 동기와 오너 데이터 축적을 함께 확보. 플래그십 오너부터 적용해 반응 데이터로 전 모델 확장. VIP 케어 이미지 12.8 → 15.8 (+3.0p, 목표 14.6 초과, 카테고리 내 Audi 추월, 내부 브랜드 트래킹 서베이 기준).',
           },
         ],
       },
@@ -60,7 +60,7 @@ export const RESUME_DATA = {
             title: '고객 애프터서비스 디지털 전환',
             badge: '',
             text:
-              '대리점별로 흩어진 고객 데이터를 브랜드 앱으로 통합하고, 오프라인 100% 의존이던 정비 예약을 온라인 20%로 전환했습니다. 신차 고객 약 90%(2025 기준) 앱 가입, 전체 회원 약 9만·MAU 1.5–2만 달성.',
+              '대리점별로 흩어진 오너 데이터를 브랜드 앱 하나로 통합하고, 오프라인 100% 의존이던 정비 예약을 시작으로 서비스 접점을 온라인으로 전환. 출고 프로세스에 앱 가입을 결합하고, 신차 오너 등록률과 온라인 예약 비중 두 KPI 기준으로 기능 개발 순서를 결정. 온라인 예약 비중 20%, 신차 오너 약 90% 앱 가입 (2025 기준), 전체 회원 약 9만, MAU 1.5~2만 달성. 통합 앱은 이후 로열티와 마일리지, 서비스 프로그램의 공통 플랫폼으로 확장.',
           },
         ],
       },
@@ -86,7 +86,7 @@ export const RESUME_DATA = {
             title: '핵심 프로덕트 런칭 & 라이프사이클 관리 — Lexus RX · LM',
             badge: '',
             text:
-              'Lexus RX와 LM의 Product Owner로 총괄. RX 사전계약 계획 대비 131%, LM 5개월 사전계약 목표 100% 달성. 프리미엄 브랜드 이미지 19.5 → 22.4로 상승.',
+              '대리점 세일즈 조직과 플래그십 모델의 신규 고객 페르소나를 대상으로 런칭을 총괄. 기존 라인업 오너와 구매 동기가 다른 페르소나를 럭셔리 라이프스타일 기준으로 정의하고, 사전계약과 프리미엄 브랜드 이미지 두 KPI를 함께 설정해 경쟁 프리미엄 브랜드 전년 수치로 벤치마크. 사전런칭과 정식 런칭 2단계로 운영해 시장 반응으로 메시지를 확정. RX 사전계약 계획 대비 131%, LM 5개월 사전계약 목표 100%, 프리미엄 브랜드 이미지 19.5 → 22.4.',
           },
         ],
       },
@@ -97,7 +97,7 @@ export const RESUME_DATA = {
       period: '2020–현재',
       meta: 'Patisserie · Independent Consultant · 개인 프로젝트',
       summary:
-        '상품성은 뛰어나지만 고객에게 어떻게 다가갈지가 과제였던 개인 파티셰리 브랜드에, 맛 이상의 경험을 제공하는 방향으로 브랜드, CX, SNS, 운영을 아우르는 통합 컨설팅을 제안하고 실행까지 담당. 매장 1개에서 3개로 확장하는 과정에 참여 (서울 주요 상권), 인스타그램 팔로워 1만 달성.',
+        '코로나 시기, 제품력은 검증됐으나 고객 도달 수단이 없던 개인 파티셰리 브랜드에 브랜드, CX, SNS, 운영을 아우르는 통합 제안서를 작성하고 실행까지 담당. 광고 예산과 담당 인력이 없는 조건에 맞춰 방송 출연, 백화점 팝업 등 외부 협업으로 노출을 확보하고, 로고, 패키지, 매장 톤을 통일한 뒤 생산 거점 한 곳에서 판매 매장을 늘리는 방식으로 확장. 매장 1개에서 3개로 확장하는 과정에 참여 (서울 주요 상권), 인스타그램 팔로워 1만 달성.',
       services: ['Brand Identity', 'Customer Experience', 'SNS & Channel', 'Marketing Ops'],
     },
 
@@ -138,7 +138,7 @@ export const RESUME_DATA = {
     L_contact: 'CONTACT',
 
     profile:
-      'Nine years at Toyota Motor Korea. Owned both customer relationships and product lifecycle across the Toyota and Lexus brands. Turned service-touchpoint data into segmentation, tiering and loyalty structures to optimize CLV, and took full ownership of products from launch through growth and retention. Two flagship projects: localized Lexus’s global loyalty program Encore into ‘Lexus Amazing Members,’ and led an after-sales DX that unified fragmented dealer data into the brand app — digitizing 100% of the service process and reaching ~90% new-car app sign-up (2025), ~90k total members and 15k–20k MAU.',
+      'Nine years at Toyota Motor Korea. Owned both customer relationships and product lifecycle across the Toyota and Lexus brands. Turned service-touchpoint data into segmentation, tiering and loyalty structures to optimize CLV, and owned products from launch through growth and retention. Two flagship projects: localized Lexus’s global loyalty program Encore into ‘Lexus Amazing Members,’ and led an after-sales DX that unified fragmented dealer data into the brand app — digitizing 100% of the service process and reaching ~90% new-car owner app sign-up (2025), ~90k members and 15k–20k MAU.',
 
     employer: 'Toyota Motor Korea · Brand & Marketing PM · 2017–Present · Seoul',
 
@@ -152,7 +152,7 @@ export const RESUME_DATA = {
             title: 'Brand Loyalty Program — Lexus Amazing Members',
             badge: '',
             text:
-              'Proposed to HQ a Korea-specific program designed from the ground up — rather than adapting the global Encore — and won approval; led the design and launch of ‘Lexus Amazing Members’ as PM. Started with flagship-model customers to validate response, then expanded to all models. VIP-care brand image 12.8 → 15.8 (+3.0p, exceeded 14.6 target, overtook Audi in category — internal brand tracking survey).',
+              'Won HQ approval for a Korea-specific experience program — judging the global Encore as-is would miss Korean owners’ expectations. Segmented owners by purchase model, timing and relationship status into an owner-only three-tier structure, with lifestyle experiences as benefits instead of discounts. Limited tier access and benefit use to the brand app to drive sign-ups and accumulate owner data. Applied to flagship owners first, expanding to all models on response data. VIP-care brand image 12.8 → 15.8 (+3.0p, exceeded 14.6 target, overtook Audi in category — internal brand tracking survey).',
           },
         ],
       },
@@ -178,7 +178,7 @@ export const RESUME_DATA = {
             title: 'Customer After-Sales DX',
             badge: '',
             text:
-              'Unified customer data scattered across dealers into the brand app and converted service booking from 100% offline to 20% online. Achieved ~90% new-car app sign-up (2025), ~90k total members and 15k–20k MAU.',
+              'Unified owner data scattered across dealers into a single brand app and moved service touchpoints online, starting with maintenance booking that had been 100% offline. Built app sign-up into vehicle delivery and prioritized features by two KPIs — new-car owner registration rate and online booking share. Reached 20% online booking, ~90% new-car owner app sign-up (2025), ~90k members and 15k–20k MAU. The unified app became the common platform for loyalty, mileage and service programs.',
           },
         ],
       },
@@ -204,7 +204,7 @@ export const RESUME_DATA = {
             title: 'Core Product Launch & Lifecycle — Lexus RX · LM',
             badge: '',
             text:
-              'Owned Lexus RX and LM as Product Owner. RX pre-orders 131% of plan; LM hit 100% of the 5-month pre-order target. Premium brand image lifted from 19.5 → 22.4.',
+              'Led flagship launches with dealer sales organizations, targeting a new customer persona distinct from existing lineup owners. Defined the persona by luxury-lifestyle criteria rather than purchase history, and set dual KPIs — pre-orders and premium brand image — benchmarked against competing premium brands’ prior-year figures. Ran pre-launch and official launch as two phases, locking messaging on market response. RX pre-orders 131% of plan; LM hit 100% of the 5-month pre-order target; premium brand image 19.5 → 22.4.',
           },
         ],
       },
@@ -215,7 +215,7 @@ export const RESUME_DATA = {
       period: '2020–Present',
       meta: 'Patisserie · Independent Consultant · Personal project',
       summary:
-        'Integrated consulting across brand, CX, SNS and operations for an independent patisserie with strong products but no clear way to reach customers — proposing and executing an experience-first direction beyond taste. Participated in the brand’s expansion from one store to three across key Seoul districts; grew Instagram to 10k followers.',
+        'During COVID, proposed and executed integrated consulting across brand, CX, SNS and operations for an independent patisserie with proven products but no way to reach customers. With no ad budget or dedicated staff, secured exposure through external collaborations — TV appearances and department-store pop-ups — and unified logo, packaging and store tone before expanding sales locations from a single production base. Participated in the expansion from one store to three across key Seoul districts; grew Instagram to 10k followers.',
       services: ['Brand Identity', 'Customer Experience', 'SNS & Channel', 'Marketing Ops'],
     },
 
