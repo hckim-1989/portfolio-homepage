@@ -54,6 +54,18 @@ export function renderCareerHtml(d) {
   li::before{content:'';position:absolute;left:0;top:8px;width:4px;height:1px;background:#9498a0}
   li + li{margin-top:2px}
 
+  /* 배경과 문제 — As-Is / To-Be / Gap 소형 라벨 행 */
+  .trow{display:flex;gap:8px;font-size:10px;color:#42454b;line-height:1.6;text-wrap:pretty}
+  .trow + .trow{margin-top:2px}
+  .trow-tag{flex:none;width:36px;font-size:8px;font-weight:700;letter-spacing:.05em;color:${ACCENT};padding-top:2px}
+
+  /* 접근 방식 — 번호 + 타이틀(600) + 한 줄(400) */
+  .step{display:flex;gap:7px;font-size:10px;line-height:1.6;text-wrap:pretty}
+  .step + .step{margin-top:2px}
+  .step-num{flex:none;font-size:9.5px;font-weight:700;color:${ACCENT};padding-top:.5px;width:10px;text-align:right}
+  .step-body{flex:1;color:#42454b}
+  .step-title{font-weight:600;color:#2b2e34}
+
   footer{margin-top:26px;display:flex;justify-content:space-between;font-size:8.5px;color:#a4a7ad;letter-spacing:.02em}
 </style>
 </head>
@@ -96,15 +108,28 @@ ${d.projects
     <span class="project-period">${esc(p.period)}</span>
   </div>
   ${p.sections
-    .map(
-      s => `
+    .map(s => {
+      let body;
+      if (s.rows) {
+        body = s.rows
+          .map(r => `<div class="trow"><span class="trow-tag">${esc(r.tag)}</span><span>${esc(r.text)}</span></div>`)
+          .join('');
+      } else if (s.steps) {
+        body = s.steps
+          .map(
+            (st, i) =>
+              `<div class="step"><span class="step-num">${i + 1}.</span><span class="step-body"><span class="step-title">${esc(st.title)}:</span> ${esc(st.desc)}</span></div>`,
+          )
+          .join('');
+      } else {
+        body = `<ul>${s.bullets.map(b => `<li>${esc(b)}</li>`).join('')}</ul>`;
+      }
+      return `
   <div class="psection">
     <div class="psection-label">${esc(s.label)}</div>
-    <ul>
-      ${s.bullets.map(b => `<li>${esc(b)}</li>`).join('')}
-    </ul>
-  </div>`,
-    )
+    ${body}
+  </div>`;
+    })
     .join('')}
 </section>`,
   )
