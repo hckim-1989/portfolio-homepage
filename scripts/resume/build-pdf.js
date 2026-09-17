@@ -7,14 +7,14 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import puppeteer from 'puppeteer';
-import { RESUME_DATA } from './resume-data.js';
-import { renderResumeHtml } from './render-html.js';
+import { RESUME_EN } from './resume-en-data.js';
+import { renderResumeTableHtml } from './render-resume-table.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.resolve(__dirname, '../../public/resumes');
 
 const targets = [
-  { lang: 'en', file: 'Resume_Heungchul_Kim_EN.pdf' },
+  { lang: 'en', data: RESUME_EN, file: 'Resume_Heungchul_Kim_EN.pdf' },
 ];
 
 async function main() {
@@ -27,8 +27,7 @@ async function main() {
 
   try {
     for (const t of targets) {
-      const data = RESUME_DATA[t.lang];
-      const html = renderResumeHtml(data);
+      const html = renderResumeTableHtml(t.data);
 
       const page = await browser.newPage();
       await page.setContent(html, { waitUntil: 'networkidle0' });
