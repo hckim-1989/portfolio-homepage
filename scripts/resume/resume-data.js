@@ -1,5 +1,6 @@
-// Resume content — v17 (homepage v16 최종본과 일치)
-// KO / EN 두 언어
+// Resume content — v18
+// 주의: 국문 이력서·경력기술서 PDF는 사용자 제작본을 public/resumes/에 직접 배포 (build-pdf.js는 EN만 생성)
+// ko 데이터는 참고용으로 유지
 
 export const RESUME_DATA = {
   ko: {
@@ -65,19 +66,6 @@ export const RESUME_DATA = {
         ],
       },
       {
-        title: 'Brand Strategy',
-        tagline: '중장기 방향과 시장 진입을 설계',
-        items: [
-          {
-            period: '2025–현재',
-            title: '브랜드 중장기 전략 (Electrified)',
-            badge: '진행 중',
-            text:
-              '2021 EV CFT 참여부터 현재 전동화 TFT 코어 멤버까지 전동화 전환에 연속 관여. 단계별 시장 진입 시나리오와 인프라 전략을 설계하고, 경쟁사와 차별화된 브랜드 로드맵을 정립했습니다.',
-          },
-        ],
-      },
-      {
         title: 'Product Ownership & Lifecycle',
         tagline: '런칭부터 성장·유지까지 전 과정을 책임',
         items: [
@@ -97,7 +85,7 @@ export const RESUME_DATA = {
       period: '2020–현재',
       meta: 'Patisserie · Independent Consultant · 개인 프로젝트',
       summary:
-        '코로나 시기, 제품력은 검증됐으나 고객 도달 수단이 없던 개인 파티셰리 브랜드에 브랜드, CX, SNS, 운영을 아우르는 통합 제안서를 작성하고 실행까지 담당. 광고 예산과 담당 인력이 없는 조건에 맞춰 방송 출연, 백화점 팝업 등 외부 협업으로 노출을 확보하고, 로고, 패키지, 매장 톤을 통일한 뒤 생산 거점 한 곳에서 판매 매장을 늘리는 방식으로 확장. 매장 1개에서 3개로 확장하는 과정에 참여 (서울 주요 상권), 인스타그램 팔로워 1만 달성.',
+        '코로나 시기, 제품력은 검증됐으나 고객 도달 수단이 없던 개인 파티셰리 브랜드에 브랜드, CX, SNS, 운영을 아우르는 통합 제안서를 작성하고 실행까지 담당. 광고 예산과 담당 인력이 없는 조건에 맞춰 방송 출연, 백화점 팝업 등 외부 협업으로 노출을 확보하고, 로고, 패키지, 매장 톤을 통일한 뒤 생산 거점 한 곳에서 판매 매장을 늘리는 방식으로 확장. 서울 주요 상권 매장 확장 과정에 참여, 인스타그램 팔로워 1만 달성.',
       services: ['Brand Identity', 'Customer Experience', 'SNS & Channel', 'Marketing Ops'],
     },
 
@@ -178,20 +166,7 @@ export const RESUME_DATA = {
             title: 'Customer After-Sales DX',
             badge: '',
             text:
-              'Unified owner data scattered across dealers into a single brand app and moved service touchpoints online, starting with maintenance booking that had been 100% offline. Built app sign-up into vehicle delivery and prioritized features by two KPIs — new-car owner registration rate and online booking share. Reached 20% online booking, ~90% new-car owner app sign-up (2025), ~90k members and 15k–20k MAU. The unified app became the common platform for loyalty, mileage and service programs.',
-          },
-        ],
-      },
-      {
-        title: 'Brand Strategy',
-        tagline: 'Designing long-term direction & market entry',
-        items: [
-          {
-            period: '2025–Present',
-            title: 'Brand Mid/Long-Term Strategy (Electrified)',
-            badge: 'In progress',
-            text:
-              'Engaged in electrification from the 2021 EV CFT through the current TFT as a core member. Designed phased market-entry scenarios and infrastructure strategy, and established a brand roadmap differentiated from competitors.',
+              'Unified owner data scattered across dealers into a single brand app and moved service touchpoints online, starting with maintenance booking that had been 100% offline. Built app sign-up into vehicle delivery and prioritized features by two KPIs — new-car owner registration rate and online booking share. Took online booking from 0 to 20%, with ~90% new-car owner app sign-up (2025), ~90k members and 15k–20k MAU. The unified app became the common platform for loyalty, mileage and service programs.',
           },
         ],
       },
@@ -204,7 +179,7 @@ export const RESUME_DATA = {
             title: 'Core Product Launch & Lifecycle — Lexus RX · LM',
             badge: '',
             text:
-              'Led flagship launches with dealer sales organizations, targeting a new customer persona distinct from existing lineup owners. Defined the persona by luxury-lifestyle criteria rather than purchase history, and set dual KPIs — pre-orders and premium brand image — benchmarked against competing premium brands’ prior-year figures. Ran pre-launch and official launch as two phases, locking messaging on market response. RX pre-orders 131% of plan; LM hit 100% of the 5-month pre-order target; premium brand image 19.5 → 22.4.',
+              'Led model launches with dealer sales organizations, targeting a new customer persona distinct from existing lineup owners. Defined the persona by luxury-lifestyle criteria rather than purchase history, and set dual KPIs — pre-orders and premium brand image — benchmarked against competing premium brands’ prior-year figures. Ran pre-launch and official launch as two phases, locking messaging on market response. Core SUV RX (2022) pre-orders at 131% of plan, exceeding target; flagship LM (2024) hit 100% of the 5-month pre-order target; premium brand image +2.9p (19.5 → 22.4).',
           },
         ],
       },
@@ -215,7 +190,7 @@ export const RESUME_DATA = {
       period: '2020–Present',
       meta: 'Patisserie · Independent Consultant · Personal project',
       summary:
-        'During COVID, proposed and executed integrated consulting across brand, CX, SNS and operations for an independent patisserie with proven products but no way to reach customers. With no ad budget or dedicated staff, secured exposure through external collaborations — TV appearances and department-store pop-ups — and unified logo, packaging and store tone before expanding sales locations from a single production base. Participated in the expansion from one store to three across key Seoul districts; grew Instagram to 10k followers.',
+        'During COVID, proposed and executed integrated consulting across brand, CX, SNS and operations for an independent patisserie with proven products but no way to reach customers. With no ad budget or dedicated staff, secured exposure through external collaborations — TV appearances and department-store pop-ups — and unified logo, packaging and store tone before expanding sales locations from a single production base. Participated in the brand’s store expansion across key Seoul districts; grew Instagram to 10k followers.',
       services: ['Brand Identity', 'Customer Experience', 'SNS & Channel', 'Marketing Ops'],
     },
 

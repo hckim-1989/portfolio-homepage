@@ -11,7 +11,7 @@ const PILLAR_LABEL = {
 
 /**
  * Timeline + About — 한 섹션에 묶음
- * 상단: About 카피  /  하단: 5단계 타임라인
+ * 상단: About 카피  /  하단: 4단계 타임라인
  */
 export default function Timeline() {
   const aboutLines = [

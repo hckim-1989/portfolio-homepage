@@ -1,4 +1,6 @@
-// Build PDF resumes (KO/EN) + 범용 경력기술서 from resume-data
+// Build EN resume PDF from resume-data
+// 주의: 국문 이력서(Resume_..._KO.pdf)와 경력기술서(Career_..._KO.pdf)는
+// 사용자 제작 PDF를 public/resumes/에 직접 배포 — 이 스크립트로 덮어쓰지 말 것
 // Usage: node scripts/resume/build-pdf.js
 
 import fs from 'node:fs/promises';
@@ -6,15 +8,12 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import puppeteer from 'puppeteer';
 import { RESUME_DATA } from './resume-data.js';
-import { CAREER_KO } from './career-data.js';
 import { renderResumeHtml } from './render-html.js';
-import { renderCareerHtml } from './render-career-html.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.resolve(__dirname, '../../public/resumes');
 
 const targets = [
-  { lang: 'ko', file: 'Resume_Heungchul_Kim_KO.pdf' },
   { lang: 'en', file: 'Resume_Heungchul_Kim_EN.pdf' },
 ];
 
@@ -48,24 +47,6 @@ async function main() {
 
       const size = (await fs.stat(outPath)).size;
       console.log(`✓ ${t.lang.toUpperCase()} → ${outPath} (${(size / 1024).toFixed(1)} KB)`);
-      await page.close();
-    }
-
-    // ── 범용 경력기술서 (멀티페이지, Puppeteer 마진) ──
-    {
-      const page = await browser.newPage();
-      await page.setContent(renderCareerHtml(CAREER_KO), { waitUntil: 'networkidle0' });
-      await page.evaluate(() => document.fonts?.ready);
-
-      const outPath = path.join(OUT_DIR, 'Career_Heungchul_Kim_KO.pdf');
-      await page.pdf({
-        path: outPath,
-        format: 'A4',
-        printBackground: true,
-        margin: { top: '13mm', right: '17mm', bottom: '13mm', left: '17mm' },
-      });
-      const size = (await fs.stat(outPath)).size;
-      console.log(`✓ Career → ${outPath} (${(size / 1024).toFixed(1)} KB)`);
       await page.close();
     }
   } finally {
