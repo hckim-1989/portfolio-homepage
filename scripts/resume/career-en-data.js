@@ -18,9 +18,9 @@ export const CAREER_EN = {
     headers: ['Project', 'Core Competency', 'Key Results'],
     rows: [
       ['Brand flagship model launch', 'Go-to-Market Strategy', 'Pre-orders hit 100% of target; premium brand image +2.9p (19.5 → 22.4)'],
-      ['Premium customer loyalty program', 'Customer Segmentation & CRM Strategy', 'VIP-care image +3.0p (12.8 → 15.8), overtook Audi in category'],
-      ['Brand app integration PM', 'Digital Channel PM', 'Service booking taken online 0 → 20%; ~90% new-car owner sign-up; ~90k members'],
-      ['Integrated brand consulting for an independent café', 'Brand Consulting', 'Store expansion across key Seoul districts; 10k Instagram followers'],
+      ['Premium customer loyalty program', 'Customer Segmentation & CRM Strategy', 'VIP-care image +3.0p (12.8 → 15.8), overtook Audi in the category'],
+      ['Brand app integration PM', 'Digital Channel PM', 'Online service booking 0 → 20%; ~90% new-car owner sign-up; ~90k members'],
+      ['Integrated brand consulting for an independent café', 'Brand Consulting', 'Store expansion across Seoul’s major retail districts; 10k Instagram followers'],
     ],
   },
 
@@ -42,19 +42,19 @@ export const CAREER_EN = {
           label: 'Approach',
           steps: [
             { title: 'Dual KPIs', desc: 'Set pre-order volume and premium image metrics together, benchmarked against competing premium brands’ prior-year figures' },
-            { title: 'Persona redefinition', desc: 'Defined the target as luxury-lifestyle consumers rather than by purchase history' },
-            { title: 'Two-phase launch', desc: 'Secured pre-orders and market response first with the June pre-launch, then locked the July official-launch messaging on that basis' },
-            { title: 'Journey integration', desc: 'Designed awareness through advertising, contact through experience programs, conversion through dealers' },
-            { title: 'Dealer standardization', desc: 'Standardized sales messaging with model sales kits, aligned with online content' },
+            { title: 'Persona redefinition', desc: 'Defined the target as luxury-lifestyle consumers instead of relying on purchase history' },
+            { title: 'Two-phase launch', desc: 'Ran a June pre-launch to secure pre-orders and read market response, then locked the July official-launch messaging on that basis' },
+            { title: 'Journey integration', desc: 'Designed awareness through advertising, contact through experience programs, and conversion through dealers' },
+            { title: 'Dealer standardization', desc: 'Standardized sales messaging with model sales kits, matched to online content' },
           ],
         },
         {
           label: 'Target & Action Plan',
           bullets: [
             'Target: hit the 5-month pre-order goal; premium brand image 19.5 → 22.2 (2024)',
-            'Integrated design of launch plan, advertising strategy and customer experience programs',
+            'Integrated design of the launch plan, advertising strategy and customer experience programs',
             'Ran pre-launch and official launch as two phases',
-            'Produced and distributed model sales kits and model content for online and dealers',
+            'Produced and distributed model sales kits and model content for online channels and dealers',
             'Established the two-phase launch process with related teams',
           ],
         },
@@ -75,18 +75,18 @@ export const CAREER_EN = {
         {
           label: 'Background & Problem',
           rows: [
-            { tag: 'As-Is', text: 'The global loyalty program misaligned with Korean owners’ expectations; VIP-care image at 12.8, behind competing premium brands' },
+            { tag: 'As-Is', text: 'The global loyalty program did not match Korean owners’ expectations; VIP-care image at 12.8, behind competing premium brands' },
             { tag: 'To-Be', text: 'Owner perception that the premium experience continues after purchase' },
-            { tag: 'Gap', text: 'No tiers and benefits designed around Korean owners' },
+            { tag: 'Gap', text: 'No tiers or benefits designed around Korean owners' },
           ],
         },
         {
           label: 'Approach',
           steps: [
             { title: 'Owner segmentation', desc: 'Classified owners by three criteria — purchase model, purchase timing, relationship status' },
-            { title: 'Owner-only three-tier structure', desc: 'First flagship delivery, any-model delivery, repurchase and service-visit retention; no entry tier for non-owners' },
+            { title: 'Owner-only three-tier structure', desc: 'Three tiers — first flagship delivery, any-model delivery, and repurchase with continued service visits; no entry tier for non-owners' },
             { title: 'Experiential benefits', desc: 'Built benefits as lifestyle experience programs instead of price discounts, preserving premium positioning' },
-            { title: 'App-only operation', desc: 'Limited tier access and benefit use to the brand app, creating sign-up motivation and accumulating owner data' },
+            { title: 'App-only operation', desc: 'Limited tier status checks and benefit use to the brand app, driving app sign-ups and building owner data' },
             { title: 'Flagship-first rollout', desc: 'Proposed a Korea-specific design to HQ and won approval; applied to flagship owners first, using response data to time the all-model expansion' },
           ],
         },
@@ -96,14 +96,14 @@ export const CAREER_EN = {
             'Target: VIP-care image 12.8 → 14.6 (2024); validate with flagship owners, then expand to all models',
             'Tier redesign based on purchase and service data',
             'Design and operation of tier-specific lifestyle programs',
-            'Content production; system and dealer preparation',
+            'Content production; system and dealer readiness',
           ],
         },
         {
           label: 'Results & Follow-through',
           bullets: [
-            'VIP-care image 15.8 (exceeded 14.6 target); overtook Audi in category (internal brand tracking survey)',
-            'Expanded the tier and benefit structure validated with flagship owners to all-model owners',
+            'VIP-care image 15.8 (exceeded 14.6 target); overtook Audi in the category (internal brand tracking survey)',
+            'Expanded the tier and benefit structure validated with flagship owners to owners of all models',
           ],
         },
       ],
@@ -124,11 +124,11 @@ export const CAREER_EN = {
         {
           label: 'Approach',
           steps: [
-            { title: 'Sign-up at delivery', desc: 'Built app sign-up into the delivery process, then limited loyalty-tier access to the app to reinforce the entry motivation' },
+            { title: 'Sign-up at delivery', desc: 'Built app sign-up into the vehicle delivery process, then made the app the only place to check loyalty tiers — strengthening the reason to join' },
             { title: 'Maintenance booking first', desc: 'Formed app-usage habits at the highest-frequency touchpoint, accumulating service-visit history as customer data' },
             { title: 'Two fixed KPIs', desc: 'New-car owner registration rate and online booking share; feature development ordered by KPI contribution, not by request order' },
             { title: 'Mileage integration', desc: 'Points earned at five touchpoints — new sign-up, referral, repurchase, service visit, online shopping' },
-            { title: 'Phased integration', desc: 'Dealer data integration carried out step by step with the product organization and dealers' },
+            { title: 'Phased integration', desc: 'Brought dealer data together step by step, working with the product organization and dealers' },
           ],
         },
         {
@@ -138,7 +138,7 @@ export const CAREER_EN = {
             'Integrated dealer-held owner data into the brand app',
             'Moved service touchpoints online, starting with maintenance booking',
             'Integrated the loyalty program and mileage into the app',
-            'App design renewal',
+            'App redesign',
           ],
         },
         {
@@ -158,23 +158,23 @@ export const CAREER_EN = {
         {
           label: 'Background & Problem',
           rows: [
-            { tag: 'As-Is', text: 'COVID era: proven products but no means of reaching customers; survival at stake' },
+            { tag: 'As-Is', text: 'During COVID: proven products but no way to reach customers, and survival at stake' },
             { tag: 'To-Be', text: 'A brand recognized as an experience beyond taste, with stable operations and expansion built on that recognition' },
-            { tag: 'Gap', text: 'No reach channel and no structure for expansion' },
+            { tag: 'Gap', text: 'No channel to reach customers, no structure to expand' },
           ],
         },
         {
           label: 'Approach',
           steps: [
             { title: 'Designed for a small brand', desc: 'No ad budget, no marketing staff, one to two hours a day — chose only methods sustainable under those conditions' },
-            { title: 'Exposure through external collaborations', desc: 'Proposed and landed TV appearances, department-store pop-ups and other exposure instead of advertising; this exposure triggered the store expansion' },
+            { title: 'Exposure through external collaborations', desc: 'Proposed and landed TV appearances, department-store pop-ups and similar opportunities instead of paid advertising; that visibility triggered the store expansion' },
             { title: 'Production efficiency', desc: 'Unified logo, packaging and store tone first, then expanded sales locations from a single production base' },
           ],
         },
         {
           label: 'Target & Action Plan',
           bullets: [
-            'Target: no quantitative goal; stable operations and expansion premised on surviving the COVID era',
+            'Target: no quantitative goal — stable operations and expansion, starting from survival through COVID',
             'Redesigned logo, packaging and store tone',
             'Proposed and ran external collaborations such as TV appearances and department-store pop-ups',
             'Established Instagram content tone and operating principles',
@@ -183,7 +183,7 @@ export const CAREER_EN = {
         {
           label: 'Results & Follow-through',
           bullets: [
-            'Participated in store expansion across key Seoul districts through brand, collaboration and operations design; 10k Instagram followers',
+            'Participated in store expansion across Seoul’s major retail districts through brand, collaboration and operations design; 10k Instagram followers',
             'Kept one brand standard — no store-specific menus or promotions — so the experience stays consistent as stores grow',
           ],
         },

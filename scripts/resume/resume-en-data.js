@@ -13,7 +13,7 @@ export const RESUME_EN = {
   L_profile: 'PROFILE',
 
   profile:
-    'Nine years at one brand, working across four departments in brand and customer marketing — each move a step into new territory. Wanting to apply that experience beyond the company, I began consulting for an independent store in 2020 and continue today. I have chosen the next challenge over the familiar seat, and because I know the weight of that choice, I see every decision I make through to the end. I believe outstanding results come from respect and a positive attitude. Delivering results in areas I have not yet tried is what I find most rewarding in my work, and I intend to keep growing by taking on new territory and owning the outcome.',
+    'Nine years at one brand, working across four departments in brand and customer marketing — each move a step into new territory. Wanting to apply that experience beyond the company, I began consulting for an independent store in 2020 and continue that work today. I have chosen the next challenge over staying comfortable, and because I know the weight of that choice, I see every decision through to the end. I believe outstanding results come from respect and a positive attitude. Delivering results in areas that are new to me is what I find most rewarding, and I intend to keep growing that way — taking on the unfamiliar and owning the outcome.',
 
   sections: [
     {
@@ -28,12 +28,12 @@ export const RESUME_EN = {
             competency: 'Go-to-Market Strategy',
             items: [
               {
-                project: 'Flagship model launch lead (2024)',
+                project: 'Flagship model launch (2024)',
                 result: 'Pre-orders hit 100% of target; premium brand image +2.9p (19.5 → 22.4)',
               },
               {
                 project: 'Core SUV model launch (2022)',
-                result: 'Pre-orders at 131%, exceeding target',
+                result: 'Pre-orders 131% of plan, exceeding target',
               },
             ],
           },
@@ -41,8 +41,8 @@ export const RESUME_EN = {
             competency: 'Customer Segmentation & CRM Strategy',
             items: [
               {
-                project: 'Lexus Amazing Members design & launch (2024–2025)',
-                result: 'VIP-care brand image +3.0p (12.8 → 15.8), overtook Audi in category',
+                project: 'Design & launch of Lexus Amazing Members (2024–2025)',
+                result: 'VIP-care brand image +3.0p (12.8 → 15.8), overtook Audi in the category',
               },
             ],
           },
@@ -51,7 +51,7 @@ export const RESUME_EN = {
             items: [
               {
                 project: 'Brand app integration (2021–2026)',
-                result: 'Service booking taken online 0 → 20%; ~90% new-car owner sign-up; ~90k members',
+                result: 'Online service booking 0 → 20%; ~90% new-car owner sign-up; ~90k members',
               },
             ],
           },
@@ -70,8 +70,8 @@ export const RESUME_EN = {
             competency: 'Brand Consulting',
             items: [
               {
-                project: 'Integrated consulting across brand, CX, SNS and operations',
-                result: 'Store expansion across key Seoul districts; 10k Instagram followers',
+                project: 'Integrated consulting across brand, CX, social media and operations',
+                result: 'Store expansion across Seoul’s major retail districts; 10k Instagram followers',
               },
             ],
           },
@@ -80,12 +80,12 @@ export const RESUME_EN = {
     },
   ],
 
-  education: { label: 'EDUCATION', school: 'Konkuk University', line: 'B.B.A., Business Administration, Graduated 2016' },
-  languages: { label: 'LANGUAGES', value: 'Korean Native, English Fluent' },
+  education: { label: 'EDUCATION', school: 'Konkuk University', line: 'B.B.A. in Business Administration, 2016' },
+  languages: { label: 'LANGUAGES', value: 'Korean (native), English (fluent)' },
   tools: {
     label: 'TOOLS',
     value:
-      'Generative AI (ChatGPT, Claude) for research, planning and content automation; built a personal portfolio website and AI-powered operations-automation tools (no-code)',
+      'Generative AI (ChatGPT, Claude) for research, planning and content automation; built a personal portfolio website and AI-powered operations automation tools (no-code)',
   },
 
   footer: '© 2026 Heungchul Kim 김형철',
