@@ -496,6 +496,13 @@ export const contact = {
       href: '/resumes/Career_Heungchul_Kim_KO.pdf',
       external: true,
     },
+    {
+      id: 'career-en',
+      label: 'Career · EN',
+      value: 'Career History (English) Download',
+      href: '/resumes/Career_Heungchul_Kim_EN.pdf',
+      external: true,
+    },
   ],
 };
 

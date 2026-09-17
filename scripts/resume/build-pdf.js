@@ -8,7 +8,9 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import puppeteer from 'puppeteer';
 import { RESUME_EN } from './resume-en-data.js';
+import { CAREER_EN } from './career-en-data.js';
 import { renderResumeTableHtml } from './render-resume-table.js';
+import { renderCareerHtml } from './render-career-html.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.resolve(__dirname, '../../public/resumes');
@@ -46,6 +48,24 @@ async function main() {
 
       const size = (await fs.stat(outPath)).size;
       console.log(`✓ ${t.lang.toUpperCase()} → ${outPath} (${(size / 1024).toFixed(1)} KB)`);
+      await page.close();
+    }
+
+    // ── EN 경력기술서 (멀티페이지, Puppeteer 마진) ──
+    {
+      const page = await browser.newPage();
+      await page.setContent(renderCareerHtml(CAREER_EN), { waitUntil: 'networkidle0' });
+      await page.evaluate(() => document.fonts?.ready);
+
+      const outPath = path.join(OUT_DIR, 'Career_Heungchul_Kim_EN.pdf');
+      await page.pdf({
+        path: outPath,
+        format: 'A4',
+        printBackground: true,
+        margin: { top: '13mm', right: '17mm', bottom: '13mm', left: '17mm' },
+      });
+      const size = (await fs.stat(outPath)).size;
+      console.log(`✓ Career EN → ${outPath} (${(size / 1024).toFixed(1)} KB)`);
       await page.close();
     }
   } finally {
