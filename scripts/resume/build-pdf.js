@@ -1,12 +1,13 @@
-// Build EN resume PDF from resume-data
-// 주의: 국문 이력서(Resume_..._KO.pdf)와 경력기술서(Career_..._KO.pdf)는
-// 사용자 제작 PDF를 public/resumes/에 직접 배포 — 이 스크립트로 덮어쓰지 말 것
+// Build resume PDFs (KO/EN, 표 구조) + EN 경력기술서
+// 주의: 국문 경력기술서(Career_..._KO.pdf)는 사용자 제작 PDF를
+// public/resumes/에 직접 배포 — 이 스크립트로 덮어쓰지 말 것
 // Usage: node scripts/resume/build-pdf.js
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import puppeteer from 'puppeteer';
+import { RESUME_KO } from './resume-ko-data.js';
 import { RESUME_EN } from './resume-en-data.js';
 import { CAREER_EN } from './career-en-data.js';
 import { renderResumeTableHtml } from './render-resume-table.js';
@@ -16,6 +17,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.resolve(__dirname, '../../public/resumes');
 
 const targets = [
+  { lang: 'ko', data: RESUME_KO, file: 'Resume_Heungchul_Kim_KO.pdf' },
   { lang: 'en', data: RESUME_EN, file: 'Resume_Heungchul_Kim_EN.pdf' },
 ];
 
