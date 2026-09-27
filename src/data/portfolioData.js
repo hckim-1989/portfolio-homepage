@@ -503,6 +503,13 @@ export const contact = {
       href: '/resumes/Career_Heungchul_Kim_EN.pdf',
       external: true,
     },
+    {
+      id: 'portfolio-ppt',
+      label: 'Portfolio · PDF',
+      value: '포트폴리오 PT 다운로드',
+      href: '/portfolio/Portfolio_Heungchul_Kim_KO.pdf',
+      external: true,
+    },
   ],
 };
 
