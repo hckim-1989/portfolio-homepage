@@ -29,11 +29,15 @@ export const RESUME_EN = {
             items: [
               {
                 project: 'Flagship model launch (2024)',
-                result: 'Pre-orders hit 100% of target; premium brand image +2.9p (19.5 → 22.4)',
+                desc: 'Redefined the launch goal from sales volume to brand image; the validated two-phase process became the standard for later launches',
+                results: [
+                  { v: '100%', t: 'of the 5-month pre-order target' },
+                  { v: '+2.9p', t: 'premium brand image, 19.5 → 22.4' },
+                ],
               },
               {
                 project: 'Core SUV model launch (2022)',
-                result: 'Pre-orders 131% of plan, exceeding target',
+                results: [{ v: '131%', t: 'pre-orders vs. plan' }],
               },
             ],
           },
@@ -42,7 +46,11 @@ export const RESUME_EN = {
             items: [
               {
                 project: 'Design & launch of Lexus Amazing Members (2024-2025)',
-                result: 'VIP-care brand image +3.0p (12.8 → 15.8), overtook a competing premium brand in the category',
+                desc: 'Owner-only three-tier structure with experiential benefits, designed around Korean owner expectations and validated with flagship owners first',
+                results: [
+                  { v: '+3.0p', t: 'VIP-care image, 12.8 → 15.8' },
+                  { v: 'Overtook', t: 'a competing premium brand in the category' },
+                ],
               },
             ],
           },
@@ -51,7 +59,11 @@ export const RESUME_EN = {
             items: [
               {
                 project: 'Brand app integration (2021-2026)',
-                result: 'Online service booking 0 → 20%; ~90% new-car owner sign-up; ~90k members',
+                desc: 'Built app sign-up into vehicle delivery, moved maintenance booking online, linked KPIs to dealer evaluations',
+                results: [
+                  { v: '0 → 20%', t: 'online maintenance booking' },
+                  { v: '~90%', t: 'new-car owner sign-up, ~90k members' },
+                ],
               },
             ],
           },
@@ -71,7 +83,11 @@ export const RESUME_EN = {
             items: [
               {
                 project: 'Integrated consulting across brand, CX, social media and operations',
-                result: 'Store expansion across Seoul’s major retail districts; 10k Instagram followers',
+                desc: 'Established the brand identity, landed TV appearances and department-store pop-ups, designed expansion around a single production base',
+                results: [
+                  { v: 'Store expansion', t: 'across Seoul’s major retail districts' },
+                  { v: '10k', t: 'Instagram followers' },
+                ],
               },
             ],
           },

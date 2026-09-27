@@ -46,9 +46,15 @@ export function renderResumeTableHtml(d) {
   table{width:100%;border-collapse:collapse;margin-top:8px}
   th{font-size:9px;font-weight:700;letter-spacing:.08em;color:#6b6f76;text-align:left;padding:6px 10px;border-bottom:1.5px solid ${ACCENT};background:#fafafa}
   td{font-size:10px;color:#42454b;line-height:1.5;padding:7px 10px;border-bottom:1px solid #ececef;vertical-align:top;text-wrap:pretty}
-  td.comp{font-weight:600;color:#23262b;width:27%}
-  td.proj{width:36%}
+  td.comp{font-weight:600;color:#23262b;width:25%}
+  td.proj{width:38%}
   td.result{width:37%}
+  .proj-name{font-weight:600;color:#23262b}
+  .proj-desc{font-size:9px;color:#84888f;line-height:1.5;margin-top:2px}
+  .res-line{display:flex;gap:6px;align-items:baseline}
+  .res-line + .res-line{margin-top:3px}
+  .res-v{font-weight:700;color:#181a1d;white-space:nowrap;font-size:10.5px}
+  .res-t{font-size:9.5px;color:#6b6f76;line-height:1.45}
 
   .grow{flex:1;min-height:0}
 
@@ -111,8 +117,17 @@ export function renderResumeTableHtml(d) {
                 (it, i) => `
         <tr>
           ${i === 0 ? `<td class="comp" rowspan="${r.items.length}">${esc(r.competency)}</td>` : ''}
-          <td class="proj">${esc(it.project)}</td>
-          <td class="result">${esc(it.result)}</td>
+          <td class="proj">
+            <div class="proj-name">${esc(it.project)}</div>
+            ${it.desc ? `<div class="proj-desc">${esc(it.desc)}</div>` : ''}
+          </td>
+          <td class="result">${
+            it.results
+              ? it.results
+                  .map(m => `<div class="res-line"><span class="res-v">${esc(m.v)}</span><span class="res-t">${esc(m.t)}</span></div>`)
+                  .join('')
+              : esc(it.result)
+          }</td>
         </tr>`,
               )
               .join(''),
