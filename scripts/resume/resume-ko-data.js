@@ -18,7 +18,7 @@ export const RESUME_KO = {
     {
       label: 'WORK EXPERIENCE',
       org: 'Toyota Motor Korea, Seoul',
-      period: '2017 – 현재',
+      period: '2017 - 현재',
       role: 'Brand & Marketing PM, Lexus',
       table: {
         headers: ['핵심 역량', '프로젝트', '성과'],
@@ -40,8 +40,8 @@ export const RESUME_KO = {
             competency: '고객 세그먼테이션과 CRM 전략',
             items: [
               {
-                project: 'Lexus Amazing Members 설계와 런칭 (2024–2025)',
-                result: 'VIP 케어 이미지 +3.0p (12.8 → 15.8), 카테고리 내 Audi 추월',
+                project: 'Lexus Amazing Members 설계와 런칭 (2024-2025)',
+                result: 'VIP 케어 이미지 +3.0p (12.8 → 15.8), 카테고리 내 경쟁 브랜드 추월',
               },
             ],
           },
@@ -49,7 +49,7 @@ export const RESUME_KO = {
             competency: '디지털 채널 PM',
             items: [
               {
-                project: '브랜드 앱 통합 (2021–2026)',
+                project: '브랜드 앱 통합 (2021-2026)',
                 result: '정비 예약 온라인 전환 0 → 20%, 신차 오너 가입 약 90%, 회원 약 9만',
               },
             ],
@@ -60,7 +60,7 @@ export const RESUME_KO = {
     {
       label: 'INDEPENDENT CONSULTING',
       org: '개인 파티셰리 브랜드, Seoul',
-      period: '2020 – 현재',
+      period: '2020 - 현재',
       role: 'Brand Consultant',
       table: {
         headers: ['핵심 역량', '프로젝트', '성과'],

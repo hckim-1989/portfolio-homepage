@@ -18,7 +18,7 @@ export const CAREER_EN = {
     headers: ['Project', 'Core Competency', 'Key Results'],
     rows: [
       ['Brand flagship model launch', 'Go-to-Market Strategy', 'Pre-orders hit 100% of target; premium brand image +2.9p (19.5 → 22.4)'],
-      ['Premium customer loyalty program', 'Customer Segmentation & CRM Strategy', 'VIP-care image +3.0p (12.8 → 15.8), overtook Audi in the category'],
+      ['Premium customer loyalty program', 'Customer Segmentation & CRM Strategy', 'VIP-care image +3.0p (12.8 → 15.8), overtook a competing premium brand in the category'],
       ['Brand app integration PM', 'Digital Channel PM', 'Online service booking 0 → 20%; ~90% new-car owner sign-up; ~90k members'],
       ['Integrated brand consulting for an independent café', 'Brand Consulting', 'Store expansion across Seoul’s major retail districts; 10k Instagram followers'],
     ],
@@ -33,19 +33,19 @@ export const CAREER_EN = {
         {
           label: 'Background & Problem',
           rows: [
-            { tag: 'As-Is', text: 'A new customer persona with purchase motivations different from existing lineup owners; dealers had no experience selling to this persona' },
+            { tag: 'As-Is', text: 'A new customer demographic with purchase motivations different from existing lineup owners; dealers had no experience selling to this group, so the existing launch playbook did not apply' },
             { tag: 'To-Be', text: 'Raise awareness of the flagship model and contribute to sales' },
-            { tag: 'Gap', text: 'Persona definition and a dealer sales-message standard' },
+            { tag: 'Gap', text: 'Target definition and a dealer sales-message standard' },
           ],
         },
         {
           label: 'Approach',
           steps: [
             { title: 'Dual KPIs', desc: 'Set pre-order volume and premium image metrics together, benchmarked against competing premium brands’ prior-year figures' },
-            { title: 'Persona redefinition', desc: 'Defined the target as luxury-lifestyle consumers instead of relying on purchase history' },
+            { title: 'Target redefinition', desc: 'Defined the target as luxury-lifestyle consumers instead of relying on purchase history' },
             { title: 'Two-phase launch', desc: 'Ran a June pre-launch to secure pre-orders and read market response, then locked the July official-launch messaging on that basis' },
             { title: 'Journey integration', desc: 'Designed awareness through advertising, contact through experience programs, and conversion through dealers' },
-            { title: 'Dealer standardization', desc: 'Standardized sales messaging with model sales kits, matched to online content' },
+            { title: 'Sales process standardization', desc: 'Standardized dealer sales messaging with model sales kits, matched to online content' },
           ],
         },
         {
@@ -70,7 +70,7 @@ export const CAREER_EN = {
     {
       num: '02',
       title: 'Premium Customer Loyalty Program (Lexus Amazing Members)',
-      period: '2024–2025',
+      period: '2024-2025',
       sections: [
         {
           label: 'Background & Problem',
@@ -83,11 +83,11 @@ export const CAREER_EN = {
         {
           label: 'Approach',
           steps: [
-            { title: 'Owner segmentation', desc: 'Classified owners by three criteria — purchase model, purchase timing, relationship status' },
-            { title: 'Owner-only three-tier structure', desc: 'Three tiers — first flagship delivery, any-model delivery, and repurchase with continued service visits; no entry tier for non-owners' },
+            { title: 'Owner segmentation', desc: 'Classified owners by three criteria: purchase model, purchase timing, relationship status' },
+            { title: 'Owner-only three-tier structure', desc: 'Three tiers: first flagship delivery, any-model delivery, and repurchase with continued service visits; no entry tier for non-owners' },
             { title: 'Experiential benefits', desc: 'Built benefits as lifestyle experience programs instead of price discounts, preserving premium positioning' },
             { title: 'App-only operation', desc: 'Limited tier status checks and benefit use to the brand app, driving app sign-ups and building owner data' },
-            { title: 'Flagship-first rollout', desc: 'Proposed a Korea-specific design to HQ and won approval; applied to flagship owners first, using response data to time the all-model expansion' },
+            { title: 'Flagship-first rollout', desc: 'Designed the program around Korean owners’ expectations; applied to flagship owners first, using response data to time the all-model expansion' },
           ],
         },
         {
@@ -102,7 +102,7 @@ export const CAREER_EN = {
         {
           label: 'Results & Follow-through',
           bullets: [
-            'VIP-care image 15.8 (exceeded 14.6 target); overtook Audi in the category (internal brand tracking survey)',
+            'VIP-care image 15.8 (exceeded 14.6 target); overtook a competing premium brand in the category (internal brand tracking survey)',
             'Expanded the tier and benefit structure validated with flagship owners to owners of all models',
           ],
         },
@@ -111,7 +111,7 @@ export const CAREER_EN = {
     {
       num: '03',
       title: 'Brand App Integration PM',
-      period: '2021–2026',
+      period: '2021-2026',
       sections: [
         {
           label: 'Background & Problem',
@@ -124,10 +124,10 @@ export const CAREER_EN = {
         {
           label: 'Approach',
           steps: [
-            { title: 'Sign-up at delivery', desc: 'Built app sign-up into the vehicle delivery process, then made the app the only place to check loyalty tiers — strengthening the reason to join' },
+            { title: 'Sign-up at delivery', desc: 'Built app sign-up into the vehicle delivery process, then made the app the only place to check loyalty tiers, strengthening the reason to join' },
             { title: 'Maintenance booking first', desc: 'Formed app-usage habits at the highest-frequency touchpoint, accumulating service-visit history as customer data' },
-            { title: 'Two fixed KPIs', desc: 'New-car owner registration rate and online booking share; feature development ordered by KPI contribution, not by request order' },
-            { title: 'Mileage integration', desc: 'Points earned at five touchpoints — new sign-up, referral, repurchase, service visit, online shopping' },
+            { title: 'Two fixed KPIs', desc: 'New-car owner registration rate and online booking share; feature development ordered by KPI contribution, and both metrics linked to dealer evaluations to create incentives for app adoption' },
+            { title: 'Mileage integration', desc: 'Points earned at five touchpoints: new sign-up, referral, repurchase, service visit, online shopping' },
             { title: 'Phased integration', desc: 'Brought dealer data together step by step, working with the product organization and dealers' },
           ],
         },
@@ -144,7 +144,7 @@ export const CAREER_EN = {
         {
           label: 'Results & Follow-through',
           bullets: [
-            'Online booking share 20%; ~90% new-car owner app sign-up (as of 2025); ~90k total members; 15k–20k MAU',
+            'Online booking share 20%; ~90% new-car owner app sign-up (as of 2025); ~90k total members; 15k-20k MAU',
             'Expanded the unified app into the common platform for subsequent loyalty and service programs',
           ],
         },
@@ -153,7 +153,7 @@ export const CAREER_EN = {
     {
       num: '04',
       title: 'Integrated Brand Consulting for an Independent Café',
-      period: '2020–Present',
+      period: '2020-Present',
       sections: [
         {
           label: 'Background & Problem',
@@ -166,7 +166,7 @@ export const CAREER_EN = {
         {
           label: 'Approach',
           steps: [
-            { title: 'Designed for a small brand', desc: 'No ad budget, no marketing staff, one to two hours a day — chose only methods sustainable under those conditions' },
+            { title: 'Designed for a small brand', desc: 'No ad budget, no marketing staff, one to two hours a day; chose only methods sustainable under those conditions' },
             { title: 'Exposure through external collaborations', desc: 'Proposed and landed TV appearances, department-store pop-ups and similar opportunities instead of paid advertising; that visibility triggered the store expansion' },
             { title: 'Production efficiency', desc: 'Unified logo, packaging and store tone first, then expanded sales locations from a single production base' },
           ],
@@ -174,7 +174,7 @@ export const CAREER_EN = {
         {
           label: 'Target & Action Plan',
           bullets: [
-            'Target: no quantitative goal — stable operations and expansion, starting from survival through COVID',
+            'Target: no quantitative goal; stable operations and expansion, starting from survival through COVID',
             'Redesigned logo, packaging and store tone',
             'Proposed and ran external collaborations such as TV appearances and department-store pop-ups',
             'Established Instagram content tone and operating principles',
@@ -184,7 +184,7 @@ export const CAREER_EN = {
           label: 'Results & Follow-through',
           bullets: [
             'Participated in store expansion across Seoul’s major retail districts through brand, collaboration and operations design; 10k Instagram followers',
-            'Kept one brand standard — no store-specific menus or promotions — so the experience stays consistent as stores grow',
+            'Kept one brand standard (no store-specific menus or promotions) so the experience stays consistent as stores grow',
           ],
         },
       ],

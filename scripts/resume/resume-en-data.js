@@ -13,13 +13,13 @@ export const RESUME_EN = {
   L_profile: 'PROFILE',
 
   profile:
-    'Nine years at one brand, working across four departments in brand and customer marketing — each move a step into new territory. Wanting to apply that experience beyond the company, I began consulting for an independent store in 2020 and continue that work today. I have chosen the next challenge over staying comfortable, and because I know the weight of that choice, I see every decision through to the end. I believe outstanding results come from respect and a positive attitude. Delivering results in areas that are new to me is what I find most rewarding, and I intend to keep growing that way — taking on the unfamiliar and owning the outcome.',
+    'Nine years at one brand, working across four departments in brand and customer marketing, each move a step into new territory. Wanting to apply that experience beyond the company, I began consulting for an independent store in 2020 and continue that work today. I have chosen the next challenge over staying comfortable, and because I know the weight of that choice, I see every decision through to the end. I believe outstanding results come from respect and a positive attitude. Delivering results in areas that are new to me is what I find most rewarding, and I intend to keep growing that way: taking on the unfamiliar and owning the outcome.',
 
   sections: [
     {
       label: 'WORK EXPERIENCE',
       org: 'Toyota Motor Korea, Seoul',
-      period: '2017 – Present',
+      period: '2017 - Present',
       role: 'Brand & Marketing PM, Lexus',
       table: {
         headers: ['Core Competency', 'Project', 'Results'],
@@ -41,8 +41,8 @@ export const RESUME_EN = {
             competency: 'Customer Segmentation & CRM Strategy',
             items: [
               {
-                project: 'Design & launch of Lexus Amazing Members (2024–2025)',
-                result: 'VIP-care brand image +3.0p (12.8 → 15.8), overtook Audi in the category',
+                project: 'Design & launch of Lexus Amazing Members (2024-2025)',
+                result: 'VIP-care brand image +3.0p (12.8 → 15.8), overtook a competing premium brand in the category',
               },
             ],
           },
@@ -50,7 +50,7 @@ export const RESUME_EN = {
             competency: 'Digital Channel PM',
             items: [
               {
-                project: 'Brand app integration (2021–2026)',
+                project: 'Brand app integration (2021-2026)',
                 result: 'Online service booking 0 → 20%; ~90% new-car owner sign-up; ~90k members',
               },
             ],
@@ -61,7 +61,7 @@ export const RESUME_EN = {
     {
       label: 'INDEPENDENT CONSULTING',
       org: 'Independent patisserie brand, Seoul',
-      period: '2020 – Present',
+      period: '2020 - Present',
       role: 'Brand Consultant',
       table: {
         headers: ['Core Competency', 'Project', 'Results'],
