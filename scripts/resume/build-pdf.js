@@ -1,6 +1,5 @@
-// Build resume PDFs (KO/EN, 표 구조) + EN 경력기술서
-// 주의: 국문 경력기술서(Career_..._KO.pdf)는 사용자 제작 PDF를
-// public/resumes/에 직접 배포 — 이 스크립트로 덮어쓰지 말 것
+// Build resume PDFs (KO/EN, 표 구조) + 경력기술서 KO/EN
+// 국문 경력기술서도 career-data.js에서 생성 (2026-09 사용자 승인으로 재생성 방식 전환)
 // Usage: node scripts/resume/build-pdf.js
 
 import fs from 'node:fs/promises';
@@ -9,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 import puppeteer from 'puppeteer';
 import { RESUME_KO } from './resume-ko-data.js';
 import { RESUME_EN } from './resume-en-data.js';
+import { CAREER_KO } from './career-data.js';
 import { CAREER_EN } from './career-en-data.js';
 import { renderResumeTableHtml } from './render-resume-table.js';
 import { renderCareerHtml } from './render-career-html.js';
@@ -53,13 +53,17 @@ async function main() {
       await page.close();
     }
 
-    // ── EN 경력기술서 (멀티페이지, Puppeteer 마진) ──
-    {
+    // ── 경력기술서 KO/EN (멀티페이지, Puppeteer 마진) ──
+    const careerTargets = [
+      { label: 'Career KO', data: CAREER_KO, file: 'Career_Heungchul_Kim_KO.pdf' },
+      { label: 'Career EN', data: CAREER_EN, file: 'Career_Heungchul_Kim_EN.pdf' },
+    ];
+    for (const t of careerTargets) {
       const page = await browser.newPage();
-      await page.setContent(renderCareerHtml(CAREER_EN), { waitUntil: 'networkidle0' });
+      await page.setContent(renderCareerHtml(t.data), { waitUntil: 'networkidle0' });
       await page.evaluate(() => document.fonts?.ready);
 
-      const outPath = path.join(OUT_DIR, 'Career_Heungchul_Kim_EN.pdf');
+      const outPath = path.join(OUT_DIR, t.file);
       await page.pdf({
         path: outPath,
         format: 'A4',
@@ -67,7 +71,7 @@ async function main() {
         margin: { top: '13mm', right: '17mm', bottom: '13mm', left: '17mm' },
       });
       const size = (await fs.stat(outPath)).size;
-      console.log(`✓ Career EN → ${outPath} (${(size / 1024).toFixed(1)} KB)`);
+      console.log(`✓ ${t.label} → ${outPath} (${(size / 1024).toFixed(1)} KB)`);
       await page.close();
     }
   } finally {
