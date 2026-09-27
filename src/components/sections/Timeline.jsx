@@ -23,7 +23,6 @@ export default function Timeline() {
     <section id="about" className="section timeline-section">
       <div className="section-inner">
         <header className="timeline-header">
-          <p className="section-eyebrow">{about.eyebrow}</p>
           <h2 className="section-title">
             {aboutLines.map(line => (
               <span
@@ -89,7 +88,6 @@ export default function Timeline() {
 
         {/* Background — Education / Languages / Tools & Skills */}
         <div className="timeline-background">
-          <div className="timeline-background-eyebrow">{background.eyebrow}</div>
           <div className="timeline-background-grid">
             <div className="tbg-block">
               <div className="tbg-label">{background.education.label}</div>

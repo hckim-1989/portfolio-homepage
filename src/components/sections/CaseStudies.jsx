@@ -56,11 +56,8 @@ export default function CaseStudies() {
               <header className="case-head">
                 <div className="case-meta">
                   <span className="case-num">{String(idx + 1).padStart(2, '0')}</span>
-                  <span className="case-meta-sep">·</span>
                   <span className="case-pillar">{PILLAR_LABEL[p.pillar]}</span>
-                  <span className="case-meta-sep">·</span>
                   <span className="case-year">{p.year}</span>
-                  <span className="case-meta-sep">·</span>
                   <span className="case-role">{p.role}</span>
                   {p.isPersonal && (
                     <span className="case-personal-badge">개인 프로젝트</span>

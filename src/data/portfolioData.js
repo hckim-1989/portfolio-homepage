@@ -25,7 +25,6 @@ export const nav = [
   { id: 'work',     label: 'Work',     href: '#work' },
   { id: 'about',    label: 'About',    href: '#about' },
   { id: 'services', label: 'Services', href: '#consulting' },
-  { id: 'journal',  label: 'Notes',    href: '#notes' },
   { id: 'contact',  label: 'Contact',  href: '#contact', muted: true },
 ];
 
@@ -40,7 +39,6 @@ export const hero = {
   buttons: [
     { label: '프로젝트 보기', href: '#work',                                  primary: true },
     { label: '이력서 PDF',    href: '/resumes/Resume_Heungchul_Kim_KO.pdf',   primary: false, external: true },
-    { label: 'RESUME',        href: '/resumes/Resume_Heungchul_Kim_EN.pdf',   primary: false, external: true },
   ],
   // 우측 스냅샷 프로필 — 5초 안에 ① 경력/레벨 ② 핵심 역량 ③ 산업 ④ 다음 행동
   snapshot: {
@@ -64,7 +62,7 @@ export const hero = {
     ],
     sector: 'Automotive · F&B',
     featured: {
-      eyebrow: 'FEATURED CASE / 01',
+      eyebrow: 'FEATURED CASE',
       title: '브랜드 로열티 프로그램 구축',
       href: '#work-loyalty-program',
     },
@@ -82,7 +80,7 @@ export const consulting = {
   body:
     '코로나 시기, 제품력은 검증됐으나 고객 도달 수단이 없던 개인 파티셰리 브랜드 Raison D\'être에 브랜드, CX, SNS, 운영을 아우르는 통합 컨설팅을 제안하고 실행까지 담당. 광고 예산과 담당 인력이 없는 조건에 맞춰 방송 출연, 백화점 팝업 등 외부 협업으로 노출을 확보하고, 로고, 패키지, 매장 톤을 통일한 뒤 생산 거점 한 곳에서 판매 매장을 늘리는 방식으로 확장. 서울 주요 상권 매장 확장 과정에 참여, 인스타그램 팔로워 1만 달성.',
   badge: 'Currently consulting',
-  client: 'Raison D\'être · 파티셰리 · 2020–현재',
+  client: 'Raison D\'être 파티셰리 · 2020-현재',
   cta: {
     label: '컨설팅 의뢰',
     href: '#contact',
@@ -90,15 +88,15 @@ export const consulting = {
   services: [
     {
       title: 'Brand Identity',
-      desc: '포지셔닝 · 톤앤매너 가이드 · 지점별 일관성',
+      desc: '포지셔닝, 톤앤매너 가이드, 지점별 일관성',
     },
     {
       title: 'Customer Experience',
-      desc: '지점 경험 설계 · 운영 도구 · 고객 접점 통합',
+      desc: '지점 경험 설계, 운영 도구, 고객 접점 통합',
     },
     {
       title: 'SNS & Channel',
-      desc: '콘텐츠 전략 · 채널 운영 · 일관성 가이드',
+      desc: '콘텐츠 전략, 채널 운영, 일관성 가이드',
     },
     {
       title: 'Marketing Ops',
@@ -144,7 +142,7 @@ export const capabilities = {
       bullets: [
         'App / Web Renewal PM',
         '분산 데이터 통합 · 프로세스 디지털화',
-        'Compliance · IA · Operations',
+        'Compliance, IA, Operations',
       ],
       featuredProjectSlug: 'after-service-dx',
     },
@@ -178,9 +176,9 @@ export const projects = [
   {
     slug: 'loyalty-program',
     id: 'project-loyalty',
-    title: '브랜드 로열티 프로그램 구축 — Lexus Amazing Members',
+    title: '브랜드 로열티 프로그램 구축: Lexus Amazing Members',
     pillar: 'crm',
-    year: '2024–2025',
+    year: '2024-2025',
     role: 'PM (프로젝트 총괄)',
     featured: true,
     summary:
@@ -215,14 +213,14 @@ export const projects = [
   {
     slug: 'after-service-dx',
     id: 'project-as-dx',
-    title: '고객 애프터서비스 디지털 전환 — Lexus Customer App',
+    title: '고객 애프터서비스 디지털 전환: Lexus Customer App',
     pillar: 'dx',
-    year: '2021–2026',
+    year: '2021-2026',
     role: 'PM (서비스 DX 총괄)',
     featured: true,
     summary:
       '대리점별로 흩어진 오너 데이터를 브랜드 앱으로 통합하고, 오프라인 100% 의존이던 정비 예약을 시작으로 서비스 접점을 온라인으로 전환했습니다. 신차 오너 약 90%(2025 기준)가 앱에 가입했고 전체 회원 약 9만, MAU 1.5~2만을 달성했습니다.',
-    impact: '정비 예약 온라인 전환 0 → 20% · 신차 오너 약 90% 가입 · 회원 약 9만',
+    impact: '정비 예약 온라인 전환 0 → 20%, 신차 오너 약 90% 가입, 회원 약 9만',
     challenge: [
       '오너 데이터가 대리점별로 분산, 정비 예약을 포함한 서비스 접점은 오프라인 100%',
       '브랜드와 오너의 1:1 연결, 구매 이후 서비스의 온라인화 필요',
@@ -243,7 +241,7 @@ export const projects = [
     outcomeMetrics: [
       { label: '정비 예약 온라인 전환', value: '0 → 20%' },
       { label: '신차 오너 앱 가입률', value: '약 90% (2025)' },
-      { label: '전체 회원 · MAU', value: '약 9만 · 1.5–2만' },
+      { label: '전체 회원 · MAU', value: '약 9만, 1.5~2만' },
     ],
     client: 'Toyota Motor Korea',
     assets: '[확인 필요 — 앱 스크린샷 / IA / before-after / DX 프로세스 도식]',
@@ -251,14 +249,14 @@ export const projects = [
   {
     slug: 'product-lifecycle',
     id: 'project-lifecycle',
-    title: '핵심 프로덕트 런칭 & 라이프사이클 관리 — Lexus RX · LM',
+    title: '핵심 프로덕트 런칭 & 라이프사이클 관리: Lexus RX, LM',
     pillar: 'product',
-    year: '2019–2026 Q1',
+    year: '2022, 2024',
     role: 'PM (Product Owner)',
     featured: true,
     summary:
       '주력 SUV RX(2022)와 플래그십 LM(2024)의 런칭부터 라이프사이클 관리까지 Product Owner로 총괄했습니다. RX는 사전계약 131%로 목표를 초과했고, LM은 5개월 사전계약 목표 100%를 달성하며 프리미엄 브랜드 이미지를 +2.9p(19.5 → 22.4) 끌어올렸습니다.',
-    impact: 'RX(2022) 사전계약 131% · LM(2024) 5개월 100% · 프리미엄 이미지 +2.9p',
+    impact: 'RX(2022) 사전계약 131%, LM(2024) 5개월 100%, 프리미엄 이미지 +2.9p',
     challenge: [
       '기존 라인업 오너와 구매 동기가 다른 신규 고객 페르소나, 대리점은 이 페르소나 대상 판매 경험 없음',
       '플래그십 모델의 인지도 상승과 판매 기여 필요',
@@ -289,9 +287,9 @@ export const projects = [
   {
     slug: 'customer-brand-journey',
     id: 'project-cbj',
-    title: '고객 브랜드 여정 서비스 기획 — Service Customer CRM',
+    title: '고객 브랜드 여정 서비스 기획: Service Customer CRM',
     pillar: 'engagement',
-    year: '2017–2019',
+    year: '2017-2019',
     role: '기획 지원',
     featured: false,
     summary:
@@ -320,9 +318,9 @@ export const projects = [
   {
     slug: 'raison-detre-consulting',
     id: 'project-raison',
-    title: '브랜드 컨설팅 — Cafe Branding & Marketing Consulting Project',
+    title: '브랜드 컨설팅: Cafe Branding & Marketing Consulting Project',
     pillar: 'consulting',
-    year: '2020–현재',
+    year: '2020-현재',
     role: 'Independent Consultant',
     featured: false,
     isOngoing: true,
@@ -347,7 +345,7 @@ export const projects = [
     outcomeMetrics: [
       { label: '매장 확장', value: '서울 주요 상권 확장 참여' },
       { label: '인스타그램 팔로워', value: '1만' },
-      { label: '담당 영역', value: 'CX · Brand · SNS · 운영' },
+      { label: '담당 영역', value: 'CX, Brand, SNS, 운영' },
     ],
     client: 'Raison D\'être · 파티셰리',
     assets: '[비공개 — 클라이언트 협의]',
@@ -363,7 +361,7 @@ export const about = {
     italicLine: 2,
   },
   company: 'Toyota Motor Korea · Brand & Marketing PM',
-  tenure: '2017–현재 · Seoul',
+  tenure: '2017-현재 · Seoul',
   body:
     'Toyota Motor Korea에서 9년. Toyota·Lexus 브랜드의 고객 관계와 프로덕트 라이프사이클을 함께 맡아 왔습니다. 서비스 접점에서 나온 데이터를 세그먼트·Tiering·로열티 구조로 전환해 CLV를 최적화했고, 프로덕트 런칭부터 성장·유지까지 전 과정을 직접 책임졌습니다. 대표 프로젝트는 두 가지입니다. 구매·행동 데이터로 고객 등급 프로그램을 재설계해 고객 관계를 자산화했고, 애프터서비스 디지털 전환에서는 분산된 대리점 데이터를 브랜드 앱으로 통합해 정비 프로세스를 100% 디지털화하고 신차 오너 약 90%(2025 기준) 앱 가입, MAU 1.5~2만을 달성했습니다. 글로벌 본사의 브랜드 방향을 한국 시장에 맞는 실행 전략으로 풀어내는 것이 커리어 전반의 일관된 역할이었습니다.',
 };
@@ -374,7 +372,7 @@ export const background = {
   education: {
     label: 'Education',
     school: '건국대학교',
-    line: '경영학과 · 학사 · 2016 졸업',
+    line: '경영학과 학사 · 2016 졸업',
   },
   languages: {
     label: 'Languages',
@@ -385,7 +383,7 @@ export const background = {
     items: [
       {
         title: 'Documentation',
-        text: 'Excel · PowerPoint · Word — 기획서·보고서·데이터 자료 작성 (고급)',
+        text: 'Excel, PowerPoint, Word를 활용한 기획서, 보고서, 데이터 자료 작성 (고급)',
       },
       {
         title: 'AI & Automation',
@@ -400,7 +398,7 @@ export const timeline = [
   {
     id: 'timeline-2',
     year: '2024',
-    yearDisplay: '2024–2025',
+    yearDisplay: '2024-2025',
     isPresent: false,
     title: '브랜드 로열티 프로그램 구축',
     description:
@@ -410,17 +408,17 @@ export const timeline = [
   {
     id: 'timeline-3',
     year: '2021',
-    yearDisplay: '2021–2026',
+    yearDisplay: '2021-2026',
     isPresent: true,
     title: '고객 애프터서비스 디지털 전환',
     description:
-      '대리점별로 흩어진 오너 데이터를 브랜드 앱으로 통합, 오프라인 정비 프로세스 100% 디지털화. 오프라인 100% → 온라인 정비 예약 20%, 신차 오너 약 90%(2025 기준) 앱 가입, 전체 회원 9만·MAU 1.5–2만 달성.',
+      '대리점별로 흩어진 오너 데이터를 브랜드 앱으로 통합, 오프라인 정비 프로세스 100% 디지털화. 오프라인 100% → 온라인 정비 예약 20%, 신차 오너 약 90%(2025 기준) 앱 가입, 전체 회원 9만, MAU 1.5~2만 달성.',
     pillars: ['dx'],
   },
   {
     id: 'timeline-4',
     year: '2019',
-    yearDisplay: '2019–2026 Q1',
+    yearDisplay: '2022, 2024',
     isPresent: false,
     title: '핵심 프로덕트 런칭 & 라이프사이클 관리',
     description:
@@ -430,11 +428,11 @@ export const timeline = [
   {
     id: 'timeline-5',
     year: '2017',
-    yearDisplay: '2017–2019',
+    yearDisplay: '2017-2019',
     isPresent: false,
     title: '고객 브랜드 여정 서비스 기획',
     description:
-      '차량 입고 프로세스 최적화 및 연령별 세그먼트 대응 전략 지원. 서비스 접점 데이터를 마케팅 전략과 연계하는 체계 수립 — 이후 모든 프로젝트의 출발점이 된 데이터 기반 사고.',
+      '차량 입고 프로세스 최적화 및 연령별 세그먼트 대응 전략 지원. 서비스 접점 데이터를 마케팅 전략과 연계하는 체계 수립. 이후 모든 프로젝트의 출발점이 된 데이터 기반 사고.',
     pillars: ['engagement'],
   },
 ];
@@ -448,7 +446,7 @@ export const notes = {
     line2: '나의 시선.',
     italicLine: 2,
   },
-  comingSoon: '곧 시작합니다. 자동차 마케팅 · CRM 운영 · 본사-딜러 조율에서 길어 올린 관점을 정리해 올릴 예정입니다.',
+  comingSoon: '곧 시작합니다. 자동차 마케팅, CRM 운영, 본사-딜러 조율에서 길어 올린 관점을 정리해 올릴 예정입니다.',
   posts: [],
 };
 
@@ -460,7 +458,7 @@ export const contact = {
     line2: '함께 만들어볼까요.',
     italicLine: 2,
   },
-  body: '프로젝트 문의, 협업, 커피챗 — 어떤 주제든 편하게 연락 주세요. 영업일 기준 2일 안에 회신드립니다.',
+  body: '프로젝트 문의, 협업, 커피챗까지 어떤 주제든 편하게 연락 주세요. 영업일 기준 2일 안에 회신드립니다.',
   channels: [
     {
       id: 'email',

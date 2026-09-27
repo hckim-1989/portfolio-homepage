@@ -16,7 +16,6 @@ export default function Capabilities() {
     <section id="capabilities" className="section capabilities">
       <div className="section-inner">
         <header className="capabilities-header">
-          <p className="section-eyebrow">{capabilities.eyebrow}</p>
           <h2 className="section-title">
             {lines.map(line => (
               <span

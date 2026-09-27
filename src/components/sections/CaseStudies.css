@@ -61,7 +61,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 18px;
   font: 500 12px/1 var(--font-mono);
   letter-spacing: 0.08em;
   text-transform: uppercase;

@@ -11,7 +11,6 @@ export default function Contact() {
     <section id="contact" className="section contact-section">
       <div className="section-inner">
         <header className="contact-header">
-          <p className="section-eyebrow">{contact.eyebrow}</p>
           <h2 className="section-title">
             {lines.map(line => (
               <span

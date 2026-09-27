@@ -5,7 +5,6 @@ import CaseStudies from './components/sections/CaseStudies';
 import BrandConsulting from './components/sections/BrandConsulting';
 import Capabilities from './components/sections/Capabilities';
 import Timeline from './components/sections/Timeline';
-import Notes from './components/sections/Notes';
 import Contact from './components/sections/Contact';
 import { profile } from './data/portfolioData';
 import './styles/design-tokens.css';
@@ -32,7 +31,6 @@ export default function App() {
         <BrandConsulting />
         <Capabilities />
         <Timeline />
-        <Notes />
         <Contact />
       </main>
       <footer className="site-footer">
