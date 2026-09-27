@@ -41,9 +41,9 @@ export const CAREER_EN = {
         {
           label: 'Approach',
           steps: [
-            { title: 'Dual KPIs', desc: 'Set pre-order volume and premium image metrics together, benchmarked against competing premium brands’ prior-year figures' },
+            { title: 'Goal redefinition', desc: 'Shifted the launch goal from sales volume to brand. Set pre-order volume and premium image metrics together, benchmarked against competing premium brands’ prior-year figures' },
             { title: 'Target redefinition', desc: 'Defined the target as luxury-lifestyle consumers instead of relying on purchase history' },
-            { title: 'Two-phase launch', desc: 'Ran a June pre-launch to secure pre-orders and read market response, then locked the July official-launch messaging on that basis' },
+            { title: 'Validation structure', desc: 'A two-phase launch with a validation stage built in before the official launch. Ran a June pre-launch to secure pre-orders and read market response, then locked the July official-launch messaging on that basis' },
             { title: 'Journey integration', desc: 'Designed awareness through advertising, contact through experience programs, and conversion through dealers' },
             { title: 'Sales process standardization', desc: 'Standardized dealer sales messaging with model sales kits, matched to online content' },
           ],
@@ -83,9 +83,10 @@ export const CAREER_EN = {
         {
           label: 'Approach',
           steps: [
+            { title: 'Strategic judgment', desc: 'Judged that more campaigns would not break the premium-awareness plateau; shifted the focus to customer value in the post-purchase experience' },
             { title: 'Owner segmentation', desc: 'Classified owners by three criteria: purchase model, purchase timing, relationship status' },
-            { title: 'Owner-only three-tier structure', desc: 'Three tiers: first flagship delivery, any-model delivery, and repurchase with continued service visits; no entry tier for non-owners' },
-            { title: 'Experiential benefits', desc: 'Built benefits as lifestyle experience programs instead of price discounts, preserving premium positioning' },
+            { title: 'Owner-only three-tier structure', desc: 'Three tiers: first flagship delivery, any-model delivery, and repurchase with continued service visits; excluded a non-owner entry tier to keep the tiers distinct and aspirational' },
+            { title: 'Experiential benefits', desc: 'Built benefits as lifestyle experience programs instead of price discounts; partnerships with global affiliates gave the program an identity unique to the brand' },
             { title: 'App-only operation', desc: 'Limited tier status checks and benefit use to the brand app, driving app sign-ups and building owner data' },
             { title: 'Flagship-first rollout', desc: 'Designed the program around Korean owners’ expectations; applied to flagship owners first, using response data to time the all-model expansion' },
           ],
@@ -124,9 +125,9 @@ export const CAREER_EN = {
         {
           label: 'Approach',
           steps: [
+            { title: 'Two fixed KPIs', desc: 'Set new-car owner registration rate and online booking share as the two goals. Feature development ordered by KPI contribution, and both metrics linked to dealer evaluations to create incentives for app adoption' },
             { title: 'Sign-up at delivery', desc: 'Built app sign-up into the vehicle delivery process, then made the app the only place to check loyalty tiers, strengthening the reason to join' },
             { title: 'Maintenance booking first', desc: 'Formed app-usage habits at the highest-frequency touchpoint, accumulating service-visit history as customer data' },
-            { title: 'Two fixed KPIs', desc: 'New-car owner registration rate and online booking share; feature development ordered by KPI contribution, and both metrics linked to dealer evaluations to create incentives for app adoption' },
             { title: 'Mileage integration', desc: 'Points earned at five touchpoints: new sign-up, referral, repurchase, service visit, online shopping' },
             { title: 'Phased integration', desc: 'Brought dealer data together step by step, working with the product organization and dealers' },
           ],
@@ -166,9 +167,10 @@ export const CAREER_EN = {
         {
           label: 'Approach',
           steps: [
-            { title: 'Designed for a small brand', desc: 'No ad budget, no marketing staff, one to two hours a day; chose only methods sustainable under those conditions' },
-            { title: 'Exposure through external collaborations', desc: 'Proposed and landed TV appearances, department-store pop-ups and similar opportunities instead of paid advertising; that visibility triggered the store expansion' },
-            { title: 'Production efficiency', desc: 'Unified logo, packaging and store tone first, then expanded sales locations from a single production base' },
+            { title: 'Strategy within constraints', desc: 'No ad budget, no marketing staff, one to two hours a day; chose only methods sustainable under those conditions' },
+            { title: 'Brand identity', desc: 'Redesigned the logo, packaging and store tone as one identity; established Instagram content tone and operating principles' },
+            { title: 'Visibility through external collaborations', desc: 'Proposed and landed TV appearances, department-store pop-ups and similar opportunities instead of paid advertising; that visibility triggered the store expansion' },
+            { title: 'Expansion operations design', desc: 'Kept a single production base and expanded sales locations only, holding one brand standard with no store-specific menus or promotions' },
           ],
         },
         {
